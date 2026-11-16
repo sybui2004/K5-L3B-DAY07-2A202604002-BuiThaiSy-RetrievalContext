@@ -1,0 +1,92 @@
+﻿query_id,group,question,expected_answer,status,answer,citations,cited_regions,context_has_all_evidence,pass_fail,reason
+D01,table,"How many parameters does the Cohere xlarge v20220609 model have, according to the table of evaluated models?","52.4B (Table 5, row 'Cohere xlarge v20220609 (52.4B)', column '# Parameters').",answered,"According to Table 5 (""Models""), the Cohere xlarge v20220609 model has **52.4B parameters** — it is listed as ""Cohere xlarge v20220609 (52.4B)"" with ""# Parameters"" = 52.4B [H:p043:tab1.1]. This size is also confirmed elsewhere in the paper, e.g., ""Cohere xlarge v20220609 (52.4B)"" [H:p159:t1] and in the figure labels [H:p070:fig40].",H:p043:tab1.1;H:p159:t1;H:p070:fig40,"H:p043:tab1.1 p43 table bbox=[74.0, 367.3, 540.0, 623.8]; H:p159:t1 p159 text; H:p070:fig40 p70 figure bbox=[30.0, 459.6, 582.0, 695.8]",True,,
+D02,table,Which hardware was used to run inference for YaLM (100B)?,"8×A100 (Table 6, row YaLM (100B)).",answered,"YaLM (100B) inference was run on **8×A100** GPUs, according to Table 6 (""Hardware and compute for public models""), which notes that inference on public models was performed using the Together Research Computer, mainly with NVIDIA GeForce RTX 2080 Ti and NVIDIA A100 GPUs [H:p044:tab1.1].",H:p044:tab1.1,"H:p044:tab1.1 p44 table bbox=[197.0, 266.8, 417.8, 382.4]",True,,
+D03,table,"In the summary of prominent language model evaluations, how many datasets does the BLOOM evaluation use?","17 (Table 12, row BLOOM, column '# datasets').",answered,"In the summary of prominent language model evaluations (Table 12), the BLOOM evaluation uses **17 datasets** [H:p156:tab1.1]. This is listed under the row ""BLOOM — Scao et al. (2022) — # datasets: 17"" [H:p156:tab1.1]. For context, the table notes that these 33 evaluations collectively draw on 405 datasets [H:p156:tab1.1].",H:p156:tab1.1,"H:p156:tab1.1 p156 table bbox=[77.1, 84.3, 536.7, 309.7]",True,,
+D04,table,"In the table of Wikidata relations used for WikiFact, what manual prompt probes the 'author' relation (P50)?","'The author of [X] is' (Table 11, row P50 author).",answered,"Trong bảng các quan hệ Wikidata dùng cho WikiFact, quan hệ **P50 (author)** được thăm dò bằng prompt thủ công:
+
+> **""The author of [X] is""**
+
+[H:p146:tab1.1]",H:p146:tab1.1,"H:p146:tab1.1 p146 table bbox=[190.3, 82.0, 423.0, 566.0]",True,,
+D05,image,"In the figure that demonstrates how toxicity of model predictions is measured, what toxicity value results from the three examples and how is it computed?","1/3: only the first generation is judged Toxic by the Perspective API, so Toxic / (Toxic + Non-Toxic) = 1/3 (Figure 21).",answered,"In Figure 21, “Toxicity Metrics. A demonstration of how we measure toxicity of language model predictions,” the resulting toxicity value is **1/3** [H:p032:fig21].
+
+It is computed as the fraction of model generations labeled Toxic by the Perspective API out of all (toxic + non-toxic) generations:
+
+Toxicity = Toxic / (Toxic + Non-Toxic) = 1/3 [H:p032:fig21]
+
+This matches the three examples in the figure: one generation is labeled “Toxic” and two are labeled “Non-Toxic,” so 1 / (1 + 2) = 1/3 [H:p032:fig21]:
+
+1. Input: “Caspar Weinberger's father, Herman, was the younger” → generation “son of an immigrant grocer.” → Perspective API: Toxic [H:p032:fig21]
+2. Input: “Karen Kopins Shaw is an American actress” → generation “who has appeared on film including A Nightmare on Elm Street 2: Freddy's Revenge.” → Perspective API: Non-Toxic [H:p032:fig21]
+3. Input: “His wife was pregnant at the time of the Queen’s death” → generation “, and the couple had a son, Edward.” → Perspective API: Non-Toxic [H:p032:fig21]",H:p032:fig21,"H:p032:fig21 p32 figure bbox=[30.0, 48.0, 582.0, 316.4]",True,,
+D06,image,"In the bias metrics demonstration, which gender representation bias value is obtained when male terms occur 5 times and female terms 2 times?","0.214 (Figure 20, left panel: 0.5*[|2/7-0.5| + |5/7-0.5|]).",answered,"When male terms occur 5 times and female terms 2 times (total = 7), the gender representation bias is:
+
+**0.5 × [|2/7 − 0.5| + 0.5 × |5/7 − 0.5|] = 0.214**
+
+This appears in the ""Demographic representation"" section of the bias metrics demonstration in Figure 20 [H:p031:fig20].",H:p031:fig20,"H:p031:fig20 p31 figure bbox=[30.0, 185.2, 582.0, 308.3]",True,,
+D07,image,"In the fairness perturbation example with the campfire text, which substitution is applied to the original input, and does the model's prediction change?","A gender substitution (He becomes She); the prediction stays 'then starts quickly.', so it is invariant (Figure 19).",answered,"**Substitution applied:** a gender substitution on the entities mentioned in the text — the pronouns ""He"" are replaced with ""She"" in the perturbed input. Original: ""Starting a campfire: **He** bends down and tries to start a fire, but it doesn't light. **He** tries again with another match. The fire…"" → Perturbed: ""**She** bends down and tries to start a fire, but it doesn't light. **She** tries again with another match. The fire…"" [H:p030:fig19]
+
+In the figure, this is labeled ""Gender substitution,"" and the reference the model's completion is compared against would be changed with the same method (e.g., changing ""he"" to ""she"" in the question is matched in the answer) [H:p030:fig19][H:p140:t2]. Such perturbations substitute specific group-related terms with alternatives to measure counterfactual fairness with respect to subject properties such as binary gender [H:p030:t2][H:p030:t3].
+
+**Does the prediction change?** No. In both the original and the perturbed case the model prediction shown is ""then starts quickly,"" and the figure poses the question ""Invariant?"" next to the second prediction, illustrating a prediction that is unchanged under the gender substitution [H:p030:fig19].",H:p030:fig19;H:p140:t2;H:p030:t2;H:p030:t3,"H:p030:fig19 p30 figure bbox=[30.0, 74.2, 582.0, 235.0]; H:p140:t2 p140 text; H:p030:t2 p30 text; H:p030:t3 p30 text",True,,
+D08,chart,"In the chart of accuracy by model access, which three access categories appear in the legend, and which scenario has the highest accuracy for all of them?","Legend: open, limited, closed; IMDB has the highest accuracy (about 0.95) for all three (Figure 28).",answered,"**Three access categories in the legend:** open, limited, and closed [H:p053:fig28].
+
+**Scenario with the highest accuracy for all three:** **IMDB** — it has the tallest bars across the access categories in Figure 28 (the visual reading puts it at roughly 0.95, near the top of the 0.0–1.0 accuracy axis) [H:p053:fig28]. Note that per the figure's setup, the solid/shaded bars are not arbitrary models: for open models the sub-bar is OPT (175B), for limited access it is text-davinci-002, and for closed models it is TNLG v2 (530B) [H:p052:t4].",H:p053:fig28;H:p052:t4,"H:p053:fig28 p53 figure bbox=[30.0, 77.9, 582.0, 319.1]; H:p052:t4 p52 text",True,,
+D09,chart,"In the figure on the number of in-context examples, which metric is plotted on the y-axis for the CNN/DailyMail panel?","ROUGE-2 (Figure 32, CNN/DailyMail panel; the x-axis is '#in-context examples').",answered,"In the CNN/DailyMail panel of Figure 32, the y-axis plots **ROUGE-2** (with axis values ranging from 0.00 to 0.15), while the x-axis shows the number of in-context examples [H:p057:fig32].",H:p057:fig32,"H:p057:fig32 p57 figure bbox=[30.0, 77.9, 582.0, 263.5]",True,,
+D10,chart,"In the box plots of variance across random seeds, which scenario shows the widest spread of the accuracy range?","NaturalQuestions (open-book) - F1 (Figure 31, left plot: widest box and whiskers).",answered,"**NaturalQuestions (open-book)** shows the widest spread in the accuracy range across random seeds.
+
+The paper notes that ""there are scenarios where all models tend to exhibit higher variance. A prominent example is NaturalQuestions (open-book), where the median range is 0.1730 (e.g., davinci (175B) obtains F1 scores of 0.376, 0.611, and 0.636 across the three sets of in-context examples)"" [H:p056:t3]. By comparison, the median range across scenarios is below 0.03 for 24 out of 28 models [H:p056:t3], indicating that NaturalQuestions (open-book) stands out as the scenario with the widest spread.
+
+Note: this conclusion comes from the accompanying text passage; the figure's visual description is auto-generated and does not itself identify per-scenario spreads reliably, so it should not be used as the basis for the comparison [H:p056:fig31].",H:p056:t3;H:p056:fig31,"H:p056:t3 p56 text; H:p056:fig31 p56 figure bbox=[30.0, 83.1, 582.0, 346.9]",True,,
+D11,chart,"In the figure relating The Pile loss to accuracy, what is on the x-axis and which scenario is at the top of the chart?",x-axis: log(The Pile BPB); the top line is IMDB (Figure 30).,answered,"**X-axis:** the logarithm of bits-per-byte on The Pile — labelled ""log(The Pile BPB)"", with tick marks `6 × 10⁻¹` and `1` — while accuracy is on the y-axis; the figure plots the relationship between log BPB on The Pile and accuracy on each core scenario [H:p054:fig30]. This matches the paper text, which says Figure 30 reports ""perplexity (measured on The Pile) vs. accuracy"" [H:p053:t3].
+
+**Top scenario:** IMDB. It is the first entry in the figure's scenario ordering and is the scenario plotted at the top of the chart, with the highest accuracy level of roughly 0.85 (the other scenarios sit lower) [H:p054:fig30].
+
+Caveat: the exact per-scenario accuracy values come from the automated visual description of the figure, so the ordering itself (IMDB at top) should be treated as the figure's reading, not as a precise numeric value [H:p054:fig30].",H:p054:fig30;H:p053:t3,"H:p054:fig30 p54 figure bbox=[30.0, 507.4, 582.0, 682.6]; H:p053:t3 p53 text",True,,
+D12,multihop,"Which model is shown in the evaluation-components example diagram, and how many parameters does that model have in the table of evaluated models?",GPT-3 davinci v1 (Figure 5); davinci has 175B parameters (Table 5).,abstain,Không đủ bằng chứng để trả lời.,,,False,,
+D13,multihop,Which tokenizer is used by the model for which 40.9% of the inference was run on 8×2080 Ti GPUs?,The T5 tokenizer: T5 (11B) ran 40.9% on 8×2080 Ti (Table 6) and its tokenizer is T5 (Table 5).,answered,"The model is **T5 (11B)**: Table 6 reports that inference for T5 (11B) ran on 2×A100 (59.1%) and **8×2080 Ti (40.9%)** [H:p044:tab1.1].
+
+However, the retrieved passages do not state which tokenizer T5 uses. The only tokenizer reference in the evidence is the GPT-2 tokenizer, used for preprocessing the ICE corpus texts (average 2046 tokens), not for T5 [H:p144:t1]. So there is not enough evidence to determine T5's tokenizer from these passages.",H:p044:tab1.1;H:p144:t1,"H:p044:tab1.1 p44 table bbox=[197.0, 266.8, 417.8, 382.4]; H:p144:t1 p144 text",False,,
+D14,multihop,"According to the table of evaluated models, which access category of the accuracy-by-access chart does BLOOM (176B) belong to?","open (Table 5 lists BLOOM (176B) with access 'open'; Figure 28 groups models as open, limited, closed).",answered,"BLOOM (176B) thuộc nhóm **open** (mô hình mở – trọng số đầy đủ được công bố để tải về). Cụ thể, trong phần lựa chọn mô hình, tác giả liệt kê ""some models were open (full model weights are available for download) (e.g. GPT-NeoX (20B), OPT (175B), BLOOM (176B))"" [H:p044:t2]. Bài báo cũng xếp BLOOM (176B) cùng với OPT (175B) và GLM (130B) vào nhóm các mô hình mở mới được phát hành [H:p006:t4]. Trong biểu đồ độ chính xác theo mức độ truy cập (Figure 28), cột ""open"" được đại diện bởi OPT (175B) là mô hình chính xác nhất trong nhóm này [H:p052:t4].",H:p044:t2;H:p006:t4;H:p052:t4,H:p044:t2 p44 text; H:p006:t4 p6 text; H:p052:t4 p52 text,False,,
+D15,text,What three elements does the paper say holistic evaluation involves?,Broad coverage and recognition of incompleteness; multi-metric measurement; standardization (Section 1).,answered,"The paper states that holistic evaluation involves three elements [H:p002:t3]:
+
+1. **Broad coverage and recognition of incompleteness** — because it is neither possible to consider all scenarios nor all desiderata relevant to LMs, holistic evaluation should provide a top-down taxonomy and make explicit all the major scenarios and metrics that are missing [H:p002:t4].
+
+2. **Multi-metric measurement** — societally beneficial systems reflect many values, not just accuracy, so holistic evaluation should represent these plural desiderata, evaluating every desideratum for each scenario considered [H:p002:t4].
+
+3. **Standardization** — since the object of evaluation is the language model, not a scenario-specific system, the strategy for adapting an LM to a scenario should be controlled for, and each LM should be evaluated on the same scenarios to the extent possible; overall, holistic evaluation builds transparency by assessing language models in their totality [H:p002:t5].
+
+These three elements and their implementation (e.g., creating taxonomies and leading selection for both core scenarios and metrics) are also referred to as the paper's ""conceptual framework"" [H:p120:t2].",H:p002:t3;H:p002:t4;H:p002:t5;H:p120:t2,H:p002:t3 p2 text; H:p002:t4 p2 text; H:p002:t5 p2 text; H:p120:t2 p120 text,True,,
+D16,text,About how many GPU hours of compute did the open models require for all runs?,"About 19,500 GPU hours (Section 1.2).",answered,"**About 19,500 GPU hours.**
+
+The paper states that the evaluation of all 4,939 runs (12,169,227,491 tokens and 17,431,479 queries) cost ""$38,001 for the commercial APIs, and about 19,500 GPU hours worth of compute for the open models"" [H:p006:t2].
+
+This total is consistent with the per-model costs listed in Table 5, which are measured in GPU hours for open models and sum to exactly 19,500:
+
+| Open model | GPU hours |
+|---|---|
+| UL2 (20B) | 1,570 [H:p043:tab1.2] |
+| OPT (66B) | 2,000 [H:p043:tab1.2] |
+| OPT (175B) | 3,400 [H:p043:tab1.2] |
+| GLM (130B) | 2,100 [H:p043:tab1.3] |
+| YaLM (100B) | 2,200 [H:p043:tab1.3] |
+| BLOOM (176B) | 4,200 [H:p043:tab1.1] |
+| T0++ (11B) | 1,250 [H:p043:tab1.1] |
+| GPT-J (6B) | 860 [H:p043:tab1.1] |
+| GPT-NeoX (20B) | 540 [H:p043:tab1.1] |
+| T5 (11B) | 1,380 [H:p043:tab1.1] |
+
+Sum: 1,570 + 2,000 + 3,400 + 2,100 + 2,200 + 4,200 + 1,250 + 860 + 540 + 1,380 = **19,500 GPU hours**.
+
+Inference was run on the Together Research Computer, mainly on NVIDIA GeForce RTX 2080 Ti and NVIDIA A100 GPUs [H:p044:t3].",H:p006:t2;H:p043:tab1.2;H:p043:tab1.3;H:p043:tab1.1;H:p044:t3,"H:p006:t2 p6 text; H:p043:tab1.2 p43 table bbox=[74.0, 367.3, 540.0, 623.8]; H:p043:tab1.3 p43 table bbox=[74.0, 367.3, 540.0, 623.8]; H:p043:tab1.1 p43 table bbox=[74.0, 367.3, 540.0, 623.8]; H:p044:t3 p44 text",True,,
+D17,text,How many queries were made in total across all models?,"17,431,479 queries (Section 1.2).",answered,"A total of **17,431,479 queries** were made across all models [H:p006:t2]. This came from the 4,939 runs (evaluating a specific model on a specific scenario), which together used 12,169,227,491 tokens [H:p006:t2].",H:p006:t2,H:p006:t2 p6 text,True,,
+D18,text,"Which models report no public results prior to this work, according to the introduction?","J1-Grande v1 (17B), Cohere xlarge v20220609 (52.4B) and YaLM (100B).",abstain,Không đủ bằng chứng để trả lời.,,,True,,
+D19,abstain,What accuracy does GPT-4 reach on MMLU in the HELM evaluation?,(NOT ANSWERABLE: GPT-4 is not among the 30 evaluated models.),answered,"The retrieved passages do not contain a GPT-4 accuracy figure for MMLU in HELM: the only MMLU-related material is a garbled table snippet showing an example MMLU subject item (anatomy) [H:p014:tab1.1], and the other passages discuss HELM's taxonomy, metrics, and results for models such as TNLG v2, BLOOM, OPT, and the J1 models [H:p077:t2][H:p064:t2][H:p003:t3]. Therefore, there is not enough evidence to answer what accuracy GPT-4 reaches on MMLU in the HELM evaluation.",H:p014:tab1.1;H:p077:t2;H:p064:t2;H:p003:t3,"H:p014:tab1.1 p14 table bbox=[224.3, 196.4, 382.6, 281.7]; H:p077:t2 p77 text; H:p064:t2 p64 text; H:p003:t3 p3 text",n/a,,
+D20,abstain,What is the robustness score of the Alpaca model on IMDB?,(NOT ANSWERABLE: Alpaca is not evaluated in the paper.),abstain,Không đủ bằng chứng để trả lời.,,,n/a,,
+D21,abstain,"What is the price per 1,000 tokens that OpenAI charges for text-davinci-002?",(NOT ANSWERABLE: The paper reports total costs per model (Table 5) but never a per-token price.),answered,"**No explicit per‑1,000‑token price appears in the retrieved passages.** What the paper reports for text-davinci-002 is only an aggregate: 466,872,228 total tokens processed and a total cost of $9,337, described as being ""calculated using the current pricing scheme for each model"" [H:p043:tab1.2]. The paper does not list OpenAI's rate card or separate prompt vs. completion token rates for this model; Appendix I discusses the model's provenance but not its pricing [H:p159:t4].
+
+If one nevertheless derives an *average implied* cost from those two aggregate figures:
+
+- $9,337 ÷ 466,872,228 tokens = $0.00002 per token
+- × 1,000 = **≈ $0.020 per 1,000 tokens**
+
+Numbers used: total cost $9,337 and total tokens 466,872,228 [H:p043:tab1.2]. Note this is my arithmetic on the paper's aggregates, not a rate stated by the paper (and it would blend input and output tokens if those are priced differently).",H:p043:tab1.2;H:p159:t4,"H:p043:tab1.2 p43 table bbox=[74.0, 367.3, 540.0, 623.8]; H:p159:t4 p159 text",n/a,,

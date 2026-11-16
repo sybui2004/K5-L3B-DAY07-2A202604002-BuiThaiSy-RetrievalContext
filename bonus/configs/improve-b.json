@@ -1,0 +1,1 @@
+{"name": "improve-b", "method": "dense", "top_k": 6, "max_searches": 3, "budget_chars": 9000, "neighbors": false, "rewrite": false}

@@ -1,0 +1,26 @@
+﻿query_id,question,expected_answer,status,answer,citations,answer_grade_0_2,citation_support,abstention_correct,effective_status,reason
+q16,"Theo Bộ luật Lao động 2019, hợp đồng lao động xác định thời hạn được ký với thời hạn tối đa bao lâu?",Không quá 36 tháng kể từ thời điểm có hiệu lực.,answered,"Theo Bộ luật Lao động 2019, hợp đồng lao động xác định thời hạn là hợp đồng mà hai bên xác định thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng **trong thời gian không quá 36 tháng** kể từ thời điểm có hiệu lực của hợp đồng [B:blld-2019:d020-p1].
+
+Như vậy, thời hạn tối đa của hợp đồng lao động xác định thời hạn là **36 tháng**.",B:blld-2019:d020-p1,2,true,,,"Đúng 36 tháng, trích Điều 20 BLLĐ 2019; citation có trong context và chứa đúng nội dung."
+q17,"Trong thời gian thử việc, người lao động được trả lương tối thiểu bao nhiêu?",Ít nhất bằng 85% mức lương của công việc đó.,answered,"Cả hai bản Bộ luật Lao động đều quy định giống nhau về nguyên tắc này:
+
+- **Bộ luật Lao động 2019 – Điều 26 (Tiền lương thử việc):** Tiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận nhưng **ít nhất phải bằng 85% mức lương của công việc đó** [B:blld-2019:d026-p1].
+- **Bộ luật Lao động 2012 – Điều 28 (Tiền lương trong thời gian thử việc):** cũng quy định tiền lương thử việc do hai bên thỏa thuận nhưng ít nhất bằng **85% mức lương của công việc đó** [B:blld-2012:d028-p1].
+
+Như vậy, mức tối thiểu là 85% mức lương của công việc mà người lao động sẽ đảm nhận; mức cụ thể (bằng bao nhiêu tiền) phụ thuộc vào thỏa thuận của hai bên và mức lương của công việc đó. Các đoạn tìm được không nêu con số tiền cụ thể nào khác.",B:blld-2019:d026-p1;B:blld-2012:d028-p1,2,true;true,,,"Đúng 85% mức lương công việc; cả hai citation (2012 Điều 28, 2019 Điều 26) đều nêu 85%."
+q18,Nếu hành vi vi phạm liên quan đến bí mật kinh doanh thì thời hiệu xử lý kỷ luật lao động là bao lâu?,12 tháng (thay vì 06 tháng thông thường).,answered,"**Bộ luật Lao động 2019** – Điều 123 quy định thời hiệu xử lý kỷ luật lao động là 06 tháng kể từ ngày xảy ra hành vi vi phạm; nhưng nếu hành vi vi phạm liên quan trực tiếp đến tài chính, tài sản, tiết lộ bí mật công nghệ, **bí mật kinh doanh** của người sử dụng lao động thì thời hiệu là **12 tháng** [B:blld-2019:d123-p1].
+
+**Bộ luật Lao động 2012** – Điều 124 cũng quy định tương tự: thời hiệu tối đa là 06 tháng, và với hành vi vi phạm liên quan trực tiếp đến tài chính, tài sản, tiết lộ bí mật công nghệ, **bí mật kinh doanh** của người sử dụng lao động thì thời hiệu tối đa là **12 tháng** [B:blld-2012:d124-p1].
+
+Như vậy, ở cả hai bản luật, hành vi vi phạm liên quan đến bí mật kinh doanh có thời hiệu xử lý kỷ luật là 12 tháng. Ngoài ra, khi hết thời gian quy định (theo khoản 4 Điều 122 BLLĐ 2019, hoặc khoản 4 Điều 123 BLLĐ 2012) mà hết thời hiệu hoặc còn thời hiệu nhưng không đủ 60 ngày, thời hiệu có thể được kéo dài nhưng không quá 60 ngày kể từ ngày hết thời gian đó [B:blld-2019:d123-p1] [B:blld-2012:d124-p1].",B:blld-2019:d123-p1;B:blld-2012:d124-p1,2,true;true,,,Đúng 12 tháng thay vì 6 tháng; citation 2019 Điều 123 và 2012 Điều 124 đều nêu 12 tháng.
+q19,Một doanh nghiệp được cho thuê lại một người lao động trong thời gian dài nhất là bao lâu?,Tối đa 12 tháng.,answered,"**Thời hạn tối đa là 12 tháng.**
+
+- Theo **Bộ luật Lao động 2019**: “Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng” [B:blld-2019:d053-p1].
+- Theo **Bộ luật Lao động 2012**: “Thời hạn cho thuê lại lao động tối đa không quá 12 tháng” [B:blld-2012:d054-p1].
+
+Như vậy, cả hai bản luật đều quy định giới hạn tối đa là 12 tháng đối với một người lao động được cho thuê lại.",B:blld-2019:d053-p1;B:blld-2012:d054-p1,2,true;true,,,Đúng tối đa 12 tháng; citation 2019 Điều 53 và 2012 Điều 54 nêu 12 tháng.
+q20,Người lao động ở độ tuổi nào thì được coi là lao động chưa thành niên?,Chưa đủ 18 tuổi (dưới 18 tuổi).,answered,"Theo quy định tại Bộ luật Lao động 2012: người lao động chưa thành niên là người lao động dưới 18 tuổi [B:blld-2012:d161-p1].
+
+Theo Bộ luật Lao động 2019: lao động chưa thành niên là người lao động chưa đủ 18 tuổi [B:blld-2019:d143-p1].",B:blld-2012:d161-p1;B:blld-2019:d143-p1,2,true;true,,,Đúng chưa đủ 18 tuổi; citation 2012 Điều 161 và 2019 Điều 143 nêu 18 tuổi.
+u03,Người lao động làm việc từ xa được hỗ trợ tiền internet và điện thoại bao nhiêu mỗi tháng?,(thiếu bằng chứng: Hai bộ luật không có quy định về làm việc từ xa hay hỗ trợ chi phí internet/điện thoại.),abstain,Không đủ bằng chứng để trả lời.,,,,true,,"Từ chối đúng, không thêm khẳng định; không có citation."
+u04,Mức phạt tiền cụ thể là bao nhiêu triệu đồng khi sử dụng lao động chưa thành niên trái quy định?,(thiếu bằng chứng: Bộ luật không ghi mức phạt tiền theo số tiền cụ thể (nằm ở nghị định xử phạt).),abstain,Không đủ bằng chứng để trả lời.,,,,true,,"Từ chối đúng, không thêm khẳng định; không có citation."

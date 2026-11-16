@@ -1,0 +1,26 @@
+{
+  "n_questions": 17,
+  "status_counts": {
+    "answered": 16,
+    "abstain": 1
+  },
+  "context_evidence_rate": {
+    "n": 14,
+    "N": 15
+  },
+  "tool_use": {
+    "n": 17,
+    "N": 17,
+    "errors": 0,
+    "distribution": {
+      "1": 14,
+      "4": 3
+    }
+  },
+  "tokens_in": 62782,
+  "tokens_out": 12794,
+  "seconds_total": 140.09,
+  "config": "improve-a",
+  "split": "dev",
+  "model": "deepseek-v4-flash"
+}

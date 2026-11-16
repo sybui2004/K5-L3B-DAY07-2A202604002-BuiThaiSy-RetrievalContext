@@ -1,0 +1,575 @@
+﻿query_id,question,expected_answer,context_ids,context,context_score_0_2,reason
+q01,Thời giờ làm việc bình thường tối đa là bao nhiêu giờ một ngày và bao nhiêu giờ một tuần?,Không quá 08 giờ/ngày và 48 giờ/tuần (cả hai Bộ luật).,B:blld-2012:d104-p1;B:blld-2019:d105-p1;B:blld-2019:d146-p1,"[B:blld-2012:d104-p1 | data/raw/blld_2012_congbao.pdf | page 36]
+Điều 104. Thời giờ làm việc bình thường
+1. Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và 48 giờ
+trong 01 tuần.
+2. Người sử dụng lao động có quyền quy định làm việc theo giờ hoặc ngày
+hoặc tuần; trường hợp theo tuần thì thời giờ làm việc bình thường không quá 10
+giờ trong 01 ngày, nhưng không quá 48 giờ trong 01 tuần .
+Nhà nước khuyến khích người sử dụng lao động thực hiện tuần làm việc
+40 giờ.
+3. Thời giờ làm việc không quá 06 giờ trong 01 ngày đối với những người làm
+các công việc đặc biệt nặng nhọc, độc hại, nguy hiểm theo danh mục do Bộ Lao
+động - Thương binh và Xã hội chủ trì phối hợp với Bộ Y tế ban hành.
+
+[B:blld-2019:d105-p1 | data/raw/blld_2019_congbao.pdf | page 44]
+Điều 105. Thời giờ làm việc bình thường
+1. Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không
+quá 48 giờ trong 01 tuần.
+2. Người sử dụng lao động có quyền quy định thời giờ làm việc theo ngày hoặc
+tuần nhưng phải thông báo cho người lao động biết; trường hợp theo tuần thì thời
+giờ làm việc bình thường không quá 10 giờ trong 01 ngày và không quá 48 giờ
+trong 01 tuần.
+Nhà nước khuyến khích người sử dụng lao động thực hiện tuần làm việc 40
+giờ đối với người lao động.
+3. Người sử dụng lao động có trách nhiệm bảo đảm giới hạn thời gian làm việc
+tiếp xúc với yếu tố nguy hiểm, yếu tố có hại đúng theo quy chuẩn kỹ thuật quốc
+gia và pháp luật có liên quan.
+
+[B:blld-2019:d146-p1 | data/raw/blld_2019_congbao.pdf | page 59]
+Điều 146. Thời giờ làm việc của người chưa thành niên
+1. Thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong
+01 ngày và 20 giờ trong 01 tuần; không được làm thêm giờ, làm việc vào ban đêm.
+2. Thời giờ làm việc của người từ đủ 15 tuổi đến chưa đủ 18 tuổi không
+được quá 08 giờ trong 01 ngày và 40 giờ trong 01 tuần. Người từ đủ 15 tuổi
+đến chưa đủ 18 tuổi có thể được làm thêm giờ, làm việc vào ban đêm trong
+một số nghề, công việc theo danh mục do Bộ trưởng Bộ Lao động - Thương
+binh và Xã hội ban hành.",,
+q02,Ca làm đêm được tính bắt đầu từ mấy giờ và kết thúc lúc nào?,Từ 22 giờ đến 06 giờ sáng ngày hôm sau.,B:blld-2012:d105-p1;B:blld-2019:d106-p1;B:blld-2019:d146-p1,"[B:blld-2012:d105-p1 | data/raw/blld_2012_congbao.pdf | page 37]
+Điều 105. Giờ làm việc ban đêm
+Giờ làm việc ban đêm được tính từ 22 giờ đến 6 giờ sáng ngày hôm sau.
+
+[B:blld-2019:d106-p1 | data/raw/blld_2019_congbao.pdf | page 44]
+Điều 106. Giờ làm việc ban đêm
+Giờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau.
+
+[B:blld-2019:d146-p1 | data/raw/blld_2019_congbao.pdf | page 59]
+Điều 146. Thời giờ làm việc của người chưa thành niên
+1. Thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong
+01 ngày và 20 giờ trong 01 tuần; không được làm thêm giờ, làm việc vào ban đêm.
+2. Thời giờ làm việc của người từ đủ 15 tuổi đến chưa đủ 18 tuổi không
+được quá 08 giờ trong 01 ngày và 40 giờ trong 01 tuần. Người từ đủ 15 tuổi
+đến chưa đủ 18 tuổi có thể được làm thêm giờ, làm việc vào ban đêm trong
+một số nghề, công việc theo danh mục do Bộ trưởng Bộ Lao động - Thương
+binh và Xã hội ban hành.",,
+q03,Làm thêm giờ vào ngày nghỉ hằng tuần thì được trả lương ít nhất bằng bao nhiêu phần trăm?,Ít nhất bằng 200%.,B:blld-2012:d097-p1;B:blld-2019:d098-p1;B:blld-2019:d111-p1,"[B:blld-2012:d097-p1 | data/raw/blld_2012_congbao.pdf | page 34]
+Điều 97. Tiền lương làm thêm giờ, làm việc vào ban đêm
+1. Người lao động làm thêm giờ được trả lương tính theo đơn giá tiền lương
+hoặc tiền lương theo công việc đang làm như sau:
+a) Vào ngày thường, ít nhất bằng 150%;
+b) Vào ngày nghỉ hàng tuần, ít nhất bằng 200%;
+c) Vào ngày nghỉ lễ, ngày nghỉ có hưởng lương, ít nhất bằng 300% chưa kể tiền
+lương ngày lễ, ngày nghỉ có hưởng lương đối với người lao động hưởng lương ngày.
+2. Người lao động làm việc vào ban đêm, thì được trả thêm ít nhất bằng 30%
+tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc của ngày
+làm việc bình thường.
+3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo
+quy định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm
+20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm
+vào ban ngày.
+
+[B:blld-2019:d098-p1 | data/raw/blld_2019_congbao.pdf | page 42]
+Điều 98. Tiền lương làm thêm giờ, làm việc vào ban đêm
+1. Người lao động làm thêm giờ được trả lương tính theo đơn giá tiền lương
+hoặc tiền lương thực trả theo công việc đang làm như sau:
+a) Vào ngày thường, ít nhất bằng 150%;
+b) Vào ngày nghỉ hằng tuần, ít nhất bằng 200%;
+c) Vào ngày nghỉ lễ, tết, ngày nghỉ có hưởng lương, ít nhất bằng 300% chưa kể
+tiền lương ngày lễ, tết, ngày nghỉ có hưởng lương đối với người lao động hưởng
+lương ngày.
+2. Người lao động làm việc vào ban đêm thì được trả thêm ít nhất bằng 30%
+tiền lương tính theo đơn giá tiền lương hoặc tiền lương thực trả theo công việc của
+ngày làm việc bình thường.
+3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo quy
+định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm 20% tiền
+lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm vào ban
+ngày của ngày làm việc bình thường hoặc của ngày nghỉ hằng tuần hoặc của ngày
+nghỉ lễ, tết.
+4. Chính phủ quy định chi tiết Điều này.
+
+[B:blld-2019:d111-p1 | data/raw/blld_2019_congbao.pdf | page 46]
+Điều 111. Nghỉ hằng tuần
+1. Mỗi tuần, người lao động được nghỉ ít nhất 24 giờ liên tục. Trong trường
+hợp đặc biệt do chu kỳ lao động không thể nghỉ hằng tuần thì người sử dụng lao
+động có trách nhiệm bảo đảm cho người lao động được nghỉ tính bình quân 01 tháng ít
+nhất 04 ngày.
+2. Người sử dụng lao động có quyền quyết định sắp xếp ngày nghỉ hằng tuần vào
+ngày Chủ nhật hoặc ngày xác định khác trong tuần nhưng phải ghi vào nội quy lao động.
+3. Nếu ngày nghỉ hằng tuần trùng với ngày nghỉ lễ, tết quy định tại khoản 1
+Điều 112 của Bộ luật này thì người lao động được nghỉ bù ngày nghỉ hằng tuần
+vào ngày làm việc kế tiếp.",,
+q04,Lao động nữ sinh đôi thì thời gian nghỉ thai sản được cộng thêm như thế nào?,"Từ con thứ 02 trở đi, mỗi con người mẹ được nghỉ thêm 01 tháng (ngoài 06 tháng).",B:blld-2012:d157-p1;B:blld-2019:d139-p1,"[B:blld-2012:d157-p1 | data/raw/blld_2012_congbao.pdf | page 54]
+Điều 157. Nghỉ thai sản
+1. Lao động nữ được nghỉ trước và sau khi sinh con là 06 tháng.
+Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi
+con, người mẹ được nghỉ thêm 01 tháng.
+Thời gian nghỉ trước khi sinh tối đa không quá 02 tháng.
+2. Trong thời gian nghỉ thai sản, lao động nữ được hưởng chế độ thai sản theo
+quy định của pháp luật về bảo hiểm xã hội.
+3. Hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, nếu có nhu
+cầu, lao động nữ có thể nghỉ thêm một thời gian không hưởng lương theo thỏa
+thuận với người sử dụng lao động.
+4. Trước khi hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này,
+nếu có nhu cầu, có xác nhận của cơ sở khám bệnh, chữa bệnh có thẩm quyền về
+việc đi làm sớm không có hại cho sức khỏe của người lao động và được người sử
+dụng lao động đồng ý, lao động nữ có thể trở lại làm việc khi đã nghỉ ít nhất được
+04 tháng.
+Trong trường hợp này, ngoài tiền lương của những ngày làm việc do người sử
+dụng lao động trả, lao động nữ vẫn tiếp tục được hưởng trợ cấp thai sản theo quy
+định của pháp luật về bảo hiểm xã hội.
+
+[B:blld-2019:d139-p1 | data/raw/blld_2019_congbao.pdf | page 57]
+Điều 139. Nghỉ thai sản
+1. Lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng; thời
+gian nghỉ trước khi sinh không quá 02 tháng.
+Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi
+con, người mẹ được nghỉ thêm 01 tháng.
+2. Trong thời gian nghỉ thai sản, lao động nữ được hưởng chế độ thai sản theo
+quy định của pháp luật về bảo hiểm xã hội.
+3. Hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, nếu có nhu
+cầu, lao động nữ có thể nghỉ thêm một thời gian không hưởng lương sau khi thỏa
+thuận với người sử dụng lao động.
+4. Trước khi hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, lao
+động nữ có thể trở lại làm việc khi đã nghỉ ít nhất được 04 tháng nhưng người lao
+động phải báo trước, được người sử dụng lao động đồng ý và có xác nhận của cơ
+sở khám bệnh, chữa bệnh có thẩm quyền về việc đi làm sớm không có hại cho sức
+khỏe của người lao động. Trong trường hợp này, ngoài tiền lương của những ngày
+làm việc do người sử dụng lao động trả, lao động nữ vẫn tiếp tục được hưởng trợ
+cấp thai sản theo quy định của pháp luật về bảo hiểm xã hội.
+5. Lao động nam khi vợ sinh con, người lao động nhận nuôi con nuôi dưới
+06 tháng tuổi, lao động nữ mang thai hộ và người lao động là người mẹ nhờ mang thai
+hộ được nghỉ việc hưởng chế độ thai sản theo quy định của pháp luật về bảo hiểm xã hội.",,
+q05,Người làm công việc trong điều kiện bình thường được nghỉ hằng năm bao nhiêu ngày?,12 ngày làm việc (khi đủ 12 tháng làm việc).,B:blld-2019:d113-p1;B:blld-2012:d111-p1,"[B:blld-2019:d113-p1 | data/raw/blld_2019_congbao.pdf | page 47]
+Điều 113. Nghỉ hằng năm
+1. Người lao động làm việc đủ 12 tháng cho một người sử dụng lao động thì
+được nghỉ hằng năm, hưởng nguyên lương theo hợp đồng lao động như sau:
+a) 12 ngày làm việc đối với người làm công việc trong điều kiện bình thường;
+b) 14 ngày làm việc đối với người lao động chưa thành niên, lao động là người
+khuyết tật, người làm nghề, công việc nặng nhọc, độc hại, nguy hiểm;
+c) 16 ngày làm việc đối với người làm nghề, công việc đặc biệt nặng nhọc, độc
+hại, nguy hiểm.
+2. Người lao động làm việc chưa đủ 12 tháng cho một người sử dụng lao động
+thì số ngày nghỉ hằng năm theo tỷ lệ tương ứng với số tháng làm việc.
+3. Trường hợp do thôi việc, bị mất việc làm mà chưa nghỉ hằng năm hoặc chưa
+nghỉ hết số ngày nghỉ hằng năm thì được người sử dụng lao động thanh toán tiền
+lương cho những ngày chưa nghỉ.
+4. Người sử dụng lao động có trách nhiệm quy định lịch nghỉ hằng năm sau khi
+tham khảo ý kiến của người lao động và phải thông báo trước cho người lao động
+biết. Người lao động có thể thỏa thuận với người sử dụng lao động để nghỉ hằng
+năm thành nhiều lần hoặc nghỉ gộp tối đa 03 năm một lần.
+5. Khi nghỉ hằng năm mà chưa đến kỳ trả lương, người lao động được tạm ứng
+tiền lương theo quy định tại khoản 3 Điều 101 của Bộ luật này.
+
+[B:blld-2012:d111-p1 | data/raw/blld_2012_congbao.pdf | page 38]
+Điều 111. Nghỉ hàng năm
+1. Người lao động có đủ 12 tháng làm việc cho một người sử dụng lao động thì
+được nghỉ hàng năm, hưởng nguyên lương theo hợp đồng lao động như sau:
+a) 12 ngày làm việc đối với người làm công việc trong điều kiện bình thường;
+b) 14 ngày làm việc đối với người làm công việc nặng nhọc, độc hại, nguy
+hiểm hoặc người làm việc ở những nơi có có điều kiện sinh sống khắc nghiệt theo
+danh mục do Bộ Lao động - Thương binh và Xã hội chủ trì phối hợp với Bộ Y tế
+ban hành hoặc lao động chưa thành niên hoặc lao động là người khuyết tật;
+c) 16 ngày làm việc đối với người làm công việc đặc biệt nặng nhọc, độc hại,
+nguy hiểm hoặc người làm việc ở những nơi có điều kiện sinh sống đặc biệt khắc
+nghiệt theo danh mục do Bộ Lao động - Thương binh và Xã hội chủ trì phối hợp
+với Bộ Y tế ban hành.
+2. Người sử dụng lao động có quyền quy định lịch nghỉ hàng năm sau khi tham
+khảo ý kiến của người lao động và phải thông báo trước cho người lao động.
+3. Người lao động có thể thỏa thuận với người sử dụng lao động để nghỉ hàng
+năm thành nhiều lần hoặc nghỉ gộp tối đa 03 năm một lần.
+4. Khi nghỉ hằng năm, nếu người lao động đi bằng các phương tiện đường bộ,
+đường sắt, đường thủy mà số ngày đi đường cả đi và về trên 02 ngày thì từ ngày
+thứ 03 trở đi được tính thêm thời gian đi đường ngoài ngày nghỉ hàng năm và chỉ
+được tính cho 01 lần nghỉ trong năm.",,
+q06,"Theo Bộ luật Lao động 2012, số giờ làm thêm tối đa trong một tháng là bao nhiêu?","Không quá 30 giờ/tháng (tổng không quá 200 giờ/năm, trường hợp đặc biệt 300 giờ).",B:blld-2012:d106-p1;B:blld-2012:d097-p1;B:blld-2012:d107-p1,"[B:blld-2012:d106-p1 | data/raw/blld_2012_congbao.pdf | page 37]
+Điều 106. Làm thêm giờ
+1. Làm thêm giờ là khoảng thời gian làm việc ngoài thời giờ làm việc bình
+thường được quy định trong pháp luật, thỏa ước lao động tập thể hoặc theo nội quy
+lao động.
+2. Người sử dụng lao động được sử dụng người lao động làm thêm giờ khi đáp
+ứng đủ các điều kiện sau đây:
+a) Được sự đồng ý của người lao động;
+b) Bảo đảm số giờ làm thêm của người lao động không quá 50% số giờ làm
+việc bình thường trong 01 ngày, trường hợp áp dụng quy định làm việc theo tuần
+thì tổng số giờ làm việc bình thường và số giờ làm thêm không quá 12 giờ trong 01
+ngày; không quá 30 giờ trong 01 tháng và tổng số không quá 200 giờ trong 01
+năm, trừ một số trường hợp đặc biệt do Chính phủ quy định thì được làm thêm giờ
+không quá 300 giờ trong 01 năm;
+c) Sau mỗi đợt làm thêm giờ nhiều ngày liên tục trong tháng, người sử dụng
+lao động phải bố trí để người lao động được nghỉ bù cho số thời gian đã không
+được nghỉ.
+
+[B:blld-2012:d097-p1 | data/raw/blld_2012_congbao.pdf | page 34]
+Điều 97. Tiền lương làm thêm giờ, làm việc vào ban đêm
+1. Người lao động làm thêm giờ được trả lương tính theo đơn giá tiền lương
+hoặc tiền lương theo công việc đang làm như sau:
+a) Vào ngày thường, ít nhất bằng 150%;
+b) Vào ngày nghỉ hàng tuần, ít nhất bằng 200%;
+c) Vào ngày nghỉ lễ, ngày nghỉ có hưởng lương, ít nhất bằng 300% chưa kể tiền
+lương ngày lễ, ngày nghỉ có hưởng lương đối với người lao động hưởng lương ngày.
+2. Người lao động làm việc vào ban đêm, thì được trả thêm ít nhất bằng 30%
+tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc của ngày
+làm việc bình thường.
+3. Người lao động làm thêm giờ vào ban đêm thì ngoài việc trả lương theo
+quy định tại khoản 1 và khoản 2 Điều này, người lao động còn được trả thêm
+20% tiền lương tính theo đơn giá tiền lương hoặc tiền lương theo công việc làm
+vào ban ngày.
+
+[B:blld-2012:d107-p1 | data/raw/blld_2012_congbao.pdf | page 37]
+Điều 107. Làm thêm giờ trong những trường hợp đặc biệt
+Người sử dụng lao động có quyền yêu cầu người lao động làm thêm giờ vào bất
+kỳ ngày nào và người lao động không được từ chối trong các trường hợp sau đây:
+1. Thực hiện lệnh động viên, huy động bảo đảm nhiệm vụ quốc phòng, an ninh
+trong tình trạng khẩn cấp về quốc phòng, an ninh theo quy định của pháp luật;
+2. Thực hiện các công việc nhằm bảo vệ tính mạng con người, tài sản của cơ
+quan, tổ chức, cá nhân trong phòng ngừa và khắc phục hậu quả thiên tai, hỏa hoạn,
+dịch bệnh và thảm họa.",,
+q07,"Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với người quản lý doanh nghiệp là bao lâu?",Không quá 180 ngày.,B:blld-2019:d025-p1;B:blld-2019:d024-p1;B:blld-2019:d027-p1,"[B:blld-2019:d025-p1 | data/raw/blld_2019_congbao.pdf | page 11]
+Điều 25. Thời gian thử việc
+Thời gian thử việc do hai bên thỏa thuận căn cứ vào tính chất và mức độ phức
+tạp của công việc nhưng chỉ được thử việc một lần đối với một công việc và bảo
+đảm điều kiện sau đây:
+1. Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp theo
+quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu tư vào
+sản xuất, kinh doanh tại doanh nghiệp;
+2. Không quá 60 ngày đối với công việc có chức danh nghề nghiệp cần trình
+độ chuyên môn, kỹ thuật từ cao đẳng trở lên;
+3. Không quá 30 ngày đối với công việc có chức danh nghề nghiệp cần trình
+độ chuyên môn, kỹ thuật trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ;
+4. Không quá 06 ngày làm việc đối với công việc khác.
+
+[B:blld-2019:d024-p1 | data/raw/blld_2019_congbao.pdf | page 11]
+Điều 24. Thử việc
+1. Người sử dụng lao động và người lao động có thể thỏa thuận nội dung thử
+việc ghi trong hợp đồng lao động hoặc thỏa thuận về thử việc bằng việc giao kết
+hợp đồng thử việc.
+2. Nội dung chủ yếu của hợp đồng thử việc gồm thời gian thử việc và nội dung
+quy định tại các điểm a, b, c, đ, g và h khoản 1 Điều 21 của Bộ luật này.
+3. Không áp dụng thử việc đối với người lao động giao kết hợp đồng lao động
+có thời hạn dưới 01 tháng.
+
+[B:blld-2019:d027-p1 | data/raw/blld_2019_congbao.pdf | page 12]
+Điều 27. Kết thúc thời gian thử việc
+1. Khi kết thúc thời gian thử việc, người sử dụng lao động phải thông báo kết
+quả thử việc cho người lao động.
+Trường hợp thử việc đạt yêu cầu thì người sử dụng lao động tiếp tục thực hiện
+hợp đồng lao động đã giao kết đối với trường hợp thỏa thuận thử việc trong hợp
+đồng lao động hoặc phải giao kết hợp đồng lao động đối với trường hợp giao kết
+hợp đồng thử việc.
+Trường hợp thử việc không đạt yêu cầu thì chấm dứt hợp đồng lao động đã
+giao kết hoặc hợp đồng thử việc.
+2. Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc
+hợp đồng lao động đã giao kết mà không cần báo trước và không phải bồi thường.",,
+q08,Trong trường hợp nào người lao động được nghỉ việc ngay mà không cần báo trước cho người sử dụng lao động?,Không được bố trí đúng công việc/địa điểm; không được trả đủ hoặc đúng hạn lương; bị ngược đãi; bị quấy rối tình dục; lao động nữ mang thai phải nghỉ; đủ tuổi nghỉ hưu; người sử dụng lao động cung cấp thông tin không trung thực (Điều 35 BLLĐ 2019).,B:blld-2019:d035-p2;B:blld-2019:d036-p2,"[B:blld-2019:d035-p2 | data/raw/blld_2019_congbao.pdf | page 16]
+Điều 35. Quyền đơn phương chấm dứt hợp đồng lao động của người
+2. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không
+cần báo trước trong trường hợp sau đây:
+a) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không được
+bảo đảm điều kiện làm việc theo thỏa thuận, trừ trường hợp quy định tại Điều 29
+của Bộ luật này;
+b) Không được trả đủ lương hoặc trả lương không đúng thời hạn, trừ trường
+hợp quy định tại khoản 4 Điều 97 của Bộ luật này;
+c) Bị người sử dụng lao động ngược đãi, đánh đập hoặc có lời nói, hành vi
+nhục mạ, hành vi làm ảnh hưởng đến sức khỏe, nhân phẩm, danh dự; bị cưỡng bức
+lao động;
+d) Bị quấy rối tình dục tại nơi làm việc;
+đ) Lao động nữ mang thai phải nghỉ việc theo quy định tại khoản 1 Điều 138
+của Bộ luật này;
+e) Đủ tuổi nghỉ hưu theo quy định tại Điều 169 của Bộ luật này, trừ trường hợp
+các bên có thỏa thuận khác;
+g) Người sử dụng lao động cung cấp thông tin không trung thực theo quy định
+tại khoản 1 Điều 16 của Bộ luật này làm ảnh hưởng đến việc thực hiện hợp đồng
+lao động.
+
+[B:blld-2019:d036-p2 | data/raw/blld_2019_congbao.pdf | page 17]
+Điều 36. Quyền đơn phương chấm dứt hợp đồng lao động của người sử
+đ) Người lao động đủ tuổi nghỉ hưu theo quy định tại Điều 169 của Bộ luật
+này, trừ trường hợp có thỏa thuận khác;
+e) Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm
+việc liên tục trở lên;
+g) Người lao động cung cấp không trung thực thông tin theo quy định tại
+khoản 2 Điều 16 của Bộ luật này khi giao kết hợp đồng lao động làm ảnh hưởng
+đến việc tuyển dụng người lao động.
+2. Khi đơn phương chấm dứt hợp đồng lao động trong trường hợp quy định tại
+các điểm a, b, c, đ và g khoản 1 Điều này, người sử dụng lao động phải báo trước
+cho người lao động như sau:
+a) Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn;
+b) Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn có thời hạn
+từ 12 tháng đến 36 tháng;
+c) Ít nhất 03 ngày làm việc đối với hợp đồng lao động xác định thời hạn
+có thời hạn dưới 12 tháng và đối với trường hợp quy định tại điểm b khoản 1
+Điều này;
+d) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được
+thực hiện theo quy định của Chính phủ.
+3. Khi đơn phương chấm dứt hợp đồng lao động quy định tại điểm d và điểm e
+khoản 1 Điều này thì người sử dụng lao động không phải báo trước cho người
+lao động.",,
+q09,Trợ cấp thôi việc được tính bao nhiêu cho mỗi năm làm việc?,Mỗi năm làm việc được trợ cấp một nửa tháng tiền lương.,B:blld-2019:d046-p1;B:blld-2012:d048-p1;B:blld-2012:d049-p1,"[B:blld-2019:d046-p1 | data/raw/blld_2019_congbao.pdf | page 21]
+Điều 46. Trợ cấp thôi việc
+1. Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 4, 6, 7, 9
+và 10 Điều 34 của Bộ luật này thì người sử dụng lao động có trách nhiệm trả trợ
+cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình từ đủ 12
+tháng trở lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương, trừ trường
+hợp đủ điều kiện hưởng lương hưu theo quy định của pháp luật về bảo hiểm xã hội
+và trường hợp quy định tại điểm e khoản 1 Điều 36 của Bộ luật này.
+2. Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động
+đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã
+tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo hiểm thất nghiệp
+và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ
+cấp mất việc làm.
+3. Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng
+liền kề theo hợp đồng lao động trước khi người lao động thôi việc.
+4. Chính phủ quy định chi tiết Điều này.
+
+[B:blld-2012:d048-p1 | data/raw/blld_2012_congbao.pdf | page 18]
+Điều 48. Trợ cấp thôi việc
+1. Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 5, 6, 7,
+9 và 10 Điều 36 của Bộ luật này thì người sử dụng lao động có trách nhiệm chi trả
+trợ cấp thôi việc cho người lao động đã làm việc thường xuyên từ đủ 12 tháng trở
+lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương.
+2. Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động
+đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã
+tham gia bảo hiểm thất nghiệp theo quy định của Luật bảo hiểm xã hội và thời gian
+làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc.
+3. Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân theo hợp đồng
+lao động của 06 tháng liền kề trước khi người lao động thôi việc.
+
+[B:blld-2012:d049-p1 | data/raw/blld_2012_congbao.pdf | page 19]
+Điều 49. Trợ cấp mất việc làm
+1. Người sử dụng lao động trả trợ cấp mất việc làm cho người lao động đã làm
+việc thường xuyên cho mình từ 12 tháng trở lên mà bị mất việc làm theo quy định
+tại Điều 44 và Điều 45 của Bộ luật này, mỗi năm làm việc trả 01 tháng tiền lương
+nhưng ít nhất phải bằng 02 tháng tiền lương.
+2. Thời gian làm việc để tính trợ cấp mất việc làm là tổng thời gian người lao
+động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao
+động đã tham gia bảo hiểm thất nghiệp theo quy định của Luật Bảo hiểm xã hội và
+thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc.
+3. Tiền lương để tính trợ cấp mất việc làm là tiền lương bình quân theo hợp
+đồng lao động của 06 tháng liền kề trước khi người lao động mất việc làm.",,
+q10,Nhân viên làm việc từ 6 tiếng trở lên mỗi ngày được nghỉ giữa ca tối thiểu bao nhiêu phút?,Ít nhất 30 phút (làm ban đêm ít nhất 45 phút).,B:blld-2012:d108-p1;B:blld-2019:d109-p1;B:blld-2019:d110-p1,"[B:blld-2012:d108-p1 | data/raw/blld_2012_congbao.pdf | page 37]
+Điều 108. Nghỉ trong giờ làm việc
+1. Người lao động làm việc liên tục 08 giờ hoặc 06 giờ theo quy định tại Điều
+104 của Bộ luật này được nghỉ giữa giờ ít nhất 30 phút, tính vào thời giờ làm việc.
+2. Trường hợp làm việc ban đêm, thì người lao động được nghỉ giữa giờ ít nhất
+45 phút, tính vào thời giờ làm việc.
+3. Ngoài thời gian nghỉ giữa giờ quy định tại khoản 1 và khoản 2 Điều này,
+người sử dụng lao động quy định thời điểm các đợt nghỉ ngắn và ghi vào nội quy
+lao động.
+
+[B:blld-2019:d109-p1 | data/raw/blld_2019_congbao.pdf | page 46]
+Điều 109. Nghỉ trong giờ làm việc
+1. Người lao động làm việc theo thời giờ làm việc quy định tại Điều 105 của
+Bộ luật này từ 06 giờ trở lên trong một ngày thì được nghỉ giữa giờ ít nhất 30 phút
+liên tục, làm việc ban đêm thì được nghỉ giữa giờ ít nhất 45 phút liên tục.
+Trường hợp người lao động làm việc theo ca liên tục từ 06 giờ trở lên thì thời
+gian nghỉ giữa giờ được tính vào giờ làm việc.
+2. Ngoài thời gian nghỉ quy định tại khoản 1 Điều này, người sử dụng lao động
+bố trí cho người lao động các đợt nghỉ giải lao và ghi vào nội quy lao động.
+
+[B:blld-2019:d110-p1 | data/raw/blld_2019_congbao.pdf | page 46]
+Điều 110. Nghỉ chuyển ca
+Người lao động làm việc theo ca được nghỉ ít nhất 12 giờ trước khi chuyển
+sang ca làm việc khác.",,
+q11,"Theo Bộ luật Lao động 2019, người lao động được nghỉ mấy ngày dịp Quốc khánh?",02 ngày (ngày 02/9 và 01 ngày liền kề trước hoặc sau).,B:blld-2019:d112-p1;B:blld-2019:d113-p2;B:blld-2019:d113-p1,"[B:blld-2019:d112-p1 | data/raw/blld_2019_congbao.pdf | page 46]
+Điều 112. Nghỉ lễ, tết
+1. Người lao động được nghỉ làm việc, hưởng nguyên lương trong những ngày
+lễ, tết sau đây:
+a) Tết Dương lịch: 01 ngày (ngày 01 tháng 01 dương lịch);
+b) Tết Âm lịch: 05 ngày;
+c) Ngày Chiến thắng: 01 ngày (ngày 30 tháng 4 dương lịch);
+d) Ngày Quốc tế lao động: 01 ngày (ngày 01 tháng 5 dương lịch);
+đ) Quốc khánh: 02 ngày (ngày 02 tháng 9 dương lịch và 01 ngày liền kề trước
+hoặc sau);
+e) Ngày Giỗ Tổ Hùng Vương: 01 ngày (ngày 10 tháng 3 âm lịch).
+2. Lao động là người nước ngoài làm việc tại Việt Nam ngoài các ngày nghỉ
+theo quy định tại khoản 1 Điều này còn được nghỉ thêm 01 ngày Tết cổ truyền dân
+tộc và 01 ngày Quốc khánh của nước họ.
+3. Hằng năm, căn cứ vào điều kiện thực tế, Thủ tướng Chính phủ quyết định cụ
+thể ngày nghỉ quy định tại điểm b và điểm đ khoản 1 Điều này.
+
+[B:blld-2019:d113-p2 | data/raw/blld_2019_congbao.pdf | page 47]
+Điều 113. Nghỉ hằng năm
+6. Khi nghỉ hằng năm, nếu người lao động đi bằng các phương tiện đường bộ,
+đường sắt, đường thủy mà số ngày đi đường cả đi và về trên 02 ngày thì từ ngày
+thứ 03 trở đi được tính thêm thời gian đi đường ngoài ngày nghỉ hằng năm và chỉ
+được tính cho 01 lần nghỉ trong năm.
+7. Chính phủ quy định chi tiết điều này.
+
+[B:blld-2019:d113-p1 | data/raw/blld_2019_congbao.pdf | page 47]
+Điều 113. Nghỉ hằng năm
+1. Người lao động làm việc đủ 12 tháng cho một người sử dụng lao động thì
+được nghỉ hằng năm, hưởng nguyên lương theo hợp đồng lao động như sau:
+a) 12 ngày làm việc đối với người làm công việc trong điều kiện bình thường;
+b) 14 ngày làm việc đối với người lao động chưa thành niên, lao động là người
+khuyết tật, người làm nghề, công việc nặng nhọc, độc hại, nguy hiểm;
+c) 16 ngày làm việc đối với người làm nghề, công việc đặc biệt nặng nhọc, độc
+hại, nguy hiểm.
+2. Người lao động làm việc chưa đủ 12 tháng cho một người sử dụng lao động
+thì số ngày nghỉ hằng năm theo tỷ lệ tương ứng với số tháng làm việc.
+3. Trường hợp do thôi việc, bị mất việc làm mà chưa nghỉ hằng năm hoặc chưa
+nghỉ hết số ngày nghỉ hằng năm thì được người sử dụng lao động thanh toán tiền
+lương cho những ngày chưa nghỉ.
+4. Người sử dụng lao động có trách nhiệm quy định lịch nghỉ hằng năm sau khi
+tham khảo ý kiến của người lao động và phải thông báo trước cho người lao động
+biết. Người lao động có thể thỏa thuận với người sử dụng lao động để nghỉ hằng
+năm thành nhiều lần hoặc nghỉ gộp tối đa 03 năm một lần.
+5. Khi nghỉ hằng năm mà chưa đến kỳ trả lương, người lao động được tạm ứng
+tiền lương theo quy định tại khoản 3 Điều 101 của Bộ luật này.",,
+q12,Lao động nữ được nghỉ trước khi sinh con tối đa bao lâu?,Không quá 02 tháng.,B:blld-2012:d157-p1;B:blld-2019:d139-p1,"[B:blld-2012:d157-p1 | data/raw/blld_2012_congbao.pdf | page 54]
+Điều 157. Nghỉ thai sản
+1. Lao động nữ được nghỉ trước và sau khi sinh con là 06 tháng.
+Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi
+con, người mẹ được nghỉ thêm 01 tháng.
+Thời gian nghỉ trước khi sinh tối đa không quá 02 tháng.
+2. Trong thời gian nghỉ thai sản, lao động nữ được hưởng chế độ thai sản theo
+quy định của pháp luật về bảo hiểm xã hội.
+3. Hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, nếu có nhu
+cầu, lao động nữ có thể nghỉ thêm một thời gian không hưởng lương theo thỏa
+thuận với người sử dụng lao động.
+4. Trước khi hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này,
+nếu có nhu cầu, có xác nhận của cơ sở khám bệnh, chữa bệnh có thẩm quyền về
+việc đi làm sớm không có hại cho sức khỏe của người lao động và được người sử
+dụng lao động đồng ý, lao động nữ có thể trở lại làm việc khi đã nghỉ ít nhất được
+04 tháng.
+Trong trường hợp này, ngoài tiền lương của những ngày làm việc do người sử
+dụng lao động trả, lao động nữ vẫn tiếp tục được hưởng trợ cấp thai sản theo quy
+định của pháp luật về bảo hiểm xã hội.
+
+[B:blld-2019:d139-p1 | data/raw/blld_2019_congbao.pdf | page 57]
+Điều 139. Nghỉ thai sản
+1. Lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng; thời
+gian nghỉ trước khi sinh không quá 02 tháng.
+Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi
+con, người mẹ được nghỉ thêm 01 tháng.
+2. Trong thời gian nghỉ thai sản, lao động nữ được hưởng chế độ thai sản theo
+quy định của pháp luật về bảo hiểm xã hội.
+3. Hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, nếu có nhu
+cầu, lao động nữ có thể nghỉ thêm một thời gian không hưởng lương sau khi thỏa
+thuận với người sử dụng lao động.
+4. Trước khi hết thời gian nghỉ thai sản theo quy định tại khoản 1 Điều này, lao
+động nữ có thể trở lại làm việc khi đã nghỉ ít nhất được 04 tháng nhưng người lao
+động phải báo trước, được người sử dụng lao động đồng ý và có xác nhận của cơ
+sở khám bệnh, chữa bệnh có thẩm quyền về việc đi làm sớm không có hại cho sức
+khỏe của người lao động. Trong trường hợp này, ngoài tiền lương của những ngày
+làm việc do người sử dụng lao động trả, lao động nữ vẫn tiếp tục được hưởng trợ
+cấp thai sản theo quy định của pháp luật về bảo hiểm xã hội.
+5. Lao động nam khi vợ sinh con, người lao động nhận nuôi con nuôi dưới
+06 tháng tuổi, lao động nữ mang thai hộ và người lao động là người mẹ nhờ mang thai
+hộ được nghỉ việc hưởng chế độ thai sản theo quy định của pháp luật về bảo hiểm xã hội.",,
+q13,Có được ký hợp đồng mùa vụ dưới 12 tháng để làm công việc có tính chất thường xuyên từ 12 tháng trở lên không?,"Không, trừ khi tạm thời thay thế người đi nghĩa vụ quân sự, nghỉ thai sản, ốm đau, tai nạn lao động hoặc nghỉ tạm thời khác (Điều 22 BLLĐ 2012).",B:blld-2012:d022-p2;B:blld-2012:d037-p1,"[B:blld-2012:d022-p2 | data/raw/blld_2012_congbao.pdf | page 9]
+Điều 22. Loại hợp đồng lao động
+3. Không được giao kết hợp đồng lao động theo mùa vụ hoặc theo một công
+việc nhất định có thời hạn dưới 12 tháng để làm những công việc có tính chất
+thường xuyên từ 12 tháng trở lên, trừ trường hợp phải tạm thời thay thế người lao
+động đi làm nghĩa vụ quân sự, nghỉ theo chế độ thai sản, ốm đau, tai nạn lao động
+hoặc nghỉ việc có tính chất tạm thời khác.
+
+[B:blld-2012:d037-p1 | data/raw/blld_2012_congbao.pdf | page 13]
+Điều 37. Quyền đơn phương chấm dứt hợp đồng lao động của người
+lao động
+1. Người lao động làm việc theo hợp đồng lao động xác định thời hạn, hợp
+đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12
+tháng có quyền đơn phương chấm dứt hợp đồng lao động trước thời hạn trong
+những trường hợp sau đây:
+a) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không được
+bảo đảm điều kiện làm việc đã thỏa thuận trong hợp đồng lao động;
+b) Không được trả lương đầy đủ hoặc trả lương không đúng thời hạn đã thỏa
+thuận trong hợp đồng lao động;
+c) Bị ngược đãi, quấy rối tình dục, cưỡng bức lao động;
+d) Bản thân hoặc gia đình có hoàn cảnh khó khăn không thể tiếp tục thực hiện
+hợp đồng lao động;
+đ) Được bầu làm nhiệm vụ chuyên trách ở cơ quan dân cử hoặc được bổ nhiệm
+giữ chức vụ trong bộ máy nhà nước;
+e) Lao động nữ mang thai phải nghỉ việc theo chỉ định của cơ sở khám bệnh,
+chữa bệnh có thẩm quyền;
+g) Người lao động bị ốm đau, tai nạn đã điều trị 90 ngày liên tục đối với người
+làm việc theo hợp đồng lao động xác định thời hạn và một phần tư thời hạn hợp
+đồng đối với người làm việc theo hợp đồng lao động theo mùa vụ hoặc theo một
+công việc nhất định có thời hạn dưới 12 tháng mà khả năng lao động chưa được
+hồi phục.",,
+q14,Có những hình thức xử lý kỷ luật lao động nào?,Khiển trách; kéo dài thời hạn nâng lương không quá 06 tháng; cách chức; sa thải.,B:blld-2012:d123-p1;B:blld-2019:d122-p1,"[B:blld-2012:d123-p1 | data/raw/blld_2012_congbao.pdf | page 42]
+Điều 123. Nguyên tắc, trình tự xử lý kỷ luật lao động
+1. Việc xử lý kỷ luật lao động được quy định như sau:
+a) Người sử dụng lao động phải chứng minh được lỗi của người lao động;
+b) Phải có sự tham gia của tổ chức đại diện tập thể lao động tại cơ sở;
+c) Người lao động phải có mặt và có quyền tự bào chữa, nhờ luật sư hoặc
+người khác bào chữa; trường hợp là người dưới 18 tuổi thì phải có sự tham gia của
+cha, mẹ hoặc người đại diện theo pháp luật;
+d) Việc xử lý kỷ luật lao động phải được lập thành biên bản.
+2. Không được áp dụng nhiều hình thức xử lý kỷ luật lao động đối với một
+hành vi vi phạm kỷ luật lao động.
+3. Khi một người lao động đồng thời có nhiều hành vi vi phạm kỷ luật lao
+động thì chỉ áp dụng hình thức kỷ luật cao nhất tương ứng với hành vi vi phạm
+nặng nhất.
+4. Không được xử lý kỷ luật lao động đối với người lao động đang trong thời
+gian sau đây:
+a) Nghỉ ốm đau, điều dưỡng; nghỉ việc được sự đồng ý của người sử dụng
+lao động;
+b) Đang bị tạm giữ, tạm giam;
+c) Đang chờ kết quả của cơ quan có thẩm quyền điều tra xác minh và kết luận
+đối với hành vi vi phạm được quy định tại khoản 1 Điều 126 của Bộ luật này;
+d) Lao động nữ có thai, nghỉ thai sản; người lao động nuôi con nhỏ dưới 12
+tháng tuổi.
+5. Không xử lý kỷ luật lao động đối với người lao động vi phạm kỷ luật lao
+động trong khi mắc bệnh tâm thần hoặc một bệnh khác làm mất khả năng nhận
+thức hoặc khả năng điều khiển hành vi của mình.
+
+[B:blld-2019:d122-p1 | data/raw/blld_2019_congbao.pdf | page 50]
+Điều 122. Nguyên tắc, trình tự, thủ tục xử lý kỷ luật lao động
+1. Việc xử lý kỷ luật lao động được quy định như sau:
+a) Người sử dụng lao động phải chứng minh được lỗi của người lao động;
+b) Phải có sự tham gia của tổ chức đại diện người lao động tại cơ sở mà người
+lao động đang bị xử lý kỷ luật là thành viên;
+c) Người lao động phải có mặt và có quyền tự bào chữa, nhờ luật sư hoặc tổ
+chức đại diện người lao động bào chữa; trường hợp là người chưa đủ 15 tuổi thì
+phải có sự tham gia của người đại diện theo pháp luật;
+d) Việc xử lý kỷ luật lao động phải được ghi thành biên bản.
+2. Không được áp dụng nhiều hình thức xử lý kỷ luật lao động đối với một
+hành vi vi phạm kỷ luật lao động.
+3. Khi một người lao động đồng thời có nhiều hành vi vi phạm kỷ luật lao
+động thì chỉ áp dụng hình thức kỷ luật cao nhất tương ứng với hành vi vi phạm
+nặng nhất.
+4. Không được xử lý kỷ luật lao động đối với người lao động đang trong thời
+gian sau đây:
+a) Nghỉ ốm đau, điều dưỡng; nghỉ việc được sự đồng ý của người sử dụng
+lao động;
+b) Đang bị tạm giữ, tạm giam;
+c) Đang chờ kết quả của cơ quan có thẩm quyền điều tra xác minh và kết luận
+đối với hành vi vi phạm được quy định tại khoản 1 và khoản 2 Điều 125 của Bộ
+luật này;
+d) Người lao động nữ mang thai; người lao động nghỉ thai sản, nuôi con dưới
+12 tháng tuổi.",,
+q15,"Theo Bộ luật Lao động 2012, lao động nữ được hưởng lương hưu khi đủ bao nhiêu tuổi?",Nữ đủ 55 tuổi (nam đủ 60 tuổi).,B:blld-2012:d187-p1;B:blld-2012:d158-p1;B:blld-2012:d167-p1,"[B:blld-2012:d187-p1 | data/raw/blld_2012_congbao.pdf | page 63]
+Điều 187. Tuổi nghỉ hưu
+1. Người lao động bảo đảm điều kiện về thời gian đóng bảo hiểm xã hội theo
+quy định của pháp luật về bảo hiểm xã hội được hưởng lương hưu khi nam đủ 60
+tuổi, nữ đủ 55 tuổi.
+2. Người lao động bị suy giảm khả năng lao động; làm công việc đặc biệt nặng
+nhọc, độc hại, nguy hiểm; làm công việc nặng nhọc, độc hại, nguy hiểm; làm việc
+ở vùng cao, vùng sâu, vùng xa, biên giới, hải đảo thuộc danh mục do Chính phủ
+quy định có thể nghỉ hưu ở tuổi thấp hơn so với quy định tại khoản 1 Điều này.
+3. Người lao động có trình độ chuyên môn kỹ thuật cao, người lao động làm
+công tác quản lý và một số trường hợp đặc biệt khác có thể nghỉ hưu ở tuổi cao
+hơn nhưng không quá 05 năm so với quy định tại khoản 1 Điều này.
+4. Chính phủ quy định chi tiết khoản 2 và khoản 3 Điều này.
+
+[B:blld-2012:d158-p1 | data/raw/blld_2012_congbao.pdf | page 54]
+Điều 158. Bảo đảm việc làm cho lao động nữ nghỉ thai sản
+Lao động nữ được bảo đảm việc làm cũ khi trở lại làm việc sau khi nghỉ hết
+thời gian theo quy định tại khoản 1 và khoản 3 Điều 157 của Bộ luật này; trường
+hợp việc làm cũ không còn thì người sử dụng lao động phải bố trí việc làm khác
+cho họ với mức lương không thấp hơn mức lương trước khi nghỉ thai sản.
+
+[B:blld-2012:d167-p1 | data/raw/blld_2012_congbao.pdf | page 57]
+Điều 167. Sử dụng người lao động cao tuổi
+1. Khi có nhu cầu, người sử dụng lao động có thể thỏa thuận với người lao
+động cao tuổi có đủ sức khỏe kéo dài thời hạn hợp đồng lao động hoặc giao kết
+hợp đồng lao động mới theo quy định tại Chương III của Bộ luật này.
+2. Khi đã nghỉ hưu, nếu làm việc theo hợp đồng lao động mới, thì ngoài quyền
+lợi đang hưởng theo chế độ hưu trí, người lao động cao tuổi vẫn được hưởng
+quyền lợi đã thỏa thuận theo hợp đồng lao động.
+3. Không được sử dụng người lao động cao tuổi làm những công việc nặng
+nhọc, độc hại, nguy hiểm có ảnh hưởng xấu tới sức khỏe người lao động cao tuổi,
+trừ trường hợp đặc biệt theo quy định của Chính phủ.
+4. Người sử dụng lao động có trách nhiệm quan tâm chăm sóc sức khỏe của
+người lao động cao tuổi tại nơi làm việc.",,

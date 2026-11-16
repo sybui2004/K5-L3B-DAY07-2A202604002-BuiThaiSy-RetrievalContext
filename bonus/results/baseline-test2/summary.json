@@ -1,0 +1,14 @@
+{
+  "config": "baseline",
+  "split": "test",
+  "n_questions": 33,
+  "status_counts": {
+    "abstain": 2,
+    "answered": 31
+  },
+  "errors": 0,
+  "tokens_in": 79797,
+  "tokens_out": 17911,
+  "seconds_total": 202.52,
+  "model": "deepseek-v4-flash"
+}

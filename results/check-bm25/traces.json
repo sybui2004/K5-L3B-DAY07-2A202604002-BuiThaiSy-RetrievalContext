@@ -1,0 +1,486 @@
+[
+  {
+    "id": "q01",
+    "query": "Thời giờ làm việc bình thường tối đa là bao nhiêu giờ một ngày và bao nhiêu giờ một tuần?",
+    "filter": null,
+    "seconds": 0.005,
+    "results": [
+      {
+        "id": "B:blld-2012:d104-p1",
+        "score": 34.05404588048895,
+        "page": 36,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d105-p1",
+        "score": 33.422270890371074,
+        "page": 44,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d106-p1",
+        "score": 31.52432963112498,
+        "page": 37,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q02",
+    "query": "Ca làm đêm được tính bắt đầu từ mấy giờ và kết thúc lúc nào?",
+    "filter": null,
+    "seconds": 0.002,
+    "results": [
+      {
+        "id": "B:blld-2019:d109-p1",
+        "score": 21.55595164450166,
+        "page": 46,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2012:d105-p1",
+        "score": 19.53960623908336,
+        "page": 37,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d106-p1",
+        "score": 19.53960623908336,
+        "page": 44,
+        "hit": true
+      }
+    ],
+    "rank_of_first_hit": 2,
+    "answerable": true
+  },
+  {
+    "id": "q03",
+    "query": "Làm thêm giờ vào ngày nghỉ hằng tuần thì được trả lương ít nhất bằng bao nhiêu phần trăm?",
+    "filter": null,
+    "seconds": 0.003,
+    "results": [
+      {
+        "id": "B:blld-2019:d098-p1",
+        "score": 43.465269171217074,
+        "page": 42,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d097-p1",
+        "score": 39.174155803178664,
+        "page": 34,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d111-p1",
+        "score": 33.14503109249486,
+        "page": 46,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q04",
+    "query": "Lao động nữ sinh đôi thì thời gian nghỉ thai sản được cộng thêm như thế nào?",
+    "filter": null,
+    "seconds": 0.003,
+    "results": [
+      {
+        "id": "B:blld-2012:d157-p1",
+        "score": 35.12866386731226,
+        "page": 54,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d139-p1",
+        "score": 34.81069710684107,
+        "page": 57,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d155-p1",
+        "score": 25.964634288896228,
+        "page": 53,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q05",
+    "query": "Người làm công việc trong điều kiện bình thường được nghỉ hằng năm bao nhiêu ngày?",
+    "filter": null,
+    "seconds": 0.003,
+    "results": [
+      {
+        "id": "B:blld-2019:d113-p1",
+        "score": 28.430235718923953,
+        "page": 47,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d111-p1",
+        "score": 25.272607358145194,
+        "page": 38,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d106-p1",
+        "score": 24.54000613617705,
+        "page": 37,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q06",
+    "query": "Theo Bộ luật Lao động 2012, số giờ làm thêm tối đa trong một tháng là bao nhiêu?",
+    "filter": {
+      "version": "2012"
+    },
+    "seconds": 0.002,
+    "results": [
+      {
+        "id": "B:blld-2012:d106-p1",
+        "score": 26.216815890678628,
+        "page": 37,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d157-p1",
+        "score": 20.86482789668963,
+        "page": 54,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2012:d124-p1",
+        "score": 19.21603093363715,
+        "page": 43,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q07",
+    "query": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với người quản lý doanh nghiệp là bao lâu?",
+    "filter": {
+      "version": "2019"
+    },
+    "seconds": 0.003,
+    "results": [
+      {
+        "id": "B:blld-2019:d003-p1",
+        "score": 24.169601279844667,
+        "page": 1,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2019:d025-p1",
+        "score": 23.694809958944642,
+        "page": 11,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d034-p2",
+        "score": 20.596237756359034,
+        "page": 15,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 2,
+    "answerable": true
+  },
+  {
+    "id": "q08",
+    "query": "Trong trường hợp nào người lao động được nghỉ việc ngay mà không cần báo trước cho người sử dụng lao động?",
+    "filter": null,
+    "seconds": 0.003,
+    "results": [
+      {
+        "id": "B:blld-2019:d027-p1",
+        "score": 31.1604297983327,
+        "page": 12,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2012:d029-p1",
+        "score": 30.08607931908516,
+        "page": 11,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2019:d113-p1",
+        "score": 29.259476896851204,
+        "page": 47,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": null,
+    "answerable": true
+  },
+  {
+    "id": "q09",
+    "query": "Trợ cấp thôi việc được tính bao nhiêu cho mỗi năm làm việc?",
+    "filter": null,
+    "seconds": 0.001,
+    "results": [
+      {
+        "id": "B:blld-2012:d048-p1",
+        "score": 26.118489387478203,
+        "page": 18,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d046-p1",
+        "score": 24.84738269489501,
+        "page": 21,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d049-p1",
+        "score": 23.033912466838395,
+        "page": 19,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q10",
+    "query": "Nhân viên làm việc từ 6 tiếng trở lên mỗi ngày được nghỉ giữa ca tối thiểu bao nhiêu phút?",
+    "filter": null,
+    "seconds": 0.002,
+    "results": [
+      {
+        "id": "B:blld-2019:d109-p1",
+        "score": 36.26790133706899,
+        "page": 46,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d108-p1",
+        "score": 21.59318632122862,
+        "page": 37,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d219-p2",
+        "score": 20.388350516268368,
+        "page": 90,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q11",
+    "query": "Theo Bộ luật Lao động 2019, người lao động được nghỉ mấy ngày dịp Quốc khánh?",
+    "filter": {
+      "version": "2019"
+    },
+    "seconds": 0.002,
+    "results": [
+      {
+        "id": "B:blld-2019:d112-p1",
+        "score": 26.48101571288739,
+        "page": 46,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d220-p1",
+        "score": 21.532180021792577,
+        "page": 92,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2019:d113-p1",
+        "score": 19.514317866726866,
+        "page": 47,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q12",
+    "query": "Lao động nữ được nghỉ trước khi sinh con tối đa bao lâu?",
+    "filter": null,
+    "seconds": 0.001,
+    "results": [
+      {
+        "id": "B:blld-2012:d157-p1",
+        "score": 28.773190379996915,
+        "page": 54,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2019:d139-p1",
+        "score": 25.144764595891136,
+        "page": 57,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d155-p1",
+        "score": 20.58354863896153,
+        "page": 53,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q13",
+    "query": "Có được ký hợp đồng mùa vụ dưới 12 tháng để làm công việc có tính chất thường xuyên từ 12 tháng trở lên không?",
+    "filter": null,
+    "seconds": 0.003,
+    "results": [
+      {
+        "id": "B:blld-2012:d022-p2",
+        "score": 58.02747727265547,
+        "page": 9,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d018-p1",
+        "score": 32.87583900898932,
+        "page": 7,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2012:d048-p1",
+        "score": 32.62518738938184,
+        "page": 18,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "q14",
+    "query": "Có những hình thức xử lý kỷ luật lao động nào?",
+    "filter": null,
+    "seconds": 0.001,
+    "results": [
+      {
+        "id": "B:blld-2012:d128-p1",
+        "score": 25.276250306928254,
+        "page": 44,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2012:d126-p1",
+        "score": 22.81139064219337,
+        "page": 43,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2012:d123-p1",
+        "score": 22.373526005476677,
+        "page": 42,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": null,
+    "answerable": true
+  },
+  {
+    "id": "q15",
+    "query": "Theo Bộ luật Lao động 2012, lao động nữ được hưởng lương hưu khi đủ bao nhiêu tuổi?",
+    "filter": {
+      "version": "2012"
+    },
+    "seconds": 0.002,
+    "results": [
+      {
+        "id": "B:blld-2012:d187-p1",
+        "score": 28.557921378683286,
+        "page": 63,
+        "hit": true
+      },
+      {
+        "id": "B:blld-2012:d167-p1",
+        "score": 27.831394844210237,
+        "page": 57,
+        "hit": false
+      },
+      {
+        "id": "B:blld-2012:d155-p1",
+        "score": 26.864106440425918,
+        "page": 53,
+        "hit": false
+      }
+    ],
+    "rank_of_first_hit": 1,
+    "answerable": true
+  },
+  {
+    "id": "u01",
+    "query": "Mức lương tối thiểu vùng I hiện nay là bao nhiêu đồng một tháng?",
+    "filter": null,
+    "seconds": 0.002,
+    "results": [
+      {
+        "id": "B:blld-2012:d091-p1",
+        "score": 27.806411851093532,
+        "page": 33,
+        "hit": null
+      },
+      {
+        "id": "B:blld-2019:d091-p1",
+        "score": 25.240909220453105,
+        "page": 39,
+        "hit": null
+      },
+      {
+        "id": "B:blld-2012:d098-p1",
+        "score": 18.78098846140766,
+        "page": 35,
+        "hit": null
+      }
+    ],
+    "rank_of_first_hit": null,
+    "answerable": false
+  },
+  {
+    "id": "u02",
+    "query": "Doanh nghiệp phải thưởng Tết tối thiểu bằng bao nhiêu tháng lương?",
+    "filter": null,
+    "seconds": 0.001,
+    "results": [
+      {
+        "id": "B:blld-2019:d091-p1",
+        "score": 18.3778303727587,
+        "page": 39,
+        "hit": null
+      },
+      {
+        "id": "B:blld-2012:d091-p1",
+        "score": 16.20630354887773,
+        "page": 33,
+        "hit": null
+      },
+      {
+        "id": "B:blld-2012:d115-p1",
+        "score": 12.882242376377823,
+        "page": 39,
+        "hit": null
+      }
+    ],
+    "rank_of_first_hit": null,
+    "answerable": false
+  }
+]

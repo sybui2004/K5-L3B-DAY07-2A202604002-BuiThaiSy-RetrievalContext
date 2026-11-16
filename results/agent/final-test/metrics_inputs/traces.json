@@ -1,0 +1,385 @@
+[
+  {
+    "query_id": "q16",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "hợp đồng lao động xác định thời hạn thời hạn tối đa",
+        "filter": {
+          "version": "2019"
+        },
+        "results": [
+          {
+            "id": "B:blld-2019:d020-p1",
+            "score": 0.7098651624048176,
+            "page": 9
+          },
+          {
+            "id": "B:blld-2019:d035-p1",
+            "score": 0.6768273711204721,
+            "page": 15
+          },
+          {
+            "id": "B:blld-2019:d021-p1",
+            "score": 0.6604375434443454,
+            "page": 10
+          },
+          {
+            "id": "B:blld-2019:d036-p1",
+            "score": 0.6593283997765313,
+            "page": 16
+          },
+          {
+            "id": "B:blld-2019:d036-p2",
+            "score": 0.6587480320785561,
+            "page": 17
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d020-p1",
+          "B:blld-2019:d035-p1",
+          "B:blld-2019:d021-p1",
+          "B:blld-2019:d036-p1",
+          "B:blld-2019:d019-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d020-p1"
+    ]
+  },
+  {
+    "query_id": "q17",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "tiền lương trong thời gian thử việc",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d028-p1",
+            "score": 0.7884886299107707,
+            "page": 11
+          },
+          {
+            "id": "B:blld-2019:d026-p1",
+            "score": 0.7834717084551852,
+            "page": 12
+          },
+          {
+            "id": "B:blld-2012:d027-p1",
+            "score": 0.6564042977805202,
+            "page": 10
+          },
+          {
+            "id": "B:blld-2019:d025-p1",
+            "score": 0.6499232113636022,
+            "page": 11
+          },
+          {
+            "id": "B:blld-2012:d026-p1",
+            "score": 0.6302940159159952,
+            "page": 10
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d028-p1",
+          "B:blld-2019:d026-p1",
+          "B:blld-2012:d027-p1",
+          "B:blld-2019:d025-p1",
+          "B:blld-2012:d026-p1",
+          "B:blld-2012:d025-p1",
+          "B:blld-2012:d029-p1",
+          "B:blld-2019:d024-p1",
+          "B:blld-2019:d027-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d028-p1",
+      "B:blld-2019:d026-p1"
+    ]
+  },
+  {
+    "query_id": "q18",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "thời hiệu xử lý kỷ luật lao động bí mật kinh doanh",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d123-p1",
+            "score": 0.679885902418406,
+            "page": 51
+          },
+          {
+            "id": "B:blld-2012:d124-p1",
+            "score": 0.6610789521007153,
+            "page": 43
+          },
+          {
+            "id": "B:blld-2019:d125-p1",
+            "score": 0.5847238943803635,
+            "page": 52
+          },
+          {
+            "id": "B:blld-2012:d126-p1",
+            "score": 0.5550358957095652,
+            "page": 43
+          },
+          {
+            "id": "B:blld-2012:d127-p1",
+            "score": 0.5488335373798559,
+            "page": 44
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d123-p1",
+          "B:blld-2012:d124-p1",
+          "B:blld-2019:d125-p1",
+          "B:blld-2012:d126-p1",
+          "B:blld-2012:d127-p1",
+          "B:blld-2012:d125-p1",
+          "B:blld-2012:d128-p1",
+          "B:blld-2019:d122-p2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d123-p1",
+      "B:blld-2012:d124-p1"
+    ]
+  },
+  {
+    "query_id": "q19",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "thời hạn cho thuê lại lao động",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d053-p1",
+            "score": 0.8023371953001104,
+            "page": 23
+          },
+          {
+            "id": "B:blld-2012:d054-p1",
+            "score": 0.776655888651315,
+            "page": 20
+          },
+          {
+            "id": "B:blld-2019:d052-p1",
+            "score": 0.6983592585450488,
+            "page": 23
+          },
+          {
+            "id": "B:blld-2012:d053-p1",
+            "score": 0.6875438951086795,
+            "page": 20
+          },
+          {
+            "id": "B:blld-2012:d055-p1",
+            "score": 0.6854162845760206,
+            "page": 21
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d053-p1",
+          "B:blld-2012:d054-p1",
+          "B:blld-2019:d052-p1",
+          "B:blld-2012:d053-p1",
+          "B:blld-2012:d055-p1",
+          "B:blld-2012:d052-p1",
+          "B:blld-2012:d056-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d054-p1",
+      "B:blld-2019:d053-p1"
+    ]
+  },
+  {
+    "query_id": "q20",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "lao động chưa thành niên độ tuổi",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d161-p1",
+            "score": 0.7646758258190549,
+            "page": 55
+          },
+          {
+            "id": "B:blld-2019:d143-p1",
+            "score": 0.733430431324139,
+            "page": 58
+          },
+          {
+            "id": "B:blld-2012:d162-p1",
+            "score": 0.7001491964663775,
+            "page": 55
+          },
+          {
+            "id": "B:blld-2019:d144-p1",
+            "score": 0.6974450557663929,
+            "page": 58
+          },
+          {
+            "id": "B:blld-2012:d163-p1",
+            "score": 0.6939150837204359,
+            "page": 55
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d161-p1",
+          "B:blld-2019:d143-p1",
+          "B:blld-2012:d162-p1",
+          "B:blld-2019:d144-p1",
+          "B:blld-2012:d163-p1",
+          "B:blld-2012:d160-p1",
+          "B:blld-2012:d164-p1",
+          "B:blld-2019:d142-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d161-p1",
+      "B:blld-2019:d143-p1"
+    ]
+  },
+  {
+    "query_id": "u03",
+    "status": "abstain",
+    "trace_status": "abstain",
+    "events": [
+      {
+        "event": "search",
+        "query": "làm việc từ xa hỗ trợ tiền internet điện thoại",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d113-p1",
+            "score": 0.5440514368643175,
+            "page": 39
+          },
+          {
+            "id": "B:blld-2012:d100-p1",
+            "score": 0.5308270307412605,
+            "page": 35
+          },
+          {
+            "id": "B:blld-2019:d099-p1",
+            "score": 0.518713050348952,
+            "page": 42
+          },
+          {
+            "id": "B:blld-2012:d098-p1",
+            "score": 0.5146363307780227,
+            "page": 35
+          },
+          {
+            "id": "B:blld-2019:d101-p1",
+            "score": 0.5121784304775521,
+            "page": 43
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d113-p1",
+          "B:blld-2012:d100-p1",
+          "B:blld-2019:d099-p1",
+          "B:blld-2012:d098-p1",
+          "B:blld-2019:d101-p1",
+          "B:blld-2012:d097-p1",
+          "B:blld-2012:d099-p1",
+          "B:blld-2012:d112-p1"
+        ]
+      },
+      {
+        "event": "no_valid_citation"
+      }
+    ],
+    "citations": []
+  },
+  {
+    "query_id": "u04",
+    "status": "abstain",
+    "trace_status": "abstain",
+    "events": [
+      {
+        "event": "search",
+        "query": "sử dụng lao động chưa thành niên trái quy định xử phạt tiền",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d162-p1",
+            "score": 0.6931166625217496,
+            "page": 55
+          },
+          {
+            "id": "B:blld-2012:d163-p1",
+            "score": 0.6871925574071791,
+            "page": 55
+          },
+          {
+            "id": "B:blld-2019:d144-p1",
+            "score": 0.6833822230206591,
+            "page": 58
+          },
+          {
+            "id": "B:blld-2019:d147-p1",
+            "score": 0.6790602928040667,
+            "page": 60
+          },
+          {
+            "id": "B:blld-2012:d165-p1",
+            "score": 0.6709473886992038,
+            "page": 56
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d162-p1",
+          "B:blld-2012:d163-p1",
+          "B:blld-2019:d144-p1",
+          "B:blld-2019:d147-p1",
+          "B:blld-2012:d165-p1",
+          "B:blld-2012:d161-p1",
+          "B:blld-2012:d166-p1"
+        ]
+      },
+      {
+        "event": "no_valid_citation"
+      }
+    ],
+    "citations": []
+  }
+]

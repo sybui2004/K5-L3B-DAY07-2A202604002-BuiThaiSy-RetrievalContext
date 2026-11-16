@@ -30,4 +30,45 @@ Index một tài liệu thực tế từ **100 trang** có bảng, ảnh và bi�
 
 ![Các bước thử nghiệm trên dev và đánh giá trên test](assets/experiment-loop.svg)
 
-Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/individual/MSSV_HoTen.md). Thời gian ở [checkpoints](CHECKPOINTS.md) là gợi ý, có thể điều chỉnh theo lớp và phạm vi thử nghiệm.
+Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/individual/2A202604002_BuiThaiSy.md). Thời gian ở [checkpoints](CHECKPOINTS.md) là gợi ý, có thể điều chỉnh theo lớp và phạm vi thử nghiệm.
+
+## Tái tạo kho vector Day 6
+
+Day 7 chỉ **đọc** các bảng `chunks_a/b/c` của Day 6 (xem [src/store_day6.py](src/store_day6.py)); repo này không tự ingest. Nguồn dữ liệu nằm trong [data/raw/](data/raw/), nguồn và quyền sử dụng ở [data/manifest.csv](data/manifest.csv) (SHA-256 khớp bản dùng ở Day 6).
+
+1. Dựng PostgreSQL + pgvector bằng file đã sao chép từ Day 6:
+   ```bash
+   docker compose -f infra/docker-compose.yml -p day6_student_starter up -d --wait
+   ```
+   Cổng host là `15433` (Windows trên máy này giữ `55433`). Mật khẩu `day6_local_only` chỉ dùng local.
+2. Nếu volume Docker của Day 6 còn nguyên (cùng project name `day6_student_starter`), dữ liệu đã có sẵn, bỏ qua bước 3.
+3. Nếu database trống, nạp lại bằng pipeline Day 6 (repo Day 6, thư mục `starter/`), dùng đúng PDF trong `data/raw/` ở đây (copy sang `data/raw/` của Day 6 nếu cần):
+   ```bash
+   python -m src.run ingest        # tạo chunks_a, chunks_b, chunks_c với bge-m3 (1024 chiều)
+   ```
+4. Embedding: Ollama `bge-m3`, chạy ở `http://localhost:11434` (`ollama pull bge-m3`).
+5. Copy `.env.example` thành `.env`, điền khóa DeepSeek, kiểm tra `DATABASE_URL` trỏ `127.0.0.1:15433`.
+6. Kiểm chứng: `python -m src.eval_retrieval --method dense --split dev --out results/check-dense` phải cho Hit@1 13/15 và Hit@3 14/15; lệch thì index không khớp Day 6.
+
+## Rerank (cross-encoder)
+
+Hai phương pháp `dense-rerank` và `hybrid-rerank` lấy 20 ứng viên từ dense hoặc hybrid, chấm lại từng cặp (câu hỏi, chunk) bằng `BAAI/bge-reranker-v2-m3`, rồi giữ top-k (`RerankRetriever` trong [src/retrievers.py](src/retrievers.py)).
+
+- Cần gói `sentence-transformers` (đã có trong [requirements.txt](requirements.txt)). Lần chạy đầu tải model (~2GB) vào cache HuggingFace; chạy trên CPU khoảng 21 giây/câu.
+- Retrieval: `python -m src.eval_retrieval --method hybrid-rerank --split dev --out results/retrieval/hybrid-rerank-dev`
+- Agent: đặt `"method": "hybrid-rerank"` (hoặc `"dense-rerank"`) trong file config, ví dụ [configs/improve-d.json](configs/improve-d.json), [configs/improve-e.json](configs/improve-e.json), rồi chạy `python -m src.run_agent --config configs/improve-d.json --split dev --out results/agent/<thư_mục_mới>`.
+
+Kết quả so sánh: [results/retrieval/compare-dev.md](results/retrieval/compare-dev.md), [results/dev-summary.md](results/dev-summary.md).
+
+## Tính lại metric và chi phí từ kết quả đã lưu (không gọi API)
+
+- Hit@1/Hit@3 của lượt tìm đầu tiên và Context Evidence Rate của một run agent (cần Postgres để đọc nội dung chunk): `python -m src.eval_agent --run results/agent/improve-b-dev --split dev` (ghi vào `summary.json`, trường `first_search_hits`).
+- Điểm từ nhãn tay: `python -m src.score_run --run results/agent/improve-b-dev --split dev`.
+- Chi phí bằng USD (mức trần, giá DeepSeek Flash): `python -m src.cost results/agent/*-dev results/agent/*-test`.
+
+## Giao diện demo
+
+Chạy từ thư mục gốc repo: `streamlit run demo/app.py`. Thanh bên chọn bộ dữ liệu (Cơ bản hoặc Bonus HELM).
+
+- **Trace**: xem lại các lần chạy đã lưu (`results/agent/*`, `bonus/results/*`): summary, bảng câu hỏi, từng lượt search, context đã ghép, câu trả lời kèm citation, đáp án và evidence chuẩn, nhãn audit, ảnh crop của Bonus. Không cần DB hay API.
+- **Live**: gọi agent thật trên câu dev hoặc câu tự nhập (không có split test), chọn cấu hình và ghi đè phương pháp retrieval, hoặc so sánh các phương pháp mà không gọi LLM. Cần Docker Postgres đang chạy, Ollama có `bge-m3` và `.env` đã điền; thiếu thì chỉ tab Live báo lỗi.

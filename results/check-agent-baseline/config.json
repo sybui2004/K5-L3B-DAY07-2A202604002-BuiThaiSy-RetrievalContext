@@ -1,0 +1,9 @@
+{
+  "name": "baseline",
+  "method": "dense",
+  "top_k": 3,
+  "max_searches": 1,
+  "budget_chars": 3000,
+  "neighbors": false,
+  "rewrite": false
+}

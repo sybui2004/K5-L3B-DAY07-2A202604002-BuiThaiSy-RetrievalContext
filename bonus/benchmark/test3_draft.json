@@ -1,0 +1,584 @@
+[
+ {
+  "id": "M01",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "answerable": true,
+  "question": "How many GPU hours did it take to run OPT (66B), according to the table of evaluated models?",
+  "expected_answer": "2,000 GPU hours (Table 5, OPT (66B) row, column 'Total Cost').",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 43,
+    "evidence": "2,000 GPU hours",
+    "region": "Table 5, OPT (66B) row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M02",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "answerable": true,
+  "question": "Who created TNLG v2 (6.7B), and what is its access level, according to the table of evaluated models?",
+  "expected_answer": "Microsoft/NVIDIA; closed access (Table 5, TNLG v2 (6.7B) row).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 43,
+    "evidence": "TNLG v2 (6.7B)",
+    "region": "Table 5, TNLG v2 (6.7B) row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M03",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "answerable": true,
+  "question": "On which hardware configurations, and with what shares of GPU hours, was T0++ (11B) inference run?",
+  "expected_answer": "2×A100 (1.1%) and 8×2080 Ti (98.9%) (Table 6, T0++ (11B) row).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 44,
+    "evidence": "98.9%",
+    "region": "Table 6, T0++ (11B) row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M04",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "answerable": true,
+  "question": "In the table of computation estimates, how much energy (MWh) and how many mtCO2 are estimated for babbage (1.3B)?",
+  "expected_answer": "9.8 MWh and 4.2 mtCO2 (Table 9, babbage (1.3B) row).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 138,
+    "evidence": "babbage (1.3B)",
+    "region": "Table 9, babbage (1.3B) row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M05",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "answerable": true,
+  "question": "In the summary of language model evaluations, how many datasets does the PaLM evaluation use?",
+  "expected_answer": "262 (Table 12, row PaLM, column '# datasets').",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 156,
+    "evidence": "Chowdhery et al. (2022)",
+    "region": "Table 12, PaLM row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M06",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "answerable": true,
+  "question": "In the table of Wikidata relations used for WikiFact, which manual prompt probes the 'currency' relation (P38)?",
+  "expected_answer": "'The currency of [X] is' (Table 11, row P38 currency, Economics).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 146,
+    "evidence": "P38",
+    "region": "Table 11, P38 row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M07",
+  "split": "test",
+  "group": "table",
+  "tags": [],
+  "answerable": true,
+  "question": "Which scenarios use the 'multiple choice (joint)' adaptation method by default?",
+  "expected_answer": "MMLU, TruthfulQA, LegalSupport, LSAT and BBQ (Table 14).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 162,
+    "evidence": "MMLU, TruthfulQA, LegalSupport, LSAT, BBQ",
+    "region": "Table 14, 'Multiple choice (joint)' row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M08",
+  "split": "test",
+  "group": "image",
+  "tags": [],
+  "answerable": true,
+  "question": "In the sentiment analysis example from IMDB, which reference is marked as correct?",
+  "expected_answer": "Negative (Figure 14: the review says the movie 'should have been destroyed').",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 23,
+    "evidence": "Figure 14",
+    "region": "Figure 14, references list"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M09",
+  "split": "test",
+  "group": "image",
+  "tags": [],
+  "answerable": true,
+  "question": "In the RAFT (Banking77) example for miscellaneous text classification, which reference label is marked as correct?",
+  "expected_answer": "Declined_transfer (Figure 16).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 25,
+    "evidence": "Figure 16",
+    "region": "Figure 16, references list"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M10",
+  "split": "test",
+  "group": "image",
+  "tags": [],
+  "answerable": true,
+  "question": "In the prompt formatting example, how many times is the block of training input, references and output repeated, and which answer does the training example give?",
+  "expected_answer": "5 times (the '5x' brace); the training example's answer is C (Figure 23).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 46,
+    "evidence": "Figure 23",
+    "region": "Figure 23, '5x' brace and '{train output} Answer: C'"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M11",
+  "split": "test",
+  "group": "image",
+  "tags": [],
+  "answerable": true,
+  "question": "In the figure of modern use cases for language models, which use case is described as 'Create a recipe from a list of ingredients'?",
+  "expected_answer": "'Recipe creator (eat at your own risk)' (Figure 9, third column).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 17,
+    "evidence": "Figure 9",
+    "region": "Figure 9, third column, bottom entry"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M12",
+  "split": "test",
+  "group": "image",
+  "tags": [],
+  "answerable": true,
+  "question": "In the figure on standardizing language model evaluation, what are the two parts that are compared, and which two scenarios does the caption name as having many models evaluated before this work?",
+  "expected_answer": "Previous work (top) versus HELM (bottom); BoolQ and HellaSwag (Figure 4).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 5,
+    "evidence": "Figure 4",
+    "region": "Figure 4 caption and the two grids"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M13",
+  "split": "test",
+  "group": "image",
+  "tags": [],
+  "answerable": true,
+  "question": "In the bias metrics demonstration, what value does the gender association bias for 'mathematician' take when the co-occurrence is 3 with male terms and 1 with female terms?",
+  "expected_answer": "0.25 (Figure 20, right panel 'Stereotypical association').",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 31,
+    "evidence": "Figure 20",
+    "region": "Figure 20, right panel"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M14",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "answerable": true,
+  "question": "In the head-to-head win rate figure, which model is at the top of the Toxicity panel?",
+  "expected_answer": "T0pp (11B) (Figure 26, bottom-right panel).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 51,
+    "evidence": "Figure 26",
+    "region": "Figure 26, Toxicity panel, top bar"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M15",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "answerable": true,
+  "question": "In the head-to-head win rate figure, which model is at the top of the Bias panel?",
+  "expected_answer": "GPT-J (6B) (Figure 26, bottom-middle panel).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 51,
+    "evidence": "Figure 26",
+    "region": "Figure 26, Bias panel, top bar"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M16",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "answerable": true,
+  "question": "In the robustness-equivariance plots with contrast sets, for which of the two scenarios do the points lie closer to the dashed diagonal line?",
+  "expected_answer": "IMDB (Figure 35, left plot: most points cluster near the diagonal; BoolQ points sit well below it).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 61,
+    "evidence": "Figure 35",
+    "region": "Figure 35, both plots"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M17",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "answerable": true,
+  "question": "In the 'Accuracy vs. X' scatter plots, at what value does the dashed horizontal line appear in the bias (gender representation) panel?",
+  "expected_answer": "0.5 (Figure 24, bottom-left panel).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 48,
+    "evidence": "Figure 24",
+    "region": "Figure 24, bottom-left panel"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M18",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "answerable": true,
+  "question": "In the cumulative scale versus accuracy chart, which scenario has the lowest accuracy at the smallest model size?",
+  "expected_answer": "XSUM (Figure 29, lowest line at the left edge, about 0.03).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 54,
+    "evidence": "Figure 29",
+    "region": "Figure 29, lowest line at the left edge"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M19",
+  "split": "test",
+  "group": "chart",
+  "tags": [],
+  "answerable": true,
+  "question": "In the multiple-choice adaptation chart, which three adaptation methods are in the legend and which six models are compared on the x-axis?",
+  "expected_answer": "Legend: joint, separate, separate calibrated. Models: Anthropic-LM v4-s3 (52B), BLOOM (176B), GPT-J (6B), GPT-NeoX (20B), OPT (175B), OPT (66B) (Figure 33).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 58,
+    "evidence": "Figure 33",
+    "region": "Figure 33, legend and x-axis labels"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M20",
+  "split": "test",
+  "group": "multihop",
+  "tags": [],
+  "answerable": true,
+  "question": "What is the context window size of the model that the summary of findings says reaches 62.0% accuracy on TruthfulQA?",
+  "expected_answer": "4000 tokens: text-davinci-002 (62.0% on TruthfulQA, p. 8) has window size 4000 (Table 5).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 8,
+    "evidence": "62.0%",
+    "region": "Finding 15, Knowledge"
+   },
+   {
+    "source_id": "helm",
+    "page": 43,
+    "evidence": "text-davinci-002",
+    "region": "Table 5, text-davinci-002 row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M21",
+  "split": "test",
+  "group": "multihop",
+  "tags": [],
+  "answerable": true,
+  "question": "How many GPU hours did it cost to run the model that heads the Toxicity panel of the head-to-head win rate figure?",
+  "expected_answer": "1,250 GPU hours: T0pp (11B) is on top (Figure 26) and the models table lists 1,250 GPU hours for T0++ (11B).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 51,
+    "evidence": "Figure 26",
+    "region": "Figure 26, Toxicity panel, top bar"
+   },
+   {
+    "source_id": "helm",
+    "page": 43,
+    "evidence": "T0++ (11B)",
+    "region": "Table 5, T0++ (11B) row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M22",
+  "split": "test",
+  "group": "multihop",
+  "tags": [],
+  "answerable": true,
+  "question": "How many total queries were made to the model that ran 73.9% of its inference on 2×A100 GPUs?",
+  "expected_answer": "849,830: GPT-NeoX (20B) (Table 6) has 849,830 total queries (Table 5).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 44,
+    "evidence": "73.9%",
+    "region": "Table 6, GPT-NeoX (20B) row"
+   },
+   {
+    "source_id": "helm",
+    "page": 43,
+    "evidence": "GPT-NeoX (20B)",
+    "region": "Table 5, GPT-NeoX (20B) row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M23",
+  "split": "test",
+  "group": "multihop",
+  "tags": [],
+  "answerable": true,
+  "question": "What context window size does the model have that is the most accurate on TwitterAAE according to the summary of findings?",
+  "expected_answer": "2048 tokens: OPT (175B) is the most accurate on TwitterAAE (p. 7) and its window size is 2048 (Table 5).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 7,
+    "evidence": "most accurate model on TwitterAAE",
+    "region": "Finding 5, Performance disparities"
+   },
+   {
+    "source_id": "helm",
+    "page": 43,
+    "evidence": "OPT (175B)",
+    "region": "Table 5, OPT (175B) row"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M24",
+  "split": "test",
+  "group": "text",
+  "tags": [],
+  "answerable": true,
+  "question": "Which models does the paper give as examples of open, limited-API-access and closed models?",
+  "expected_answer": "Open: GPT-NeoX (20B), OPT (175B), BLOOM (176B). Limited: davinci (175B), J1-Jumbo v1 (178B), Cohere xlarge v20220609 (52.4B). Closed: Anthropic-LM v4-s3 (52B), TNLG v2 (530B).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 44,
+    "evidence": "Model selection.",
+    "region": "paragraph 'Model selection.'"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M25",
+  "split": "test",
+  "group": "text",
+  "tags": [],
+  "answerable": true,
+  "question": "On NarrativeQA, how far does the accuracy of TNLG v2 (530B) fall under robustness perturbations?",
+  "expected_answer": "From 72.6% standard accuracy to 38.9% (finding 4).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 7,
+    "evidence": "38.9%",
+    "region": "Finding 4, Robustness and fairness perturbations"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M26",
+  "split": "test",
+  "group": "text",
+  "tags": [],
+  "answerable": true,
+  "question": "How does text-davinci-002 perform on the Systematic Review Inclusion split of RAFT compared with other models?",
+  "expected_answer": "Very poorly: 40.8% accuracy, compared with 97.5% from several models such as GLM (130B) (finding 13).",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 8,
+    "evidence": "40.8%",
+    "region": "Finding 13, Miscellaneous text classification"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M27",
+  "split": "test",
+  "group": "text",
+  "tags": [],
+  "answerable": true,
+  "question": "How are the in-context examples chosen, and do they change between evaluation instances?",
+  "expected_answer": "Sampled to ensure class coverage (the 5 most frequent classes represented); fixed across all evaluation instances.",
+  "gold": [
+   {
+    "source_id": "helm",
+    "page": 46,
+    "evidence": "fix the in-context examples across all evaluation instances",
+    "region": "paragraph 'In-context examples.'"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "M28",
+  "split": "test",
+  "group": "abstain",
+  "tags": [],
+  "answerable": false,
+  "question": "What accuracy does Falcon-40B reach on TruthfulQA in the HELM evaluation?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Falcon is not evaluated in the paper.",
+  "how_checked": "full-text search of the PDF (all 162 pages) finds no model named Falcon; 'Falcon' occurs once, only inside the author surname 'Saad-Falcon' (p. 108 references).",
+  "gold": []
+ },
+ {
+  "id": "M29",
+  "split": "test",
+  "group": "abstain",
+  "tags": [],
+  "answerable": false,
+  "question": "What is the total number of queries made to Yi-34B in the models table?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Yi-34B is not evaluated in the paper.",
+  "how_checked": "full-text search of the PDF (all 162 pages) for the model name returns no match ('Yi-34B' appears 0 times).",
+  "gold": []
+ },
+ {
+  "id": "M30",
+  "split": "test",
+  "group": "abstain",
+  "tags": [],
+  "answerable": false,
+  "question": "What toxicity score does Grok-1 get on BOLD in the HELM evaluation?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Grok is not evaluated in the paper.",
+  "how_checked": "full-text search of the PDF (all 162 pages) for the model name returns no match ('Grok' appears 0 times).",
+  "gold": []
+ },
+ {
+  "id": "M31",
+  "split": "test",
+  "group": "abstain",
+  "tags": [],
+  "answerable": false,
+  "question": "On which hardware was Baichuan-13B run for inference?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Baichuan is not evaluated in the paper.",
+  "how_checked": "full-text search of the PDF (all 162 pages) for the model name returns no match ('Baichuan' appears 0 times).",
+  "gold": []
+ },
+ {
+  "id": "M32",
+  "split": "test",
+  "group": "abstain",
+  "tags": [],
+  "answerable": false,
+  "question": "What is the context window size of Phi-2 in the table of evaluated models?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Phi-2 is not evaluated in the paper.",
+  "how_checked": "full-text search of the PDF (all 162 pages) for the model name returns no match ('Phi-2' appears 0 times).",
+  "gold": []
+ },
+ {
+  "id": "M33",
+  "split": "test",
+  "group": "abstain",
+  "tags": [],
+  "answerable": false,
+  "question": "How much energy in MWh is estimated for Nemotron-4 in the computation estimates table?",
+  "expected_behavior": "search_and_abstain",
+  "absence_reason": "Nemotron is not evaluated in the paper.",
+  "how_checked": "full-text search of the PDF (all 162 pages) for the model name returns no match ('Nemotron' appears 0 times).",
+  "gold": []
+ }
+]

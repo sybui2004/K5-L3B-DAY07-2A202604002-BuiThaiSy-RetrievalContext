@@ -1,0 +1,11 @@
+{
+  "name": "improve-e",
+  "method": "dense-rerank",
+  "top_k": 5,
+  "max_searches": 1,
+  "budget_chars": 6000,
+  "neighbors": false,
+  "rewrite": false,
+  "pack": "order",
+  "figure_reader": false
+}

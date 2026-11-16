@@ -1,0 +1,381 @@
+[
+  {
+    "query_id": "q16",
+    "split": "test",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "Theo Bộ luật Lao động 2019, hợp đồng lao động xác định thời hạn là hợp đồng mà hai bên xác định thời hạn, thời điểm chấm dứt hiệu lực trong thời gian **không quá 36 tháng** kể từ thời điểm hợp đồng có hiệu lực [B:blld-2019:d020-p1].",
+    "citations": [
+      "B:blld-2019:d020-p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "hợp đồng lao động xác định thời hạn thời hạn tối đa",
+        "filter": {
+          "version": "2019"
+        },
+        "results": [
+          {
+            "id": "B:blld-2019:d020-p1",
+            "score": 0.7098651624048176,
+            "page": 9
+          },
+          {
+            "id": "B:blld-2019:d035-p1",
+            "score": 0.6768273711204721,
+            "page": 15
+          },
+          {
+            "id": "B:blld-2019:d021-p1",
+            "score": 0.6604375434443454,
+            "page": 10
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d020-p1",
+          "B:blld-2019:d035-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[B:blld-2019:d020-p1 | data/raw/blld_2019_congbao.pdf | page 9]\nĐiều 20. Loại hợp đồng lao động\n1. Hợp đồng lao động phải được giao kết theo một trong các loại sau đây:\na) Hợp đồng lao động không xác định thời hạn là hợp đồng mà trong đó hai\nbên không xác định thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng;\nb) Hợp đồng lao động xác định thời hạn là hợp đồng mà trong đó hai bên xác\nđịnh thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng trong thời gian không\nquá 36 tháng kể từ thời điểm có hiệu lực của hợp đồng.\n2. Khi hợp đồng lao động quy định tại điểm b khoản 1 Điều này hết hạn mà\nngười lao động vẫn tiếp tục làm việc thì thực hiện như sau:\na) Trong thời hạn 30 ngày kể từ ngày hợp đồng lao động hết hạn, hai bên\nphải ký kết hợp đồng lao động mới; trong thời gian chưa ký kết hợp đồng lao\nđộng mới thì quyền, nghĩa vụ và lợi ích của hai bên được thực hiện theo hợp\nđồng đã giao kết;\nb) Nếu hết thời hạn 30 ngày kể từ ngày hợp đồng lao động hết hạn mà hai bên\nkhông ký kết hợp đồng lao động mới thì hợp đồng đã giao kết theo quy định tại\nđiểm b khoản 1 Điều này trở thành hợp đồng lao động không xác định thời hạn;\nc) Trường hợp hai bên ký kết hợp đồng lao động mới là hợp đồng lao động xác\nđịnh thời hạn thì cũng chỉ được ký thêm 01 lần, sau đó nếu người lao động vẫn tiếp\ntục làm việc thì phải ký kết hợp đồng lao động không xác định thời hạn, trừ hợp\nđồng lao động đối với người được thuê làm giám đốc trong doanh nghiệp có vốn\nnhà nước và trường hợp quy định tại khoản 1 Điều 149, khoản 2 Điều 151 và\nkhoản 4 Điều 177 của Bộ luật này.\n\n[B:blld-2019:d035-p1 | data/raw/blld_2019_congbao.pdf | page 15]\nĐiều 35. Quyền đơn phương chấm dứt hợp đồng lao động của người\nlao động\n1. Người lao động có quyền đơn phương chấm dứt hợp đồng lao động nhưng\nphải báo trước cho người sử dụng lao động như sau:\na) Ít nhất 45 ngày nếu làm việc theo hợp đồng lao động không xác định\nthời hạn;\nb) Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có\nthời hạn từ 12 tháng đến 36 tháng;\nc) Ít nhất 03 ngày làm việc nếu làm việc theo hợp đồng lao động xác định thời\nhạn có thời hạn dưới 12 tháng;\nd) Đối với một số ngành, nghề, công việc đặc thù thì thời hạn báo trước được\nthực hiện theo quy định của Chính phủ.",
+    "context_ids": [
+      "B:blld-2019:d020-p1",
+      "B:blld-2019:d035-p1"
+    ],
+    "error": null,
+    "seconds": 10.25,
+    "tokens_in": 2140,
+    "tokens_out": 293,
+    "llm_calls": 2
+  },
+  {
+    "query_id": "q17",
+    "split": "test",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "Theo quy định tại cả hai bản Bộ luật Lao động, tiền lương trong thời gian thử việc do hai bên thỏa thuận nhưng ít nhất phải bằng **85% mức lương của công việc đó**.\n\n- Bộ luật Lao động 2012 – Điều 28: \"Tiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận nhưng ít nhất phải bằng 85% mức lương của công việc đó.\" [B:blld-2012:d028-p1]\n- Bộ luật Lao động 2019 – Điều 26: nội dung tương tự, \"ít nhất phải bằng 85% mức lương của công việc đó.\" [B:blld-2019:d026-p1]",
+    "citations": [
+      "B:blld-2012:d028-p1",
+      "B:blld-2019:d026-p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "tiền lương trong thời gian thử việc tối thiểu",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d028-p1",
+            "score": 0.7598233819007928,
+            "page": 11
+          },
+          {
+            "id": "B:blld-2019:d026-p1",
+            "score": 0.7595005035400445,
+            "page": 12
+          },
+          {
+            "id": "B:blld-2012:d027-p1",
+            "score": 0.6448807081366863,
+            "page": 10
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d028-p1",
+          "B:blld-2019:d026-p1",
+          "B:blld-2012:d027-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[B:blld-2012:d028-p1 | data/raw/blld_2012_congbao.pdf | page 11]\nĐiều 28. Tiền lương trong thời gian thử việc\nTiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận\nnhưng ít nhất phải bằng 85% mức lương của công việc đó.\n\n[B:blld-2019:d026-p1 | data/raw/blld_2019_congbao.pdf | page 12]\nĐiều 26. Tiền lương thử việc\nTiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận\nnhưng ít nhất phải bằng 85% mức lương của công việc đó.\n\n[B:blld-2012:d027-p1 | data/raw/blld_2012_congbao.pdf | page 10]\nĐiều 27. Thời gian thử việc\nThời gian thử việc căn cứ vào tính chất và mức độ phức tạp của công việc\nnhưng chỉ được thử việc 01 lần đối với một công việc và bảo đảm các điều kiện\nsau đây:\n1. Không quá 60 ngày đối với công việc có chức danh nghề cần trình độ\nchuyên môn, kỹ thuật từ cao đẳng trở lên;\n2. Không quá 30 ngày đối với công việc có chức danh nghề cần trình độ\nchuyên môn kỹ thuật trung cấp nghề, trung cấp chuyên nghiệp, công nhân kỹ thuật,\nnhân viên nghiệp vụ.\n3. Không quá 6 ngày làm việc đối với công việc khác.",
+    "context_ids": [
+      "B:blld-2012:d028-p1",
+      "B:blld-2019:d026-p1",
+      "B:blld-2012:d027-p1"
+    ],
+    "error": null,
+    "seconds": 4.83,
+    "tokens_in": 1654,
+    "tokens_out": 370,
+    "llm_calls": 2
+  },
+  {
+    "query_id": "q18",
+    "split": "test",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "Hành vi vi phạm liên quan trực tiếp đến bí mật kinh doanh của người sử dụng lao động có thời hiệu xử lý kỷ luật lao động là **12 tháng** kể từ ngày xảy ra hành vi vi phạm (thay vì 06 tháng đối với trường hợp thông thường):\n\n- **Bộ luật Lao động 2019** (Điều 123): thời hiệu xử lý kỷ luật lao động là 06 tháng; trường hợp hành vi vi phạm liên quan trực tiếp đến tài chính, tài sản, tiết lộ bí mật công nghệ, bí mật kinh doanh của người sử dụng lao động thì thời hiệu là 12 tháng [B:blld-2019:d123-p1].\n- **Bộ luật Lao động 2012** (Điều 124): thời hiệu xử lý kỷ luật lao động tối đa là 06 tháng; trường hợp hành vi vi phạm liên quan trực tiếp đến tài chính, tài sản, tiết lộ bí mật công nghệ, bí mật kinh doanh của người sử dụng lao động thì thời hiệu tối đa là 12 tháng [B:blld-2012:d124-p1].\n\nNhư vậy, cả hai bản luật đều quy định mức 12 tháng cho trường hợp liên quan đến bí mật kinh doanh.",
+    "citations": [
+      "B:blld-2019:d123-p1",
+      "B:blld-2012:d124-p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "thời hiệu xử lý kỷ luật lao động bí mật kinh doanh",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d123-p1",
+            "score": 0.679885902418406,
+            "page": 51
+          },
+          {
+            "id": "B:blld-2012:d124-p1",
+            "score": 0.6610789521007153,
+            "page": 43
+          },
+          {
+            "id": "B:blld-2019:d125-p1",
+            "score": 0.5847238943803635,
+            "page": 52
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d123-p1",
+          "B:blld-2012:d124-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[B:blld-2019:d123-p1 | data/raw/blld_2019_congbao.pdf | page 51]\nĐiều 123. Thời hiệu xử lý kỷ luật lao động\n1. Thời hiệu xử lý kỷ luật lao động là 06 tháng kể từ ngày xảy ra hành vi vi\nphạm; trường hợp hành vi vi phạm liên quan trực tiếp đến tài chính, tài sản, tiết lộ\nbí mật công nghệ, bí mật kinh doanh của người sử dụng lao động thì thời hiệu xử\nlý kỷ luật lao động là 12 tháng.\n2. Khi hết thời gian quy định tại khoản 4 Điều 122 của Bộ luật này, nếu hết\nthời hiệu hoặc còn thời hiệu nhưng không đủ 60 ngày thì được kéo dài thời hiệu để\nxử lý kỷ luật lao động nhưng không quá 60 ngày kể từ ngày hết thời gian nêu trên.\n3. Người sử dụng lao động phải ban hành quyết định xử lý kỷ luật lao động\ntrong thời hạn quy định tại khoản 1 và khoản 2 Điều này.\n\n[B:blld-2012:d124-p1 | data/raw/blld_2012_congbao.pdf | page 43]\nĐiều 124. Thời hiệu xử lý kỷ luật lao động\n1. Thời hiệu xử lý kỷ luật lao động tối đa là 06 tháng, kể từ ngày xảy ra hành\nvi vi phạm; trường hợp hành vi vi phạm liên quan trực tiếp đến tài chính, tài sản,\ntiết lộ bí mật công nghệ, bí mật kinh doanh của người sử dụng lao động thì thời\nhiệu xử lý kỷ luật lao động tối đa là 12 tháng.\n2. Khi hết thời gian quy định tại các điểm a, b và c khoản 4 Điều 123, nếu còn\nthời hiệu để xử lý kỷ luật lao động thì người sử dụng lao động tiến hành xử lý kỷ\nluật lao động ngay, nếu hết thời hiệu thì được kéo dài thời hiệu để xử lý kỷ luật lao\nđộng nhưng tối đa không quá 60 ngày kể từ ngày hết thời gian nêu trên.\nKhi hết thời gian quy định tại điểm d khoản 4 Điều 123, mà thời hiệu xử lý kỷ\nluật lao động đã hết thì được kéo dài thời hiệu xử lý kỷ luật lao động nhưng tối đa\nkhông quá 60 ngày kể từ ngày hết thời gian nêu trên.\n3. Quyết định xử lý kỷ luật lao động phải được ban hành trong thời hạn quy\nđịnh tại khoản 1 và khoản 2 Điều này.",
+    "context_ids": [
+      "B:blld-2019:d123-p1",
+      "B:blld-2012:d124-p1"
+    ],
+    "error": null,
+    "seconds": 6.14,
+    "tokens_in": 2028,
+    "tokens_out": 675,
+    "llm_calls": 2
+  },
+  {
+    "query_id": "q19",
+    "split": "test",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "Thời gian cho thuê lại lao động tối đa là **12 tháng**.\n\n- Bộ luật Lao động 2019: Điều 53.1 quy định thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng [B:blld-2019:d053-p1].\n- Bộ luật Lao động 2012: Điều 54.2 cũng quy định thời hạn cho thuê lại lao động tối đa không quá 12 tháng [B:blld-2012:d054-p1].",
+    "citations": [
+      "B:blld-2019:d053-p1",
+      "B:blld-2012:d054-p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "cho thuê lại lao động thời hạn",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d053-p1",
+            "score": 0.7563551985105537,
+            "page": 23
+          },
+          {
+            "id": "B:blld-2012:d054-p1",
+            "score": 0.7413392729765268,
+            "page": 20
+          },
+          {
+            "id": "B:blld-2019:d052-p1",
+            "score": 0.7100328400880193,
+            "page": 23
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d053-p1",
+          "B:blld-2012:d054-p1",
+          "B:blld-2019:d052-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[B:blld-2019:d053-p1 | data/raw/blld_2019_congbao.pdf | page 23]\nĐiều 53. Nguyên tắc hoạt động cho thuê lại lao động\n1. Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng.\n2. Bên thuê lại lao động được sử dụng lao động thuê lại trong trường hợp\nsau đây:\na) Đáp ứng tạm thời sự gia tăng đột ngột về nhu cầu sử dụng lao động trong\nkhoảng thời gian nhất định;\nb) Thay thế người lao động trong thời gian nghỉ thai sản, bị tai nạn lao động,\nbệnh nghề nghiệp hoặc phải thực hiện các nghĩa vụ công dân;\nc) Có nhu cầu sử dụng lao động trình độ chuyên môn, kỹ thuật cao.\n3. Bên thuê lại lao động không được sử dụng lao động thuê lại trong trường\nhợp sau đây:\na) Để thay thế người lao động đang trong thời gian thực hiện quyền đình công,\ngiải quyết tranh chấp lao động;\nb) Không có thỏa thuận cụ thể về trách nhiệm bồi thường tai nạn lao\nđộng, bệnh nghề nghiệp của người lao động thuê lại với doanh nghiệp cho\nthuê lại lao động;\nc) Thay thế người lao động bị cho thôi việc do thay đổi cơ cấu, công nghệ, vì\nlý do kinh tế hoặc chia, tách, hợp nhất, sáp nhập.\n4. Bên thuê lại lao động không được chuyển người lao động thuê lại cho người\nsử dụng lao động khác; không được sử dụng người lao động thuê lại được cung\ncấp bởi doanh nghiệp không có Giấy phép hoạt động cho thuê lại lao động.\n\n[B:blld-2012:d054-p1 | data/raw/blld_2012_congbao.pdf | page 20]\nĐiều 54. Doanh nghiệp cho thuê lại lao động\n1. Doanh nghiệp cho thuê lại lao động phải ký quỹ và được cấp phép hoạt\nđộng cho thuê lại lao động.\n2. Thời hạn cho thuê lại lao động tối đa không quá 12 tháng.\n3. Chính phủ quy định việc cấp phép hoạt động cho thuê lại lao động, việc ký\nquỹ và danh mục công việc được thực hiện cho thuê lại lao động.\n\n[B:blld-2019:d052-p1 | data/raw/blld_2019_congbao.pdf | page 23]\nĐiều 52. Cho thuê lại lao động\n1. Cho thuê lại lao động là việc người lao động giao kết hợp đồng lao động với\nmột người sử dụng lao động là doanh nghiệp cho thuê lại lao động, sau đó người\nlao động được chuyển sang làm việc và chịu sự điều hành của người sử dụng lao\nđộng khác mà vẫn duy trì quan hệ lao động với người sử dụng lao động đã giao kết\nhợp đồng lao động.\n2. Hoạt động cho thuê lại lao động là ngành, nghề kinh doanh có điều kiện, chỉ\nđược thực hiện bởi các doanh nghiệp có Giấy phép hoạt động cho thuê lại lao động\nvà áp dụng đối với một số công việc nhất định.",
+    "context_ids": [
+      "B:blld-2019:d053-p1",
+      "B:blld-2012:d054-p1",
+      "B:blld-2019:d052-p1"
+    ],
+    "error": null,
+    "seconds": 6.04,
+    "tokens_in": 2136,
+    "tokens_out": 432,
+    "llm_calls": 2
+  },
+  {
+    "query_id": "q20",
+    "split": "test",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "Theo quy định của pháp luật lao động Việt Nam, người lao động chưa thành niên được xác định như sau:\n\n- **Bộ luật Lao động 2012:** Người lao động chưa thành niên là người lao động **dưới 18 tuổi** [B:blld-2012:d161-p1].\n- **Bộ luật Lao động 2019:** Lao động chưa thành niên là người lao động **chưa đủ 18 tuổi** [B:blld-2019:d143-p1].\n\nNhư vậy, điểm chung ở cả hai bản là người lao động chưa thành niên là người **chưa đủ 18 tuổi**. Bộ luật 2019 còn phân chia cụ thể hơn theo nhóm tuổi: người từ đủ 15 tuổi đến chưa đủ 18 tuổi không được làm một số công việc/nơi làm việc nhất định [B:blld-2019:d143-p1]; người từ đủ 13 tuổi đến chưa đủ 15 tuổi chỉ được làm công việc nhẹ theo danh mục do Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành [B:blld-2019:d143-p1]; người chưa đủ 13 tuổi chỉ được làm các công việc theo quy định tại khoản 3 Điều 145 Bộ luật này [B:blld-2019:d143-p1].",
+    "citations": [
+      "B:blld-2012:d161-p1",
+      "B:blld-2019:d143-p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "lao động chưa thành niên độ tuổi",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d161-p1",
+            "score": 0.7646758258190549,
+            "page": 55
+          },
+          {
+            "id": "B:blld-2019:d143-p1",
+            "score": 0.733430431324139,
+            "page": 58
+          },
+          {
+            "id": "B:blld-2012:d162-p1",
+            "score": 0.7001491964663775,
+            "page": 55
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d161-p1",
+          "B:blld-2019:d143-p1",
+          "B:blld-2012:d162-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[B:blld-2012:d161-p1 | data/raw/blld_2012_congbao.pdf | page 55]\nĐiều 161. Lao động chưa thành niên\nNgười lao động chưa thành niên là người lao động dưới 18 tuổi.\n\n[B:blld-2019:d143-p1 | data/raw/blld_2019_congbao.pdf | page 58]\nĐiều 143. Lao động chưa thành niên\n1. Lao động chưa thành niên là người lao động chưa đủ 18 tuổi.\n2. Người từ đủ 15 tuổi đến chưa đủ 18 tuổi không được làm công việc hoặc\nlàm việc ở nơi làm việc quy định tại Điều 147 của Bộ luật này.\n3. Người từ đủ 13 tuổi đến chưa đủ 15 tuổi chỉ được làm công việc nhẹ theo\ndanh mục do Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành.\n4. Người chưa đủ 13 tuổi chỉ được làm các công việc theo quy định tại khoản 3\nĐiều 145 của Bộ luật này.\n\n[B:blld-2012:d162-p1 | data/raw/blld_2012_congbao.pdf | page 55]\nĐiều 162. Sử dụng người lao động chưa thành niên\n1. Người sử dụng lao động chỉ được sử dụng người lao động chưa thành\nniên vào những công việc phù hợp với sức khoẻ để bảo đảm sự phát triển thể\nlực, trí lực, nhân cách và có trách nhiệm quan tâm chăm sóc người lao động\nchưa thành niên về các mặt lao động, tiền lương, sức khoẻ, học tập trong quá\ntrình lao động.\n2. Khi sử dụng người lao động chưa thành niên, người sử dụng lao động phải\nlập sổ theo dõi riêng, ghi đầy đủ họ tên, ngày tháng năm sinh, công việc đang làm,\nkết quả những lần kiểm tra sức khoẻ định kỳ và xuất trình khi cơ quan nhà nước có\nthẩm quyền yêu cầu.",
+    "context_ids": [
+      "B:blld-2012:d161-p1",
+      "B:blld-2019:d143-p1",
+      "B:blld-2012:d162-p1"
+    ],
+    "error": null,
+    "seconds": 5.72,
+    "tokens_in": 1768,
+    "tokens_out": 499,
+    "llm_calls": 2
+  },
+  {
+    "query_id": "u03",
+    "split": "test",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "Không đủ bằng chứng để trả lời.\n\nCác đoạn tài liệu tìm được chỉ đề cập đến tạm ứng tiền lương, tiền tàu xe đi đường ngày nghỉ hằng năm [B:blld-2012:d113-p1], tạm ứng tiền lương [B:blld-2012:d100-p1] và tiền lương ngừng việc [B:blld-2019:d099-p1]. Không có đoạn nào quy định về mức hỗ trợ tiền internet và điện thoại cho người lao động làm việc từ xa, nên tôi không thể xác nhận con số cụ thể.",
+    "citations": [
+      "B:blld-2012:d113-p1",
+      "B:blld-2012:d100-p1",
+      "B:blld-2019:d099-p1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "làm việc từ xa hỗ trợ tiền internet điện thoại",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d113-p1",
+            "score": 0.5440514368643175,
+            "page": 39
+          },
+          {
+            "id": "B:blld-2012:d100-p1",
+            "score": 0.5308270307412605,
+            "page": 35
+          },
+          {
+            "id": "B:blld-2019:d099-p1",
+            "score": 0.518713050348952,
+            "page": 42
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d113-p1",
+          "B:blld-2012:d100-p1",
+          "B:blld-2019:d099-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[B:blld-2012:d113-p1 | data/raw/blld_2012_congbao.pdf | page 39]\nĐiều 113. Tạm ứng tiền lương, tiền tàu xe đi đường ngày nghỉ hằng năm\n1. Khi nghỉ hằng năm, người lao động được tạm ứng trước một khoản tiền ít\nnhất bằng tiền lương của những ngày nghỉ.\n2. Tiền tàu xe và tiền lương những ngày đi đường do hai bên thỏa thuận.\nĐối với người lao động miền xuôi làm việc ở vùng cao, vùng sâu, vùng xa,\nbiên giới, hải đảo và người lao động ở vùng cao, vùng sâu, vùng xa, biên giới, hải\nđảo làm việc ở miền xuôi thì được người sử dụng lao động thanh toán tiền tàu xe\nvà tiền lương những ngày đi đường.\n\n[B:blld-2012:d100-p1 | data/raw/blld_2012_congbao.pdf | page 35]\nĐiều 100. Tạm ứng tiền lương\n1. Người lao động được tạm ứng tiền lương theo điều kiện do hai bên thỏa thuận.\n2. Người sử dụng lao động phải tạm ứng tiền lương tương ứng với số ngày\nngười lao động tạm thời nghỉ việc để thực hiện nghĩa vụ công dân từ 01 tuần trở\nlên nhưng tối đa không quá 01 tháng lương và phải hoàn lại số tiền đã tạm ứng trừ\ntrường hợp thực hiện nghĩa vụ quân sự.\n\n[B:blld-2019:d099-p1 | data/raw/blld_2019_congbao.pdf | page 42]\nĐiều 99. Tiền lương ngừng việc\nTrường hợp phải ngừng việc, người lao động được trả lương như sau:\n1. Nếu do lỗi của người sử dụng lao động thì người lao động được trả đủ tiền\nlương theo hợp đồng lao động;\n2. Nếu do lỗi của người lao động thì người đó không được trả lương; những\nngười lao động khác trong cùng đơn vị phải ngừng việc thì được trả lương theo\nmức do hai bên thỏa thuận nhưng không được thấp hơn mức lương tối thiểu;\n3. Nếu vì sự cố về điện, nước mà không do lỗi của người sử dụng lao động\nhoặc do thiên tai, hỏa hoạn, dịch bệnh nguy hiểm, địch họa, di dời địa điểm hoạt\nđộng theo yêu cầu của cơ quan nhà nước có thẩm quyền hoặc vì lý do kinh tế thì\nhai bên thỏa thuận về tiền lương ngừng việc như sau:\na) Trường hợp ngừng việc từ 14 ngày làm việc trở xuống thì tiền lương ngừng\nviệc được thỏa thuận không thấp hơn mức lương tối thiểu;\nb) Trường hợp phải ngừng việc trên 14 ngày làm việc thì tiền lương ngừng\nviệc do hai bên thỏa thuận nhưng phải bảo đảm tiền lương ngừng việc trong 14\nngày đầu tiên không thấp hơn mức lương tối thiểu.",
+    "context_ids": [
+      "B:blld-2012:d113-p1",
+      "B:blld-2012:d100-p1",
+      "B:blld-2019:d099-p1"
+    ],
+    "error": null,
+    "seconds": 4.73,
+    "tokens_in": 2112,
+    "tokens_out": 310,
+    "llm_calls": 2
+  },
+  {
+    "query_id": "u04",
+    "split": "test",
+    "config": "baseline",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "mức phạt tiền sử dụng lao động chưa thành niên trái quy định",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d163-p1",
+            "score": 0.6470204994971057,
+            "page": 55
+          },
+          {
+            "id": "B:blld-2019:d147-p1",
+            "score": 0.6354520488340604,
+            "page": 60
+          },
+          {
+            "id": "B:blld-2019:d143-p1",
+            "score": 0.6190991486729989,
+            "page": 58
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d163-p1",
+          "B:blld-2019:d147-p1"
+        ]
+      },
+      {
+        "event": "no_valid_citation"
+      }
+    ],
+    "searches": 1,
+    "context": "[B:blld-2012:d163-p1 | data/raw/blld_2012_congbao.pdf | page 55]\nĐiều 163. Nguyên tắc sử dụng lao động là người chưa thành niên\n1. Không được sử dụng lao động chưa thành niên làm những công việc nặng\nnhọc, độc hại, nguy hiểm hoặc chỗ làm việc, công việc ảnh hưởng xấu tới nhân\ncách của họ theo danh mục do Bộ Lao động - Thương binh và Xã hội chủ trì phối\nhợp với Bộ Y tế ban hành.\n2. Thời giờ làm việc của người lao động chưa thành niên từ đủ 15 tuổi đến\ndưới 18 tuổi không được quá 08 giờ trong 01 ngày và 40 giờ trong 01 tuần.\nThời giờ làm việc của người dưới 15 tuổi không được quá 04 giờ trong 01\nngày và 20 giờ trong 01 tuần và không được sử dụng làm thêm giờ, làm việc vào\nban đêm.\n3. Người từ đủ 15 tuổi đến dưới 18 tuổi được làm thêm giờ, làm việc vào ban\nđêm trong một số nghề và công việc theo quy định của Bộ Lao động - Thương\nbinh và Xã hội.\n4. Không được sử dụng người chưa thành niên sản xuất và kinh doanh cồn,\nrượu, bia, thuốc lá, chất tác động đến tinh thần và các chất gây nghiện khác;\n5. Người sử dụng lao động phải tạo cơ hội để người lao động chưa thành niên\nvà người dưới 15 tuổi tham gia lao động được học văn hóa.\n\n[B:blld-2019:d147-p1 | data/raw/blld_2019_congbao.pdf | page 60]\nĐiều 147. Công việc và nơi làm việc cấm sử dụng người lao động từ đủ\n15 tuổi đến chưa đủ 18 tuổi\n1. Cấm sử dụng người lao động từ đủ 15 tuổi đến chưa đủ 18 tuổi làm các công\nviệc sau đây:\na) Mang, vác, nâng các vật nặng vượt quá thể trạng của người chưa thành niên;\nb) Sản xuất, kinh doanh cồn, rượu, bia, thuốc lá, chất tác động đến tinh thần\nhoặc chất gây nghiện khác;\nc) Sản xuất, sử dụng hoặc vận chuyển hóa chất, khí gas, chất nổ;\nd) Bảo trì, bảo dưỡng thiết bị, máy móc;\nđ) Phá dỡ các công trình xây dựng;\ne) Nấu, thổi, đúc, cán, dập, hàn kim loại;\ng) Lặn biển, đánh bắt thủy, hải sản xa bờ;\nh) Công việc khác gây tổn hại đến sự phát triển thể lực, trí lực, nhân cách của\nngười chưa thành niên.\n2. Cấm sử dụng người lao động từ đủ 15 tuổi đến chưa đủ 18 tuổi làm việc ở\ncác nơi sau đây:\na) Dưới nước, dưới lòng đất, trong hang động, trong đường hầm;\nb) Công trường xây dựng;\nc) Cơ sở giết mổ gia súc;\nd) Sòng bạc, quán bar, vũ trường, phòng hát karaoke, khách sạn, nhà nghỉ, cơ\nsở tắm hơi, cơ sở xoa bóp; điểm kinh doanh xổ số, dịch vụ trò chơi điện tử;\nđ) Nơi làm việc khác gây tổn hại đến sự phát triển thể lực, trí lực, nhân cách\ncủa người chưa thành niên.\n3. Bộ trưởng Bộ Lao động - Thương binh và Xã hội quy định danh mục tại\nđiểm h khoản 1 và điểm đ khoản 2 Điều này.",
+    "context_ids": [
+      "B:blld-2012:d163-p1",
+      "B:blld-2019:d147-p1"
+    ],
+    "error": null,
+    "raw_answer": "Không đủ bằng chứng để trả lời.\n\nCác đoạn tài liệu tìm được chỉ quy định về nguyên tắc sử dụng lao động chưa thành niên và danh mục công việc/nơi làm việc bị cấm sử dụng người lao động từ đủ 15 tuổi đến chưa đủ 18 tuổi; không có nội dung nào nêu mức phạt tiền cụ thể (số triệu đồng) đối với hành vi sử dụng lao động chưa thành niên trái quy định. Mức phạt tiền cụ thể thường nằm ở văn bản xử phạt vi phạm hành chính, không thuộc các đoạn Bộ luật Lao động đã truy xuất ở đây.\n\nVì vậy, tôi không thể đưa ra con số mức phạt dựa trên bằng chứng hiện có, và cũng không trích dẫn nguồn cho câu trả lời này.",
+    "seconds": 6.28,
+    "tokens_in": 2325,
+    "tokens_out": 654,
+    "llm_calls": 2
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "pass": "23/33",
+  "rate_percent": 69.7,
+  "meets_90_percent": false,
+  "by_group": {
+    "abstain": "6/6",
+    "chart": "2/6",
+    "image": "6/6",
+    "multihop": "1/4",
+    "table": "5/7",
+    "text": "3/4"
+  },
+  "errors": 0,
+  "tokens_in": 79797,
+  "tokens_out": 17911,
+  "seconds_total": 202.5
+}

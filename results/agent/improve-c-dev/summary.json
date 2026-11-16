@@ -1,0 +1,35 @@
+{
+  "n_questions": 17,
+  "status_counts": {
+    "answered": 15,
+    "abstain": 2
+  },
+  "context_evidence_rate": {
+    "n": 14,
+    "N": 15
+  },
+  "tool_use": {
+    "n": 17,
+    "N": 17,
+    "errors": 0,
+    "distribution": {
+      "1": 17
+    }
+  },
+  "tokens_in": 37558,
+  "tokens_out": 9316,
+  "seconds_total": 99.66,
+  "config": "improve-c",
+  "split": "dev",
+  "model": "deepseek-v4-flash",
+  "first_search_hits": {
+    "hit@1": {
+      "n": 14,
+      "N": 15
+    },
+    "hit@3": {
+      "n": 14,
+      "N": 15
+    }
+  }
+}

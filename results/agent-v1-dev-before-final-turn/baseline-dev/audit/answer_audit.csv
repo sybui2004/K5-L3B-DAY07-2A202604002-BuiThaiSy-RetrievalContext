@@ -1,0 +1,88 @@
+﻿query_id,question,expected_answer,status,answer,citations,answer_grade_0_2,citation_support,abstention_correct,reason
+q01,Thời giờ làm việc bình thường tối đa là bao nhiêu giờ một ngày và bao nhiêu giờ một tuần?,Không quá 08 giờ/ngày và 48 giờ/tuần (cả hai Bộ luật).,answered,"## Thời giờ làm việc bình thường tối đa
+
+**Bộ luật Lao động 2019 – Điều 105:**
+
+- Mức chung: không quá **08 giờ trong 01 ngày** và không quá **48 giờ trong 01 tuần** [B:blld-2019:d105-p1].
+- Trường hợp người sử dụng lao động quy định làm việc **theo tuần**: thời giờ làm việc bình thường không quá **10 giờ trong 01 ngày** và không quá **48 giờ trong 01 tuần**; phải thông báo cho người lao động biết [B:blld-2019:d105-p1].
+- Nhà nước khuyến khích thực hiện tuần làm việc **40 giờ** [B:blld-2019:d105-p1].
+
+**Bộ luật Lao động 2012 – Điều 104:** quy định tương tự về mức chung là không quá **08 giờ trong 01 ngày** và **48 giờ trong 01 tuần**; nếu làm việc theo tuần thì không quá **10 giờ trong 01 ngày** nhưng không quá **48 giờ trong 01 tuần**, và cũng khuyến khích tuần làm việc 40 giờ [B:blld-2012:d104-p1].
+
+**Lưu ý:** Đối với người lao động chưa thành niên, giới hạn thấp hơn: người chưa đủ 15 tuổi không quá 04 giờ/ngày và 20 giờ/tuần; người từ đủ 15 đến chưa đủ 18 tuổi không quá 08 giờ/ngày và 40 giờ/tuần (Bộ luật 2019 – Điều 146) [B:blld-2019:d146-p1].",B:blld-2019:d105-p1;B:blld-2012:d104-p1;B:blld-2019:d146-p1,,,,
+q02,Ca làm đêm được tính bắt đầu từ mấy giờ và kết thúc lúc nào?,Từ 22 giờ đến 06 giờ sáng ngày hôm sau.,answered,"**Giờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau.**
+
+Cụ thể theo từng bản luật:
+
+- **Bộ luật Lao động 2019** – Điều 106: “Giờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau.” [B:blld-2019:d106-p1]
+- **Bộ luật Lao động 2012** – Điều 105: “Giờ làm việc ban đêm được tính từ 22 giờ đến 6 giờ sáng ngày hôm sau.” [B:blld-2012:d105-p1]
+
+Như vậy, quy định về khung giờ làm việc ban đêm là giống nhau ở cả hai bản luật: bắt đầu lúc 22 giờ và kết thúc lúc 6 giờ sáng ngày hôm sau.",B:blld-2019:d106-p1;B:blld-2012:d105-p1,,,,
+q03,Làm thêm giờ vào ngày nghỉ hằng tuần thì được trả lương ít nhất bằng bao nhiêu phần trăm?,Ít nhất bằng 200%.,answered,"Cả hai bản Bộ luật Lao động đều quy định mức trả lương làm thêm giờ vào ngày nghỉ hằng tuần **ít nhất bằng 200%**:
+
+- **Bộ luật Lao động 2012** – Điều 97 khoản 1 điểm b: làm thêm giờ vào ngày nghỉ hàng tuần, ít nhất bằng 200% [B:blld-2012:d097-p1].
+- **Bộ luật Lao động 2019** – Điều 98 khoản 1 điểm b: làm thêm giờ vào ngày nghỉ hằng tuần, ít nhất bằng 200% [B:blld-2019:d098-p1].
+
+Lưu ý: mức này tính theo đơn giá tiền lương (bản 2012) hoặc tiền lương thực trả (bản 2019) theo công việc đang làm [B:blld-2012:d097-p1] [B:blld-2019:d098-p1]. Nếu làm thêm giờ vào ban đêm của ngày nghỉ hằng tuần, ngoài mức trên còn được trả thêm theo quy định về làm việc ban đêm và làm thêm giờ vào ban đêm [B:blld-2019:d098-p1].",B:blld-2012:d097-p1;B:blld-2019:d098-p1,,,,
+q04,Lao động nữ sinh đôi thì thời gian nghỉ thai sản được cộng thêm như thế nào?,"Từ con thứ 02 trở đi, mỗi con người mẹ được nghỉ thêm 01 tháng (ngoài 06 tháng).",answered,"Cả hai bản Bộ luật Lao động đều quy định giống nhau về cách cộng thêm thời gian nghỉ khi sinh đôi trở lên:
+
+**Bộ luật Lao động 2019 – Điều 139:**
+- Lao động nữ được nghỉ thai sản trước và sau khi sinh con là **06 tháng**; thời gian nghỉ trước khi sinh không quá 02 tháng [B:blld-2019:d139-p1].
+- Trường hợp sinh đôi trở lên thì **tính từ con thứ 02 trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng** [B:blld-2019:d139-p1].
+
+**Bộ luật Lao động 2012 – Điều 157:** quy định tương tự: nghỉ trước và sau khi sinh con 06 tháng; sinh đôi trở lên thì từ con thứ 02 trở đi, mỗi con được nghỉ thêm 01 tháng; thời gian nghỉ trước khi sinh tối đa không quá 02 tháng [B:blld-2012:d157-p1].
+
+Như vậy, với trường hợp **sinh đôi**, mức cộng thêm là **01 tháng** (chỉ tính cho con thứ 02), tức tổng thời gian nghỉ theo khoản 1 Điều 139 (2019)/Điều 157 (2012) là 07 tháng. Nếu sinh ba thì cộng thêm 02 tháng, v.v.
+
+Trong thời gian nghỉ thai sản, lao động nữ được hưởng chế độ thai sản theo pháp luật về bảo hiểm xã hội [B:blld-2019:d139-p1] [B:blld-2012:d157-p1].",B:blld-2019:d139-p1;B:blld-2012:d157-p1,,,,
+q05,Người làm công việc trong điều kiện bình thường được nghỉ hằng năm bao nhiêu ngày?,12 ngày làm việc (khi đủ 12 tháng làm việc).,answered,"Người lao động làm việc đủ 12 tháng cho một người sử dụng lao động và làm công việc trong điều kiện bình thường thì được nghỉ hằng năm **12 ngày làm việc**, hưởng nguyên lương theo hợp đồng lao động.
+
+Quy định này giống nhau ở cả hai bản:
+
+- **Bộ luật Lao động 2019** – Điều 113 khoản 1 điểm a: 12 ngày làm việc đối với người làm công việc trong điều kiện bình thường [B:blld-2019:d113-p1].
+- **Bộ luật Lao động 2012** – Điều 111 khoản 1 điểm a: 12 ngày làm việc đối với người làm công việc trong điều kiện bình thường [B:blld-2012:d111-p1].
+
+Lưu ý: nếu làm việc **chưa đủ 12 tháng**, số ngày nghỉ hằng năm được tính theo tỷ lệ tương ứng với số tháng làm việc (quy định tại khoản 2 Điều 113 Bộ luật 2019) [B:blld-2019:d113-p1].",B:blld-2019:d113-p1;B:blld-2012:d111-p1,,,,
+q06,"Theo Bộ luật Lao động 2012, số giờ làm thêm tối đa trong một tháng là bao nhiêu?","Không quá 30 giờ/tháng (tổng không quá 200 giờ/năm, trường hợp đặc biệt 300 giờ).",answered,"Theo Bộ luật Lao động 2012, số giờ làm thêm tối đa trong một tháng là **30 giờ**.
+
+Cụ thể, Điều 106 khoản 2 điểm b quy định người sử dụng lao động được sử dụng người lao động làm thêm giờ khi bảo đảm số giờ làm thêm không quá 50% số giờ làm việc bình thường trong 01 ngày (trường hợp làm việc theo tuần thì tổng số giờ làm việc bình thường và số giờ làm thêm không quá 12 giờ trong 01 ngày); **không quá 30 giờ trong 01 tháng** và tổng số không quá 200 giờ trong 01 năm, trừ một số trường hợp đặc biệt do Chính phủ quy định thì được làm thêm không quá 300 giờ trong 01 năm [B:blld-2012:d106-p1].",B:blld-2012:d106-p1,,,,
+q07,"Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với người quản lý doanh nghiệp là bao lâu?",Không quá 180 ngày.,answered,"Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp (theo quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu tư vào sản xuất, kinh doanh tại doanh nghiệp) là **không quá 180 ngày** [B:blld-2019:d025-p1].
+
+Lưu ý: thời gian thử việc do hai bên thỏa thuận căn cứ vào tính chất và mức độ phức tạp của công việc, nhưng chỉ được thử việc một lần đối với một công việc [B:blld-2019:d025-p1].",B:blld-2019:d025-p1,,,,
+q08,Trong trường hợp nào người lao động được nghỉ việc ngay mà không cần báo trước cho người sử dụng lao động?,Không được bố trí đúng công việc/địa điểm; không được trả đủ hoặc đúng hạn lương; bị ngược đãi; bị quấy rối tình dục; lao động nữ mang thai phải nghỉ; đủ tuổi nghỉ hưu; người sử dụng lao động cung cấp thông tin không trung thực (Điều 35 BLLĐ 2019).,abstain,Không đủ bằng chứng để trả lời.,,,,,
+q09,Trợ cấp thôi việc được tính bao nhiêu cho mỗi năm làm việc?,Mỗi năm làm việc được trợ cấp một nửa tháng tiền lương.,answered,"Cả hai bản Bộ luật Lao động đều quy định mức trợ cấp thôi việc như sau:
+
+- **Bộ luật Lao động 2019 (Điều 46):** Người sử dụng lao động phải trả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình từ đủ 12 tháng trở lên, **mỗi năm làm việc được trợ cấp một nửa tháng tiền lương** [B:blld-2019:d046-p1].
+- **Bộ luật Lao động 2012 (Điều 48):** Cũng quy định **mỗi năm làm việc được trợ cấp một nửa tháng tiền lương** đối với người lao động đã làm việc thường xuyên từ đủ 12 tháng trở lên [B:blld-2012:d048-p1].
+
+Một số điểm liên quan:
+
+- **Tiền lương làm căn cứ tính trợ cấp:** là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động thôi việc [B:blld-2019:d046-p1]; bản 2012 quy định tương tự [B:blld-2012:d048-p1].
+- **Thời gian làm việc để tính trợ cấp:** là tổng thời gian làm việc thực tế trừ thời gian đã tham gia bảo hiểm thất nghiệp và thời gian đã được chi trả trợ cấp thôi việc, trợ cấp mất việc làm [B:blld-2019:d046-p1] (bản 2012 có quy định tương ứng, chỉ trừ thời gian đã tham gia bảo hiểm thất nghiệp và thời gian đã được chi trả trợ cấp thôi việc) [B:blld-2012:d048-p1].
+- Bản 2019 có thêm các trường hợp loại trừ: người đủ điều kiện hưởng lương hưu theo quy định pháp luật về bảo hiểm xã hội và trường hợp quy định tại điểm e khoản 1 Điều 36 [B:blld-2019:d046-p1].
+
+Lưu ý: đây là trợ cấp thôi việc; trợ cấp mất việc làm có mức khác (01 tháng tiền lương mỗi năm làm việc, ít nhất bằng 02 tháng tiền lương) [B:blld-2012:d049-p1].",B:blld-2019:d046-p1;B:blld-2012:d048-p1;B:blld-2012:d049-p1,,,,
+q10,Nhân viên làm việc từ 6 tiếng trở lên mỗi ngày được nghỉ giữa ca tối thiểu bao nhiêu phút?,Ít nhất 30 phút (làm ban đêm ít nhất 45 phút).,answered,"Người lao động làm việc từ 06 giờ trở lên trong một ngày được nghỉ giữa giờ **ít nhất 30 phút liên tục** [B:blld-2019:d109-p1].
+
+Chi tiết theo từng bản:
+
+- **Bộ luật Lao động 2019 (Điều 109):** làm việc từ 06 giờ trở lên trong ngày thì nghỉ giữa giờ ít nhất 30 phút liên tục; nếu làm việc ban đêm thì ít nhất 45 phút liên tục. Trường hợp làm việc theo ca liên tục từ 06 giờ trở lên thì thời gian nghỉ giữa giờ được tính vào giờ làm việc [B:blld-2019:d109-p1].
+- **Bộ luật Lao động 2012 (Điều 108):** làm việc liên tục 08 giờ hoặc 06 giờ được nghỉ giữa giờ ít nhất 30 phút, tính vào thời giờ làm việc; làm việc ban đêm thì ít nhất 45 phút [B:blld-2012:d108-p1].
+
+Như vậy, mức tối thiểu là **30 phút** (45 phút nếu làm ban đêm).",B:blld-2019:d109-p1;B:blld-2012:d108-p1,,,,
+q11,"Theo Bộ luật Lao động 2019, người lao động được nghỉ mấy ngày dịp Quốc khánh?",02 ngày (ngày 02/9 và 01 ngày liền kề trước hoặc sau).,answered,"Theo Bộ luật Lao động 2019, dịp Quốc khánh người lao động được nghỉ **02 ngày**, gồm ngày 02 tháng 9 dương lịch và 01 ngày liền kề trước hoặc sau, và được hưởng nguyên lương [B:blld-2019:d112-p1].
+
+Ngoài ra, hằng năm căn cứ vào điều kiện thực tế, Thủ tướng Chính phủ quyết định cụ thể ngày nghỉ Quốc khánh này [B:blld-2019:d112-p1]. Lao động là người nước ngoài làm việc tại Việt Nam còn được nghỉ thêm 01 ngày Tết cổ truyền dân tộc và 01 ngày Quốc khánh của nước họ [B:blld-2019:d112-p1].",B:blld-2019:d112-p1,,,,
+q12,Lao động nữ được nghỉ trước khi sinh con tối đa bao lâu?,Không quá 02 tháng.,answered,"Lao động nữ được nghỉ trước khi sinh con tối đa không quá **02 tháng**.
+
+- Theo Bộ luật Lao động 2012 (Điều 157): tổng thời gian nghỉ thai sản trước và sau khi sinh là 06 tháng, và ""Thời gian nghỉ trước khi sinh tối đa không quá 02 tháng"" [B:blld-2012:d157-p1].
+- Theo Bộ luật Lao động 2019 (Điều 139): lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng; ""thời gian nghỉ trước khi sinh không quá 02 tháng"" [B:blld-2019:d139-p1].
+
+Như vậy, cả hai bản luật đều quy định mức tối đa là 02 tháng nghỉ trước khi sinh.",B:blld-2012:d157-p1;B:blld-2019:d139-p1,,,,
+q13,Có được ký hợp đồng mùa vụ dưới 12 tháng để làm công việc có tính chất thường xuyên từ 12 tháng trở lên không?,"Không, trừ khi tạm thời thay thế người đi nghĩa vụ quân sự, nghỉ thai sản, ốm đau, tai nạn lao động hoặc nghỉ tạm thời khác (Điều 22 BLLĐ 2012).",abstain,Không đủ bằng chứng để trả lời.,,,,,
+q14,Có những hình thức xử lý kỷ luật lao động nào?,Khiển trách; kéo dài thời hạn nâng lương không quá 06 tháng; cách chức; sa thải.,abstain,Không đủ bằng chứng để trả lời.,,,,,
+q15,"Theo Bộ luật Lao động 2012, lao động nữ được hưởng lương hưu khi đủ bao nhiêu tuổi?",Nữ đủ 55 tuổi (nam đủ 60 tuổi).,answered,"Theo Bộ luật Lao động 2012, lao động nữ đủ **55 tuổi** thì được hưởng lương hưu, với điều kiện bảo đảm điều kiện về thời gian đóng bảo hiểm xã hội theo quy định của pháp luật về bảo hiểm xã hội (nam đủ 60 tuổi) [B:blld-2012:d187-p1].
+
+Lưu ý: mức tuổi này có thể thấp hơn đối với người bị suy giảm khả năng lao động, làm công việc đặc biệt nặng nhọc, độc hại, nguy hiểm, hoặc làm việc ở vùng cao, vùng sâu, vùng xa, biên giới, hải đảo thuộc danh mục do Chính phủ quy định [B:blld-2012:d187-p1].",B:blld-2012:d187-p1,,,,
+u01,Mức lương tối thiểu vùng I hiện nay là bao nhiêu đồng một tháng?,"(thiếu bằng chứng: Bộ luật chỉ nêu nguyên tắc mức lương tối thiểu, không ghi số tiền theo vùng (do Chính phủ quy định).)",abstain,Không đủ bằng chứng để trả lời.,,,,,
+u02,Doanh nghiệp phải thưởng Tết tối thiểu bằng bao nhiêu tháng lương?,"(thiếu bằng chứng: Bộ luật chỉ quy định thưởng theo quy chế của người sử dụng lao động, không có mức tối thiểu hay khái niệm thưởng Tết.)",abstain,Không đủ bằng chứng để trả lời.,,,,,
