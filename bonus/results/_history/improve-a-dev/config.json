@@ -1,0 +1,9 @@
+{
+  "name": "improve-a",
+  "method": "hybrid",
+  "top_k": 8,
+  "max_searches": 1,
+  "budget_chars": 9000,
+  "neighbors": false,
+  "rewrite": false
+}

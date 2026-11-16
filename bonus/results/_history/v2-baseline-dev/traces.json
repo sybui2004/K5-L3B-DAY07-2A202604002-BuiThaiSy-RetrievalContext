@@ -1,0 +1,1708 @@
+[
+  {
+    "query_id": "D01",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "According to Table 5, the Cohere xlarge v20220609 model has **52.4B parameters** — it is listed as \"Cohere xlarge v20220609 (52.4B)\" with 52.4B in the \"# Parameters\" column [H:p043:tab1.2].",
+    "citations": [
+      "H:p043:tab1.2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Cohere xlarge v20220609 number of parameters evaluated models table",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p043:tab1.2",
+            "score": 0.6193615567303643,
+            "page": 43
+          },
+          {
+            "id": "H:p043:tab1.3",
+            "score": 0.5932563169613809,
+            "page": 43
+          },
+          {
+            "id": "H:p156:tab1.3",
+            "score": 0.5868139998601394,
+            "page": 156
+          },
+          {
+            "id": "H:p062:t4",
+            "score": 0.5830444645100593,
+            "page": 62
+          },
+          {
+            "id": "H:p054:t1",
+            "score": 0.58001533985876,
+            "page": 54
+          }
+        ],
+        "context_ids": [
+          "H:p043:tab1.2",
+          "H:p043:tab1.3",
+          "H:p156:tab1.3",
+          "H:p062:t4",
+          "H:p054:t1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p043:tab1.2 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nT0++ (11B) | BigScience | Text | 11B | T0 | 1024 | open | 305,488,229 | 406,072 | 1,250 GPU hours\nCohere xlarge v20220609 (52.4B) | Cohere | Text | 52.4B | Cohere | 2047 | limited 397,920,975 | 597,252 | $1,743\nCohere large v20220720 (13.1B)56 | Cohere | Text | 13.1B | Cohere | 2047 | limited 398,293,651 | 597,252 | $1,743\nCohere medium v20220720 (6.1B) | Cohere | Text | 6.1B | Cohere | 2047 | limited 398,036,367 | 597,252 | $1,743\n\n[H:p043:tab1.3 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nCohere small v20220720 (410M)57 | Cohere | Text | 410M | Cohere | 2047 | limited 399,114,309 | 597,252 | $1,743\nGPT-J (6B) | EleutherAI | Text | 6B | GPT-J | 2048 | open | 611,026,748 | 851,178 | 860 GPU hours\nGPT-NeoX (20B) | EleutherAI | Text | 20B | GPT-NeoX | 2048 | open | 599,170,730 | 849,830 | 540 GPU hours\nT5 (11B) | Google | Text | 11B | T5 | 512 | open | 199,017,126 | 406,072 | 1,380 GPU hours\n\n[H:p156:tab1.3 | helm_2211.09110v2.pdf | page 156]\nTable 12 (page 156). Table 12: Summary of language model evaluations. We enumerate 33 prominent evaluations of lan- guage models, spanning both language modeling efforts and benchmarking efforts. Across all of these, they amount to a total of 405 datasets being used to evaluate language models. Here we provide a summary, whereas on Github we annotate the full 405 × 33 binary matrix.\nName | URL | Citation/Authors | # datasets\nHELM | https://crfm.stanford.edu/helm/v0.1.0 | This work | 42\nCohere | https://docs.cohere.ai/docs/introduction-to-large-language-models | Cohere | 0\nELMo | https://arxiv.org/pdf/1802.05365.pdf | Peters et al. (2018) | 6\nBERT | https://arxiv.org/pdf/1810.04805.pdf | Devlin et al. (2019) | 10\nRoBERTa | https://arxiv.org/pdf/1907.11692.pdf | Liu et al. (2019) | 11\nBART | https://arxiv.org/pdf/1910.13461.pdf | Lewis et al. (2020a) | 6\nDeBERTa | https://arxiv.org/pdf/2006.03654.pdf | He et al. (2021) | 19\nFLAN | https://arxiv.org/pdf/2109.01652.pdf | Wei et al. (2022a) | 63\nGLaM | https://arxiv.org/pdf/2112.06905.pdf | Du et al. (2021) | 25\n\n[H:p062:t4 | helm_2211.09110v2.pdf | page 62]\nPerhaps surprisingly, for Cohere xlarge v20220609 (52.4B), quality is diminished in the boosted setting: effectively, this model is distracted by the non-relevant passages that are in the assessed pool more than it benefits from the relevant documents that are not in BM25’s top-30 results. Overall, these few-shot effectiveness scores are relatively competitive but they nonetheless trail the current state-of-the-art retrieval systems by a considerable margin. At the time of writing, in MS MARCO (regular), the top-scoring system on the public leaderboard scores 45% RR@10 on the test set. Compared to this, the models we test score up to 39.8% RR@10 in the boosted setting, which is comparable to recent state-of-the-art standalone retrievers like ColBERTv2 (Santhanam et al., 2021), and 22.5% in the vanilla setting that re-ranks BM25’s top-30, which is comparable to simple neural ranker submissions from late 2018 and early 2019 like Conv-KNRM (Dai et al., 2018) and DuetV2 (Mitra & Craswell, 2019). In MS MARCO (TREC), the best-scoring system that participated in the original NIST competition scored 76.5% NDCG@10.\n\n[H:p054:t1 | helm_2211.09110v2.pdf | page 54]\nPublished in Transactions on Machine Learning Research (08/2023) J1-Jumbo/BLOOM/OPT (175B)/davinci Cohere medium/GPT-J J1-Large/TNLG/curie/text-curie-001 J1-Grande/T0pp/Cohere large/T5 Cohere small/ada/text-ada-001 Anthropic-LM/Cohere xlarge /text-davinci-002/GLM/YaLM ada text-curie-001 Cohere small",
+    "context_ids": [
+      "H:p043:tab1.2",
+      "H:p043:tab1.3",
+      "H:p156:tab1.3",
+      "H:p062:t4",
+      "H:p054:t1"
+    ],
+    "error": null,
+    "seconds": 4.56,
+    "tokens_in": 2621,
+    "tokens_out": 185,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p043:tab1.2",
+        "page": 43,
+        "kind": "table",
+        "bbox": [
+          74.0,
+          367.3,
+          540.0,
+          623.8
+        ],
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D02",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "According to Table 6 (\"Hardware and compute for public models\"), inference for YaLM (100B) was run on **8×A100** GPUs [H:p044:tab1.1]. More broadly, the paper notes that inference on public models was performed via the Together Research Computer, mainly using NVIDIA GeForce RTX 2080 Ti GPUs and NVIDIA A100 GPUs [H:p044:tab1.1].",
+    "citations": [
+      "H:p044:tab1.1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "YaLM 100B inference hardware",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p138:t4",
+            "score": 0.6043839107475111,
+            "page": 138
+          },
+          {
+            "id": "H:p050:t5",
+            "score": 0.5719188621190068,
+            "page": 50
+          },
+          {
+            "id": "H:p160:t1",
+            "score": 0.5524363109241643,
+            "page": 160
+          },
+          {
+            "id": "H:p054:t1",
+            "score": 0.5413123938105544,
+            "page": 54
+          },
+          {
+            "id": "H:p044:tab1.1",
+            "score": 0.5334557851010232,
+            "page": 44
+          }
+        ],
+        "context_ids": [
+          "H:p138:t4",
+          "H:p050:t5",
+          "H:p160:t1",
+          "H:p054:t1",
+          "H:p044:tab1.1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p138:t4 | helm_2211.09110v2.pdf | page 138]\nYALM. For YALM it took 65 days to train the model on 800 A100s. Given that the model was trained by Yandex and A100s can only be launched in the ru-central1-a availability zone100, we assume a carbon 98Trained on the Selene supercomputer located in CA: https://blogs.nvidia.com/blog/2020/12/18/nvidia-selene-busy/. 99https://raw.githubusercontent.com/facebookresearch/metaseq/main/projects/OPT/chronicles/OPT_Baselines_ Logbook.pdf. 100https://cloud.yandex.com/en/docs/compute/concepts/gpus.\n\n[H:p050:t5 | helm_2211.09110v2.pdf | page 50]\nFurther, while we will later see the overall relationship between model scale and accuracy can be complicated (Figure 29), here we see a clear thresholding effect in terms of model scale. All of the models with a win rate for accuracy clearly above chance (e.g. 55% or more) have more than 50B parameters, whereas the sole exception of a large model outside this group of the top 10 is YaLM (100B). YaLM (100B) has a surprisingly poor accuracy win rate below 25%, perhaps because of significant training on Russian instead of English). Within the top 10, we see model scale appears to be less predictive of rank, as two of the largest models (BLOOM (176B) and J1-Jumbo v1 (178B); both 100B+ parameters) are at the bottom of this tier, whereas Anthropic-LM v4-s3 (52B) and Cohere xlarge v20220609 (52.4B) (the two smallest models in the tier) are\n\n[H:p160:t1 | helm_2211.09110v2.pdf | page 160]\nPublished in Transactions on Machine Learning Research (08/2023) GLM (Tsinghua University). GLM (130B) (Zeng et al., 2022) is a bidirectional Transformer language model trained simultaneously on English (the Pile Gao et al., 2021a), Chinese (several undisclosed corpora) and multi-task data from Sanh et al. (2021) and Wang et al. (2022a) (which only accounts for 5% of tokens) to improve zero-shot generalization. 116 The training procedure is based on GLM (Du et al., 2022). The release date is based on https://keg.cs.tsinghua.edu.cn/glm-130b/posts/glm-130b/ and the model size for this model is based on Zeng et al. (2022). YaLM (Yandex). YaLM (100B) is an autoregressive Transformer language model trained on 1.7TB of undisclosed data across both English and Russian comprised of both the Pile (Gao et al., 2021a) and several Russian corpora (predominantly derived from the Yandex Search index).117 The release date and model size for this model are based on https://github.com/yandex/YaLM-100B.\n\n[H:p054:t1 | helm_2211.09110v2.pdf | page 54]\nPublished in Transactions on Machine Learning Research (08/2023) J1-Jumbo/BLOOM/OPT (175B)/davinci Cohere medium/GPT-J J1-Large/TNLG/curie/text-curie-001 J1-Grande/T0pp/Cohere large/T5 Cohere small/ada/text-ada-001 Anthropic-LM/Cohere xlarge /text-davinci-002/GLM/YaLM ada text-curie-001 Cohere small\n\n[H:p044:tab1.1 | helm_2211.09110v2.pdf | page 44]\nTable 6 (page 44). Table 6: Hardware and compute for public models. To perform inference on the public models, we used the Together Research Computer. At the time of this work, Together Research Computer connects clusters at several institutions. We mainly use NVIDIA GeForce RTX 2080 Ti GPUs and NVIDIA A100 GPUs to perform inference. If jobs were run on multiple hardware configurations, we report all configurations separated by “;” (with the percentage of GPU hours spent on each configuration).\nModel | Hardware\nGPT-J (6B) | 2×A100 (10.4%); 4×2080 Ti (89.6%)\nGPT-NeoX (20B) | 2×A100 (73.9%); 11×2080 Ti (26.1%)\nT5 (11B) | 2×A100 (59.1%); 8×2080 Ti (40.9%)\nT0++ (11B) | 2×A100 (1.1%); 8×2080 Ti (98.9%)\nUL2 (20B) | 2×A100 (3.5%); 16×2080 Ti (96.5%)\nYaLM (100B) | 8×A100\nGLM (130B) | 8×A100\nOPT (66B) | 8×A100\nOPT (175B) | 8×A100\nBLOOM (176B) | 8×A100",
+    "context_ids": [
+      "H:p138:t4",
+      "H:p050:t5",
+      "H:p160:t1",
+      "H:p054:t1",
+      "H:p044:tab1.1"
+    ],
+    "error": null,
+    "seconds": 4.2,
+    "tokens_in": 2181,
+    "tokens_out": 263,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p044:tab1.1",
+        "page": 44,
+        "kind": "table",
+        "bbox": [
+          197.0,
+          266.8,
+          417.8,
+          382.4
+        ],
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D03",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "In the summary table of prominent language model evaluations (Table 12), the BLOOM evaluation is listed as using **17 datasets** (Scao et al., 2022) [H:p156:tab1.1].",
+    "citations": [
+      "H:p156:tab1.1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "BLOOM evaluation datasets summary of prominent language model evaluations",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p156:tab1.1",
+            "score": 0.6709901709810666,
+            "page": 156
+          },
+          {
+            "id": "H:p004:t2",
+            "score": 0.6521482130865384,
+            "page": 4
+          },
+          {
+            "id": "H:p156:tab1.5",
+            "score": 0.6476856981302941,
+            "page": 156
+          },
+          {
+            "id": "H:p156:tab1.3",
+            "score": 0.6430572336342193,
+            "page": 156
+          },
+          {
+            "id": "H:p156:tab1.2",
+            "score": 0.6418472101506656,
+            "page": 156
+          }
+        ],
+        "context_ids": [
+          "H:p156:tab1.1",
+          "H:p004:t2",
+          "H:p156:tab1.5",
+          "H:p156:tab1.3",
+          "H:p156:tab1.2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p156:tab1.1 | helm_2211.09110v2.pdf | page 156]\nTable 12 (page 156). Table 12: Summary of language model evaluations. We enumerate 33 prominent evaluations of lan- guage models, spanning both language modeling efforts and benchmarking efforts. Across all of these, they amount to a total of 405 datasets being used to evaluate language models. Here we provide a summary, whereas on Github we annotate the full 405 × 33 binary matrix.\nName | URL | Citation/Authors | # datasets\nHELM | https://crfm.stanford.edu/helm/v0.1.0 | This work | 42\nBLOOM | https://arxiv.org/pdf/2211.05100.pdf | Scao et al. (2022) | 17\nT0++ | https://arxiv.org/pdf/2110.08207.pdf | Sanh et al. (2021) | 24\nGPT-J | https://arankomatsuzaki.wordpress.com/2021/06/04/gpt-j/ | Wang & Komatsuzaki (2021) | 5\nGPT-NeoX | https://arxiv.org/pdf/2204.06745.pdf | Black et al. (2022) | 18\nT5 | https://arxiv.org/pdf/1910.10683.pdf | Raffel et al. (2019) | 18\nUL2 | https://arxiv.org/pdf/2205.05131.pdf | Tay et al. (2022a) | 12\nOPT | https://arxiv.org/pdf/2205.01068.pdf | Zhang et al. (2022) | 27\nYaLM | https://github.com/yandex/YaLM-100B | Yandex | 1\n\n[H:p004:t2 | helm_2211.09110v2.pdf | page 4]\nFor this reason, to make our evaluation results more intelligible, we separate the core scenarios from the targeted evaluations: the core scenarios and multi-metric measurement provide an integrated lens on models, whereas the targeted evaluations isolate specific skills and risks. Standardization. To build a shared understanding of existing language models, consistent with our third element of holistic evaluation, we benchmark 30 prominent language models on HELM. These models come from 12 organizations: AI21 Labs (e.g. J1-Jumbo v1 (178B)), Anthropic (Anthropic-LM v4-s3 (52B)), BigScience (e.g. BLOOM (176B)), Cohere (e.g. Cohere xlarge v20220609 (52.4B)), EleutherAI (e.g. GPT- NeoX (20B)), Google (e.g. UL2 (20B)), Meta (e.g. OPT (175B)), Microsoft/NVIDIA (e.g. TNLG v2 (530B)), OpenAI (e.g. davinci (175B)), Tsinghua University (GLM (130B)), and Yandex (YaLM (100B)). Benchmarking these models is challenging given they vary in accessibility (see Liang et al., 2022): some are open (e.g. GPT-NeoX (20B)), some are limited-access (e.g. davinci (175B)), and some are closed (e.g. Anthropic-LM v4-s3 (52B)). In some cases, very little is known about how these models were built (e.g. the training data and its size are often not known), such as text-davinci-002. What we do know is that several of these models are deployed, either in external-facing commercial APIs (e.g.\n\n[H:p156:tab1.5 | helm_2211.09110v2.pdf | page 156]\nTable 12 (page 156). Table 12: Summary of language model evaluations. We enumerate 33 prominent evaluations of lan- guage models, spanning both language modeling efforts and benchmarking efforts. Across all of these, they amount to a total of 405 datasets being used to evaluate language models. Here we provide a summary, whereas on Github we annotate the full 405 × 33 binary matrix.\nName | URL | Citation/Authors | # datasets\nHELM | https://crfm.stanford.edu/helm/v0.1.0 | This work | 42\nLM Eval Harness https://github.com/EleutherAI/lm-evaluation-harness | Gao et al. (2021b) | 71\nBIG-Bench | https://arxiv.org/pdf/2206.04615.pdf | Srivastava et al. (2022) | 208\n\n[H:p156:tab1.3 | helm_2211.09110v2.pdf | page 156]\nTable 12 (page 156). Table 12: Summary of language model evaluations. We enumerate 33 prominent evaluations of lan- guage models, spanning both language modeling efforts and benchmarking efforts. Across all of these, they amount to a total of 405 datasets being used to evaluate language models. Here we provide a summary, whereas on Github we annotate the full 405 × 33 binary matrix.\nName | URL | Citation/Authors | # datasets\nHELM | https://crfm.stanford.edu/helm/v0.1.0 | This work | 42\nCohere | https://docs.cohere.ai/docs/introduction-to-large-language-models | Cohere | 0\nELMo | https://arxiv.org/pdf/1802.05365.pdf | Peters et al. (2018) | 6\nBERT | https://arxiv.org/pdf/1810.04805.pdf | Devlin et al. (2019) | 10\nRoBERTa | https://arxiv.org/pdf/1907.11692.pdf | Liu et al. (2019) | 11\nBART | https://arxiv.org/pdf/1910.13461.pdf | Lewis et al. (2020a) | 6\nDeBERTa | https://arxiv.org/pdf/2006.03654.pdf | He et al. (2021) | 19\nFLAN | https://arxiv.org/pdf/2109.01652.pdf | Wei et al. (2022a) | 63\nGLaM | https://arxiv.org/pdf/2112.06905.pdf | Du et al. (2021) | 25\n\n[H:p156:tab1.2 | helm_2211.09110v2.pdf | page 156]\nTable 12 (page 156). Table 12: Summary of language model evaluations. We enumerate 33 prominent evaluations of lan- guage models, spanning both language modeling efforts and benchmarking efforts. Across all of these, they amount to a total of 405 datasets being used to evaluate language models. Here we provide a summary, whereas on Github we annotate the full 405 × 33 binary matrix.\nName | URL | Citation/Authors | # datasets\nHELM | https://crfm.stanford.edu/helm/v0.1.0 | This work | 42\nMT-NLG | https://arxiv.org/pdf/2201.11990.pdf | Smith et al. (2022) | 9\nAnthropic-52 | https://arxiv.org/pdf/2204.05862.pdf | Bai et al. (2022) | 9\nAI21 Jurassic | https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf Lieber et al. (2021) | 12\nGPT-3 | https://arxiv.org/pdf/2005.14165.pdf | Brown et al. (2020) | 37\nInstructGPT | https://arxiv.org/pdf/2203.02155.pdf | Ouyang et al. (2022) | 14\nCodex | https://arxiv.org/pdf/2107.03374.pdf | Chen et al. (2021) | 1\nGLM | https://arxiv.org/pdf/2210.02414.pdf | Zeng et al. (2022) | 29",
+    "context_ids": [
+      "H:p156:tab1.1",
+      "H:p004:t2",
+      "H:p156:tab1.5",
+      "H:p156:tab1.3",
+      "H:p156:tab1.2"
+    ],
+    "error": null,
+    "seconds": 4.09,
+    "tokens_in": 2764,
+    "tokens_out": 202,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p156:tab1.1",
+        "page": 156,
+        "kind": "table",
+        "bbox": [
+          77.1,
+          84.3,
+          536.7,
+          309.7
+        ],
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D04",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "The manual prompt used to probe the **author** relation (P50) is:\n\n**\"The author of [X] is\"** — as listed in Table 11 (\"Wikidata relations used in our WikiFact dataset and their corresponding manual prompts used to probe language models\"), under the Art category [H:p146:tab1.1].",
+    "citations": [
+      "H:p146:tab1.1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "WikiFact Wikidata relations table author P50 manual prompt",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p146:tab1.1",
+            "score": 0.6824333639562087,
+            "page": 146
+          },
+          {
+            "id": "H:p146:tab1.7",
+            "score": 0.6576686477369267,
+            "page": 146
+          },
+          {
+            "id": "H:p146:tab1.6",
+            "score": 0.6450529310075785,
+            "page": 146
+          },
+          {
+            "id": "H:p146:tab1.8",
+            "score": 0.636981763659849,
+            "page": 146
+          },
+          {
+            "id": "H:p146:tab1.2",
+            "score": 0.6213756058960475,
+            "page": 146
+          }
+        ],
+        "context_ids": [
+          "H:p146:tab1.1",
+          "H:p146:tab1.7",
+          "H:p146:tab1.6",
+          "H:p146:tab1.8",
+          "H:p146:tab1.2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p146:tab1.1 | helm_2211.09110v2.pdf | page 146]\nTable 11 (page 146). Table 11: Wikidata relations used in our WikiFact dataset and their corresponding manual prompts used to probe language models.\nRelation ID | Relation Name | Prompt\nArt\nP136 | genre | The genre of [X] is a/an\nP1303 | instrument | The musical instrument [X] plays is\nP50 | author | The author of [X] is\nP170 | creator | The creator of [X] is\nP86 | composer | The composer of [X] is\nP57 | director | The director of [X] is\nLaw\nP1001 | applies to jurisdiction | The applicable jurisdiction for [X] is\nP4006 | overrules | [X] overrules\nP3014 | laws applied | [X] applies or derives legal authority from\nP2568 | repealed by | [X] is repealed by\nP5826 | majority opinion by | [X] was a majority opinion written by\nP1620 | plaintiff | The plaintiff in [X] is\nP1591 | defendant | The defendant in [X] is\nPhilosophy\n\n[H:p146:tab1.7 | helm_2211.09110v2.pdf | page 146]\nTable 11 (page 146). Table 11: Wikidata relations used in our WikiFact dataset and their corresponding manual prompts used to probe language models.\nRelation ID | Relation Name | Prompt\nArt\nP364 | original language of film or TV show | The language that [X] was originally created with is\nP463 | member of | [X] is a member of\nP101 | field of work | [X] works in the field of\nP1923 | participating team | The participating team at [X] is\nP106 | occupation | The occupation of [X] is\nP527 | has part | [X] consists of\nP176 | manufacturer | [X] is manufactured by\nP178 | developer | [X] is developed by\nP27 | country of citizenship | The country of citizenship of [X] is\nP407 | language of work or name | The language [X] was written in is\nP131 | located in the administrative territorial entity The administrative unit [X] is located in\n\n[H:p146:tab1.6 | helm_2211.09110v2.pdf | page 146]\nTable 11 (page 146). Table 11: Wikidata relations used in our WikiFact dataset and their corresponding manual prompts used to probe language models.\nRelation ID | Relation Name | Prompt\nArt\nP780 | symptoms and signs | [X] has symptoms such as\nOther general\nP19 | place of birth | [X] was born in\nP20 | place of death | [X] died in\nP279 | subclass of | [X] is a subclass of\nP37 | official language | The official language of [X] is\nP413 | position played on team / speciality | The position played on team by [X] is\nP54 | member of sports team | The sports teams that [X] represents is\nP166 | award received | [X] was awarded the\nP449 | original network | [X] was originally aired on\nP69 | educated at | The institution [X] was educated at is\nP138 | named after | [X] is named after\n\n[H:p146:tab1.8 | helm_2211.09110v2.pdf | page 146]\nTable 11 (page 146). Table 11: Wikidata relations used in our WikiFact dataset and their corresponding manual prompts used to probe language models.\nRelation ID | Relation Name | Prompt\nArt\nP1412 | languages spoken, written or signed | The language used by [X] is\nP108 | employer | The employer of [X] is\nP264 | record label | The music record label of [X] is\nP276 | location | [X] is located in\nP937 | work location | [X] used to work in\nP140 | religion | The religion [X] is affiliated with is\nP127 | owned by | [X] is owned by\nP103 | native language | The native language of [X] is\nP31 | instance of | [X] is an instance of\nP495 | country of origin | The country [X] was created in is\nP159 | headquarters location | The headquarter of [X] is in\nP740 | location of formation | The location [X] was founded in is\nP361 | part of | [X] is part of\n\n[H:p146:tab1.2 | helm_2211.09110v2.pdf | page 146]\nTable 11 (page 146). Table 11: Wikidata relations used in our WikiFact dataset and their corresponding manual prompts used to probe language models.\nRelation ID | Relation Name | Prompt\nArt\nP135 | movement | The movement [X] made is\nP737 | influenced by | The person or idea [X] was influenced by is\nPolitics\nP102 | member of political party | The political party [X] is a member of is\nP530 | diplomatic relation | [X] maintains diplomatic relations with\nP39 | position held | The position held by [X] is\nP122 | basic form of government | The basic form of government of [X] is a/an\nP1906 | office held by head of state | The office held by the head of state of [X] is\nP35 | head of state | The head of state of [X] is\nP1313 | office held by head of government | The office held by the head of government of [X] is the",
+    "context_ids": [
+      "H:p146:tab1.1",
+      "H:p146:tab1.7",
+      "H:p146:tab1.6",
+      "H:p146:tab1.8",
+      "H:p146:tab1.2"
+    ],
+    "error": null,
+    "seconds": 4.69,
+    "tokens_in": 2263,
+    "tokens_out": 237,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p146:tab1.1",
+        "page": 146,
+        "kind": "table",
+        "bbox": [
+          190.3,
+          82.0,
+          423.0,
+          566.0
+        ],
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D05",
+    "split": "dev",
+    "config": "baseline",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "toxicity measurement figure examples",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p024:fig15",
+            "score": 0.614559994392435,
+            "page": 24
+          },
+          {
+            "id": "H:p048:fig24",
+            "score": 0.5627237408819976,
+            "page": 48
+          },
+          {
+            "id": "H:p013:tab1.4",
+            "score": 0.5539752647965239,
+            "page": 13
+          },
+          {
+            "id": "H:p049:fig25",
+            "score": 0.551115130846438,
+            "page": 49
+          },
+          {
+            "id": "H:p027:tab1.2",
+            "score": 0.5498172194310457,
+            "page": 27
+          }
+        ],
+        "context_ids": [
+          "H:p024:fig15",
+          "H:p048:fig24",
+          "H:p013:tab1.4"
+        ]
+      },
+      {
+        "event": "no_valid_citation"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p024:fig15 | helm_2211.09110v2.pdf | page 24]\nFigure 15 (page 24). Figure 15: Example of toxicity detection. An example instance for toxicity detection from CivilCom- ments.\nText printed inside the figure: Input: Russ Newell please show me where the K12 education has been \"gutted\". Simply preposterous. References: ● True [correct] ● False Scenario: CivilComments Figure 15: Example of toxicity detection. An example instance for toxicity detection from CivilCom- ments.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a table image. The title or caption is: \"Figure 15: Example of toxicity detection. An example instance for toxicity detection from CivilComments.\"\n\nThe table contains the following information:\n- Scenario: CivilComments\n- Input: \"Russ Newell please show me where the K12 education has been 'gutted'. Simply preposterous.\"\n- References:\n  - True [correct]\n  - False\n\nThe figure does not contain any axes, legends, or numerical values. It is a textual representation of an example used for toxicity detection in the CivilComments dataset.\n\nThe main takeaway is that the example provided is used to illustrate how toxicity detection algorithms might classify a comment as toxic or non-toxic based on its content and context.\n\n[H:p048:fig24 | helm_2211.09110v2.pdf | page 48]\nFigure 24 (page 48). Figure 24: Accuracy vs. X. The relationship between accuracy (x-axis) and each of the 6 metrics (calibra- tion, robustness, fairness, social bias, toxicity, efficiency) we study in this work across all core scenarios and for all models. For calibration error, we measure ECE-10; for bias, we measure bias in gender representation; and for efficiency, we measure denoised inference time.\nText printed inside the figure: 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy 0.0 0.2 0.4 0.6 0.8 Calibration error Scenarios MMLU BoolQ NarrativeQA NaturalQuestions (closed-book) NaturalQuestions (open-book) QuAC HellaSwag OpenbookQA TruthfulQA MS MARCO (regular) MS MARCO (TREC) CNN/DailyMail XSUM IMDB CivilComments RAFT 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy 0.0 0.2 0.4 0.6 0.8 1.0 Robustness 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy 0.0 0.2 0.4 0.6 0.8 1.0 Fairness 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy 0.1 0.2 0.3 0.4 0.5 Bias (gender repr.) 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy 0.000 0.005 0.010 0.015 0.020 0.025 0.030 0.035 Toxicity 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy 0 5 10 15 20 25 Inference time (s) Figure 24: Accuracy vs. X. The relationship between accuracy (x-axis) and each of the 6 metrics (calibra- tion, robustness, fairness, social bias, toxicity, efficiency) we study in this work across all core scenarios and for all models. For calibration err\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a scatter plot. \n\n**Title/Caption:** Figure 24: Accuracy vs. X. The relationship between accuracy (x-axis) and each of the 6 metrics (calibration, robustness, fairness, social bias, toxicity, efficiency) we study in this work across all core scenarios and for all models. For calibration error, we measure ECE-10; for bias, we measure bias in gender representation; and for efficiency, we measure denoised inference time.\n\n**Scatter Plot Details:**\n- **X-axis:** Accuracy\n- **Y-axis:** Various metrics (Calibration error, Robustness, Fairness, Bias, Toxicity, Inference time)\n- **Legend Entries:** MMLU, NaturalQuestions (closed-book), NaturalQuestions (open-book), BoolQ, HellaSwag, MS MARCO (regular), OpenbookQA, MS MARCO (TREC), IMDB, CNN/DailyMail, RAFT, CivilComments, TruthfulQA, QuAC\n- **Visible Values/Ranking:**\n  - Calibration error: MMLU has the lowest calibration error.\n  - Robustness: IMDB has the highest robustness.\n  - Fairness: IMDB has the highest fairness.\n  - Bias: NaturalQuestions (closed-book) has the highest bias.\n  - Toxicity: OpenbookQA has the highest toxicity.\n  - Inference time: RAFT has the longest inference time.\n\n**Main Takeaway:** The figure illustrates the trade-offs between accuracy and various metrics across different datasets and models, highlighting the need for a balanced approach in model selection.\n\n[H:p013:tab1.4 | helm_2211.09110v2.pdf | page 13]\ntable on page 13 (page 13). \nC General metrics | 130\nC.1 Accuracy | . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130\nE.7 Toxicity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154\nF Comparison with other evaluations | 155\nG Contamination | 155\nH Priority system | 156\nI | Models | 158\nJ | Adaptation | 160\nJ.1 | Formatting test instances . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160\nJ.2 | Formatting the remainder of the prompt . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161",
+    "context_ids": [
+      "H:p024:fig15",
+      "H:p048:fig24",
+      "H:p013:tab1.4"
+    ],
+    "error": null,
+    "raw_answer": "Không đủ bằng chứng để trả lời. Các đoạn truy xuất được chỉ gồm Hình 15 (một ví dụ đơn lẻ về phát hiện độc hại từ CivilComments, không nêu giá trị toxicity nào) và Hình 24 (đồ thị Accuracy vs. Toxicity theo từng kịch bản), cùng mục lục dẫn tới Mục E.7 Toxicity. Không có đoạn nào chứa hình minh họa với ba ví dụ, giá trị toxicity thu được, hay công thức tính tương ứng. Vì vậy tôi không thể xác định giá trị toxicity hay cách tính từ bằng chứng hiện có.",
+    "seconds": 6.68,
+    "tokens_in": 2498,
+    "tokens_out": 690,
+    "llm_calls": 2,
+    "citation_regions": []
+  },
+  {
+    "query_id": "D06",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "In the bias metrics demonstration (Figure 20), with occurrence of male terms = 5 and occurrence of female terms = 2, the resulting gender representation bias is **0.214** [H:p031:fig20].",
+    "citations": [
+      "H:p031:fig20"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "gender representation bias metric male terms female terms times",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p031:fig20",
+            "score": 0.6720424861680058,
+            "page": 31
+          },
+          {
+            "id": "H:p032:t1",
+            "score": 0.615604611491075,
+            "page": 32
+          },
+          {
+            "id": "H:p031:t4",
+            "score": 0.606640004715972,
+            "page": 31
+          },
+          {
+            "id": "H:p134:t2",
+            "score": 0.605566451279425,
+            "page": 134
+          },
+          {
+            "id": "H:p134:t3",
+            "score": 0.6003179190458686,
+            "page": 134
+          }
+        ],
+        "context_ids": [
+          "H:p031:fig20",
+          "H:p032:t1",
+          "H:p031:t4",
+          "H:p134:t2",
+          "H:p134:t3"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p031:fig20 | helm_2211.09110v2.pdf | page 31]\nFigure 20 (page 31). Figure 20: Bias Metrics. A demonstration of how we measure social bias with respect to demographic representation and stereotypical associations.\nText printed inside the figure: Demographic representation Occurrence (male terms) = 5 Occurrence (female terms) = 2 Gender representation bias = 0.5 * [|2/7 - 0.5| + 0.5 * |5/7 - 0.5|] = 0.214 Stereotypical association Co-occurence (mathematician, male terms) = 3 Co-occurence (mathematician, female terms) = 1 Gender association bias (mathematician) = 0.5 * [|1/4 - 0.5| + 0.5 * |3/4 - 0.5|] = 0.25 Figure 20: Bias Metrics. A demonstration of how we measure social bias with respect to demographic representation and stereotypical associations.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a table image. The title or caption is \"Figure 20: Bias Metrics. A demonstration of how we measure social bias with respect to demographic representation and stereotypical associations.\"\n\nThe table is divided into two sections: \"Demographic representation\" and \"Stereotypical association.\"\n\n### Demographic representation:\n- **Occurrence (male terms) = 5**\n- **Occurrence (female terms) = 2**\n- **Gender representation bias = 0.214**\n\n### Stereotypical association:\n- **Co-occurrence (mathematician, male terms) = 3**\n- **Co-occurrence (mathematician, female terms) = 1**\n- **Gender association bias (mathematician) = 0.25**\n\nThe table shows the calculation of bias metrics for demographic representation and stereotypical associations, using the given occurrences and co-occurrences.\n\nThe main takeaway is that the gender representation bias and gender association bias for the term \"mathematician\" are calculated, with the latter being slightly higher than the former.\n\n[H:p032:t1 | helm_2211.09110v2.pdf | page 32]\nPublished in Transactions on Machine Learning Research (08/2023) These measures dependence on the cooccurence statistics of demographic words with these stereotyped terms across model generations (see Figure 20). We note that such count-based measures can be brittle in several ways in general. Of specific importance for social bias, we emphasize the differential linguistic marking of social groups (e.g. “female nurse” vs “male nurse” may be differentially marked due to sociocultural presuppositions and stereotypes) (Rauh et al., 2022).\n\n[H:p031:t4 | helm_2211.09110v2.pdf | page 31]\nWe study bias in the context of model generations, where we study two such asymmetries. First, we measure bias in demographic representation, referring to uneveness in the rates that different demographic groups are mentioned to identify erasure and over-representation. These measures depend on the occurrence statistics of words signifying a demographic group across model generations. Second, we measure stereotypical associations, referring to uneveness in the rates that different groups are associated with stereotyped terms (e.g. occupations) in society. In both cases, by uneveness we mean the extent to which the observed rates diverge from the uniform distribution, i.e. all groups being mentioned or associated with equally, though our metrics allow for alternative references to be considered (see Appendix C.5).\n\n[H:p134:t2 | helm_2211.09110v2.pdf | page 134]\nDemographic representation. To measure demographic representation, we measure the extent to which observed rate at which different demographic groups are mentioned deviates from a reference distribution. In this work, we will consider the reference distribution to be the uniform distribution, which encodes that a model will be deemed to have no bias (in terms of demographic representation) if the different social groups are mentioned at equal rate. Let Y be the set of model generations for a scenario, y ∈Y be a specific model generation, and C(w, y) be the count of how many times the token w appears in the sequence y. To measure demographic representation, we will consider k demographic groups, where each group i ∈[k] is associated with a set Ai of words that represent the group. In this work, we consider binary gender (i.e. male and female, so k = 2) and three-class race (i.e. White, Hispanic, Asian, so k = 3). The word lists we use for these groups are stated below. For each group i, we compute its count C(i) as follows:\n\n[H:p134:t3 | helm_2211.09110v2.pdf | page 134]\nIn other words, it is the count of words for the group across all model generations. Then, given this vector C = [C(1), . . . , C(k)], we normalize this vector to be a probability distribution Pobs = C P to measure demographic representation, we compute the distance (using total variation distance) between the observed distribution Pobs and the reference distribution Pref: demographic representation = TV D(Pobs, Pref) (17) Total variation difference is bounded between 0 and 1, but since the reference distribution we consider is specifically the uniform distribution, the TVD is effectively bounded between 0 and k−1 k . So, since we consider binary gender, the maximum bias for demographic representation is 0.5 and since we consider three-class race, the maximum bias for demographic representation is 2 Overall, the full computation of the metric is as follows: C = [C(1), . . . , C(k)] (19) demographic representation = TV D(Pobs, Pref) (21)",
+    "context_ids": [
+      "H:p031:fig20",
+      "H:p032:t1",
+      "H:p031:t4",
+      "H:p134:t2",
+      "H:p134:t3"
+    ],
+    "error": null,
+    "seconds": 6.22,
+    "tokens_in": 2286,
+    "tokens_out": 644,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p031:fig20",
+        "page": 31,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          185.2,
+          582.0,
+          308.3
+        ],
+        "image": "bonus/data/figures/fig20_p031.png"
+      }
+    ]
+  },
+  {
+    "query_id": "D07",
+    "split": "dev",
+    "config": "baseline",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "fairness perturbation campfire text substitution example",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p030:fig19",
+            "score": 0.6355923035388366,
+            "page": 30
+          },
+          {
+            "id": "H:p022:fig13",
+            "score": 0.5014520874905101,
+            "page": 22
+          },
+          {
+            "id": "H:p140:t2",
+            "score": 0.5007335245172505,
+            "page": 140
+          },
+          {
+            "id": "H:p008:t6",
+            "score": 0.4952649198699379,
+            "page": 8
+          },
+          {
+            "id": "H:p030:t2",
+            "score": 0.4947921959680468,
+            "page": 30
+          }
+        ],
+        "context_ids": [
+          "H:p030:fig19",
+          "H:p022:fig13",
+          "H:p140:t2",
+          "H:p008:t6"
+        ]
+      },
+      {
+        "event": "no_valid_citation"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p030:fig19 | helm_2211.09110v2.pdf | page 30]\nFigure 19 (page 30). Figure 19: Fairness Perturbations. A example of how we perturb examples to measure fairness with respect to subject properties (e.g. the gender of the entities mentioned in the text).\nText printed inside the figure: Original input: Starting a campfire: He bends down and tries to start a fire, but it doesn't light. He tries again with another match. The fire Perturbed input: Starting a campfire: She bends down and tries to start a fire, but it doesn't light. She tries again with another match. The fire then starts quickly. Model prediction Model prediction Invariant? Gender substitution then starts quickly. Figure 19: Fairness Perturbations. A example of how we perturb examples to measure fairness with respect to subject properties (e.g. the gender of the entities mentioned in the text).\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a diagram.\n\nTitle/Caption: Figure 19: Fairness Perturbations. A example of how we perturb examples to measure fairness with respect to subject properties (e.g. the gender of the entities mentioned in the text).\n\nThe diagram consists of two main boxes connected by arrows, representing the flow of information or process:\n\n1. **Original input**: \"Starting a campfire: He bends down and tries to start a fire, but it doesn't light. He tries again with another match. The fire\"\n2. **Model prediction**: \"then starts quickly.\"\n3. **Gender substitution**: \"She bends down and tries to start a fire, but it doesn't light. She tries again with another match. The fire\"\n4. **Model prediction**: \"then starts quickly.\"\n\nThe arrows indicate the flow from the original input to the model prediction, then to the perturbed input, and finally back to the model prediction. The question \"Invariant?\" is posed next to the second model prediction, suggesting a focus on whether the model's prediction remains consistent after the gender substitution.\n\nThe main takeaway is that the model's prediction remains consistent despite the gender substitution, indicating a potential invariant property in the model's output.\n\n[H:p022:fig13 | helm_2211.09110v2.pdf | page 22]\nFigure 13 (page 22). Figure 13: Example of summarization. An example instance for summarization from CNN/DailyMail. Different summarization scenarios can have significantly different properties, but this example captures the overall structure of summarization.\nText printed inside the figure: Input Two years ago the storied Boston Marathon ended in terror and altered the lives of runners « Many bombing survivors« celebrating One Boston Day which was created to recognize acts of valor and to encourage kindness among Bostonians « Reference Citizens gather to honor victims on One Boston Day two years after the marathon bombings Scenario CNN DailyMail cigure NPW bx~mple of summ~riz~tionK ^n ex~mple inst~nce for summ~riz~tion from `kkLa~ilyj~ilK aifferent summ~riz~tion scen~rios c~n h~ve signific~ntly different propertiesI ut this ex~mple c~ptures the over~ll structure of summ~riz~tionK\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a table image. The title or caption is: \"Figure 13: Example of summarization. An example instance for summarization from CNN/DailyMail. Different summarization scenarios can have significantly different properties, but this example captures the overall structure of summarization.\"\n\nThe table contains two sections: \"Input\" and \"Reference.\" The \"Input\" section reads: \"Two years ago, the storied Boston Marathon ended in terror and altered the lives of runners, ... Many bombing survivors... celebrating 'One Boston Day,' which was created to recognize acts of valor and to encourage kindness among Bostonians. ...\" The \"Reference\" section reads: \"Citizens gather to honor victims on One Boston Day, two years after the marathon bombings.\"\n\nThe main takeaway is that the figure illustrates the process of summarization, showing how a longer text can be condensed into a shorter, more concise statement that captures the essence of the original content.\n\n[H:p140:t2 | helm_2211.09110v2.pdf | page 140]\nWe perturb evaluation instances using the following perturbation methods. Additionally, we perturb the reference the model’s completion is compared against with the same method (e.g. if we change he to she in the question, we will match this change in the answer). For all perturbations, we apply them deterministically whenever possible. While we believe this is suboptimal for actually matching a specific target distribution (e.g. we do not believe the lexical substitutions we make are a strong simulation of AAE speech, even beyond the absence of other forms of linguistic variation between AAE and SAE), our general belief is this should overestimate any performance disparities, which help to highlight fairness concerns (rather than underestimating these effects). With that said, we encourage future work to explore more sophisticated perturbation methods that may better capture important desired structure (e.g. properly model coreference in the swapping of gender pronouns, or reflect other linguistic properties of AAE speech (Ziems et al., 2022)).\n\n[H:p008:t6 | helm_2211.09110v2.pdf | page 8]\n20See https://crfm.stanford.edu/helm/v0.1.0/?group=reasoning#Accuracy. 21See https://crfm.stanford.edu/helm/v0.1.0/?group=gsm. 22See https://crfm.stanford.edu/helm/v0.1.0/?group=copyright_text.",
+    "context_ids": [
+      "H:p030:fig19",
+      "H:p022:fig13",
+      "H:p140:t2",
+      "H:p008:t6"
+    ],
+    "error": null,
+    "raw_answer": "**Substitution applied:** A gender substitution — the pronoun \"He\" in the original campfire text is replaced with \"She\" in the perturbed input (\"He bends down and tries to start a fire…\" → \"She bends down and tries to start a fire…\"), applied consistently across all mentions of the entity [p030:fig19].\n\n**Does the prediction change?** According to Figure 19, the model's completion is the same before and after the substitution (\"then starts quickly\" in both cases), and the figure poses the check \"Invariant?\" next to the second prediction, i.e., it illustrates a case where the prediction is unchanged by the gender swap [p030:fig19]. Note that the figure's printed text is partly garbled, so the \"Invariant?\" label should be read as the check being illustrated rather than an explicit verdict statement in the caption [p030:fig19]. The caption describes this figure as an example of how inputs are perturbed to measure fairness with respect to subject properties such as the gender of entities mentioned in the text [p030:fig19], and the paper notes that such perturbations are applied deterministically, with the same change mirrored in the reference answer [p140:t2].",
+    "seconds": 6.51,
+    "tokens_in": 2264,
+    "tokens_out": 653,
+    "llm_calls": 2,
+    "citation_regions": []
+  },
+  {
+    "query_id": "D08",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "The legend in Figure 28 shows three access categories: **open, limited, and closed** [H:p053:fig28].\n\nAcross these categories, **IMDB** is the scenario with the highest accuracy — its bars reach roughly 0.95, higher than the other core scenarios shown (e.g., HellaSwag and BoolQ at about 0.80, RAFT at about 0.75) [H:p053:fig28].\n\nFor context, the paper notes that overall accuracies generally fall in the order **limited access > closed > open** [H:p053:t1].",
+    "citations": [
+      "H:p053:fig28",
+      "H:p053:t1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "HELM chart accuracy by model access legend categories scenario highest accuracy",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p052:t4",
+            "score": 0.6178027216682807,
+            "page": 52
+          },
+          {
+            "id": "H:p011:tab1.5",
+            "score": 0.6067484945424689,
+            "page": 11
+          },
+          {
+            "id": "H:p053:fig28",
+            "score": 0.5987311715554214,
+            "page": 53
+          },
+          {
+            "id": "H:p004:tab1.1",
+            "score": 0.5890208102917813,
+            "page": 4
+          },
+          {
+            "id": "H:p053:t1",
+            "score": 0.5839071077857573,
+            "page": 53
+          }
+        ],
+        "context_ids": [
+          "H:p052:t4",
+          "H:p011:tab1.5",
+          "H:p053:fig28",
+          "H:p004:tab1.1",
+          "H:p053:t1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p052:t4 | helm_2211.09110v2.pdf | page 52]\nIn Figure 28, we stratify the results for accuracy based on model accessibility (see Liang et al., 2022) as we discuss in §6: models. For each access category, we report the per-scenario accuracy of the model in that category that is the most accurate (full bar) and that is generally the most accurate (smaller dark sub-bar; based on Figure 26). This means the sub-bar is always the accuracy of OPT (175B) for open models, text-davinci-002 for limited access models, and TNLG v2 (530B) for closed models. We see that these models for limited access are consistently the best in their categories, but OPT (175B) is sometimes\n\n[H:p011:tab1.5 | helm_2211.09110v2.pdf | page 11]\ntable on page 11 (page 11). \n1 | Introduction | 2\n1.1 | HELM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 3\n4.3 | Accuracy | . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 27\n4.4 | Calibration and uncertainty . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 27\n4.5 | Robustness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 28\n4.6 | Fairness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 30\n\n[H:p053:fig28 | helm_2211.09110v2.pdf | page 53]\nFigure 28 (page 53). Figure 28: Accuracy as a function of model access. The relationship between access (open vs. limited vs. closed) and model accuracy for each of the 16 core scenarios. Shaded bars indicate the performance of the best model for that scenario, whereas the solid bars indicate the performance of the overall most accurate model across all core scenarios based on Figure 26.\nText printed inside the figure: MMLU BoolQ NarrativeQA NaturalQuestions (closed-book) NaturalQuestions (open-book) QuAC HellaSwag OpenbookQA TruthfulQA MS MARCO (regular) MS MARCO (TREC) CNN/DailyMail XSUM IMDB CivilComments RAFT 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy open limited closed Figure 28: Accuracy as a function of model access. The relationship between access (open vs. limited vs. closed) and model accuracy for each of the 16 core scenarios. Shaded bars indicate the performance of the best model for that scenario, whereas the solid bars indicate the performance of the overall most accurate model across all core scenarios based on Figure 26.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a bar chart.\n\nTitle/Caption: \"Figure 28: Accuracy as a function of model access. The relationship between access (open vs. limited vs. closed) and model accuracy for each of the 16 core scenarios. Shaded bars indicate the performance of the best model for that scenario, whereas the solid bars indicate the performance of the overall most accurate model across all core scenarios based on Figure 26.\"\n\nX-axis: Core scenarios (e.g., MMLU, BoolQ, NarrativeQA, etc.)\nY-axis: Accuracy (units: none, values range from 0.0 to 1.0)\n\nLegend entries: open (blue), limited (orange), closed (green)\n\nClearly visible values/ranking:\n- For the best model (shaded bars):\n  - IMDB: ~0.95\n  - RAFT: ~0.75\n  - HellaSwag: ~0.80\n  - BoolQ: ~0.80\n  - NaturalQuestions (open-book): ~0.70\n  - NaturalQuestions (closed-book): ~0.45\n  - MMLU: ~0.55\n\n- For the overall most accurate model (solid bars):\n  - IMDB: ~0.95\n  - RAFT: ~0.75\n  - HellaSwag: ~0.80\n  - BoolQ: ~0.80\n  - NaturalQuestions (open-book): ~0.70\n  - NaturalQuestions (closed-book): ~0.45\n  - MMLU: ~0.55\n\nMain takeaway: The accuracy of models varies significantly depending on the access level (open, limited, closed), with the best performance generally achieved under open access conditions.\n\n[H:p004:tab1.1 | helm_2211.09110v2.pdf | page 4]\ntable on page 4 (page 4). \nPrevious work | HELM\nMetrics\nMetric\nAccuracy Calibration Robustness Fairness | Bias | Toxicity Efficiency\nQuestions Natural | ✔ (Accuracy) | RAFT | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔\nXSUM | ✔ (Accuracy) | IMDB | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔\nScenarios AdversarialQA ✔ (Robustness) | Scenarios Questions Natural | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔\nRealToxicity Prompts | ✔ (Toxicity) | QuAC | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔\nBBQ | ✔ (Bias) | XSUM | ✔ | ✔ | ✔ | ✔\n\n[H:p053:t1 | helm_2211.09110v2.pdf | page 53]\nPublished in Transactions on Machine Learning Research (08/2023) improved over (e.g. 10 point improvement for MMLU and CivilComments) as is TNLG v2 (530B) (e.g. more than 5 point improvement for NaturalQuestions (open-book) and TruthfulQA). Overall, we see the accuracies generally fall in the direction limited access > closed > open, which aligns with Figure 26. With that said, we see some reason for optimism regarding open science through open-sourced models, in that the best public model is usually somewhat competitive in accuracy (i.e. within 5 points of the best non-open model), with the notable exceptions of more knowledge-intensive scenarios of MMLU, NaturalQuestions (closed-book) and TruthfulQA as well as both information retrieval scenarios. This is especially noteworthy given we have yet to see models being open-sourced with significant use of human preferences and reinforcement learning from human feedback, which may further bridge this gap. However, we do highlight there are other confounds: some models may not be disclosed to the public (let alone released), some models may be disclosed after significant delay, and some highly accurate models are not yet evaluated in HELM (e.g. Gopher, Chinchilla, PaLM; see §10.4: missing-models).",
+    "context_ids": [
+      "H:p052:t4",
+      "H:p011:tab1.5",
+      "H:p053:fig28",
+      "H:p004:tab1.1",
+      "H:p053:t1"
+    ],
+    "error": null,
+    "seconds": 6.07,
+    "tokens_in": 2678,
+    "tokens_out": 452,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p053:fig28",
+        "page": 53,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          77.9,
+          582.0,
+          319.1
+        ],
+        "image": "bonus/data/figures/fig28_p053.png"
+      },
+      {
+        "id": "H:p053:t1",
+        "page": 53,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D09",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "For the CNN/DailyMail panel in Figure 32 (\"Number of in-context examples\"), the y-axis plots **ROUGE-2** (with ticks at 0.00, 0.05, 0.10, and 0.15), while the x-axis is \"#in-context examples\" [H:p057:fig32]. This matches the figure description, which lists the y-axis metrics per dataset as F1 for NaturalQuestions, ROUGE-2 for CNN/DailyMail, EM for IMDB, and EM for CivilComments [H:p057:fig32].",
+    "citations": [
+      "H:p057:fig32"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "number of in-context examples figure CNN/DailyMail panel",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p057:fig32",
+            "score": 0.6343119333479613,
+            "page": 57
+          },
+          {
+            "id": "H:p057:t1",
+            "score": 0.6131062046416442,
+            "page": 57
+          },
+          {
+            "id": "H:p022:fig13",
+            "score": 0.6061338872271295,
+            "page": 22
+          },
+          {
+            "id": "H:p046:tab1.1",
+            "score": 0.5943390873245945,
+            "page": 46
+          },
+          {
+            "id": "H:p046:t2",
+            "score": 0.5919922943110905,
+            "page": 46
+          }
+        ],
+        "context_ids": [
+          "H:p057:fig32",
+          "H:p057:t1",
+          "H:p022:fig13",
+          "H:p046:t2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p057:fig32 | helm_2211.09110v2.pdf | page 57]\nFigure 32 (page 57). Figure 32: Number of in-context examples. For each model, we set the maximum number of in-context examples to [0, 1, 2, 4, 8, 16] and fit as many in-context examples as possible within the context window. We plot performance as a function of the average number of in-context examples actually used.\nText printed inside the figure: 0 1 2 4 8 16 #in-context examples 0.2 0.3 0.4 0.5 0.6 0.7 F1 NaturalQuestions (open-book) Anthropic-LM v4-s3 (52B) BLOOM (176B) T0pp (11B) GPT-J (6B) GPT-NeoX (20B) T5 (11B) OPT (175B) OPT (66B) GLM (130B) YaLM (100B) 0 1 2 4 8 16 #in-context examples 0.00 0.05 0.10 0.15 ROUGE-2 CNN/DailyMail 0 1 2 4 8 16 #in-context examples 0.0 0.2 0.4 0.6 0.8 1.0 EM IMDB 0 1 2 4 8 16 #in-context examples 0.0 0.2 0.4 0.6 EM CivilComments Figure 32: Number of in-context examples. For each model, we set the maximum number of in-context examples to [0, 1, 2, 4, 8, 16] and fit as many in-context examples as possible within the context window. We plot performance as a function of the average number of in-context examples actually used.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a line chart.\n\nTitle/Caption: Figure 32: Number of in-context examples.\n\nDescription:\n- The x-axis is labeled \"#in-context examples\" with units of count.\n- The y-axis is labeled with different metrics for each dataset: F1 (NaturalQuestions), ROUGE-2 (CNN/DailyMail), EM (IMDB), and EM (CivilComments).\n- The legend entries include: Anthropic-LM v4-s3 (52B), T0pp (11B), GPT-NeoX (20B), OPT (175B), GLM (130B), BLOOM (176B), GPT-J (6B), T5 (11B), OPT (66B), and YaLM (100B).\n- The datasets are: NaturalQuestions (open-book), CNN/DailyMail, IMDB, and CivilComments.\n- The values for each model vary across the datasets, with some models performing better than others in specific metrics.\n\nMain takeaway: The performance of large language models varies significantly depending on the number of in-context examples used, with some models showing better performance with fewer examples than others.\n\n[H:p057:t1 | helm_2211.09110v2.pdf | page 57]\nPublished in Transactions on Machine Learning Research (08/2023) Number of in-context examples. By default, we either use 5 in-context examples, or fewer examples for scenarios where 5 examples do not fit within in the context window. To test how the number of examples (i.e. the sample efficiency of adaptation) influences performance, we vary the maximum number of examples across n ∈{0, 1, 2, 4, 8, 16}. In Figure 32, we plot model performance as a fraction of the average number of in-context examples provided (which may be fewer than the maximum stated above if they do not fit inside the context window). To explore the results further, including the model generations, see https: //crfm.stanford.edu/helm/v0.1.0/?group=ablation_in_context.\n\n[H:p022:fig13 | helm_2211.09110v2.pdf | page 22]\nFigure 13 (page 22). Figure 13: Example of summarization. An example instance for summarization from CNN/DailyMail. Different summarization scenarios can have significantly different properties, but this example captures the overall structure of summarization.\nText printed inside the figure: Input Two years ago the storied Boston Marathon ended in terror and altered the lives of runners « Many bombing survivors« celebrating One Boston Day which was created to recognize acts of valor and to encourage kindness among Bostonians « Reference Citizens gather to honor victims on One Boston Day two years after the marathon bombings Scenario CNN DailyMail cigure NPW bx~mple of summ~riz~tionK ^n ex~mple inst~nce for summ~riz~tion from `kkLa~ilyj~ilK aifferent summ~riz~tion scen~rios c~n h~ve signific~ntly different propertiesI ut this ex~mple c~ptures the over~ll structure of summ~riz~tionK\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a table image. The title or caption is: \"Figure 13: Example of summarization. An example instance for summarization from CNN/DailyMail. Different summarization scenarios can have significantly different properties, but this example captures the overall structure of summarization.\"\n\nThe table contains two sections: \"Input\" and \"Reference.\" The \"Input\" section reads: \"Two years ago, the storied Boston Marathon ended in terror and altered the lives of runners, ... Many bombing survivors... celebrating 'One Boston Day,' which was created to recognize acts of valor and to encourage kindness among Bostonians. ...\" The \"Reference\" section reads: \"Citizens gather to honor victims on One Boston Day, two years after the marathon bombings.\"\n\nThe main takeaway is that the figure illustrates the process of summarization, showing how a longer text can be condensed into a shorter, more concise statement that captures the essence of the original content.\n\n[H:p046:t2 | helm_2211.09110v2.pdf | page 46]\nIn-context examples. Since we include 5 in-context examples, two core decisions are why we use this number of examples and how we select the examples. We follow Brown et al. (2020) in their choice of the number, testing in §8.2: prompting-analysis how the number of examples influences performance. To select examples, we sample examples to ensure class coverage (for classification coverage) in order of class frequency, so the 5 most frequent classes will be represented in-context. Critically, we choose to fix the in-context examples across all evaluation instances, in contrast to prior work (e.g. Brown et al., 2020), to more accurately perform few-shot evaluation (Perez et al., 2021). While more realistic, this also implies our model performance can be more sensitive to the random choice of in-context examples. Therefore, we re-run all experiments 3 times, only varying the randomness in in-context sample selection, to estimate this variance: in §8.2: prompting-analysis, we show results can be especially high variance for some scenarios.",
+    "context_ids": [
+      "H:p057:fig32",
+      "H:p057:t1",
+      "H:p022:fig13",
+      "H:p046:t2"
+    ],
+    "error": null,
+    "seconds": 4.95,
+    "tokens_in": 2620,
+    "tokens_out": 344,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p057:fig32",
+        "page": 57,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          77.9,
+          582.0,
+          263.5
+        ],
+        "image": "bonus/data/figures/fig32_p057.png"
+      }
+    ]
+  },
+  {
+    "query_id": "D10",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "**NaturalQuestions (open-book)** is the scenario with the widest spread. The paper states that there are scenarios where all models tend to exhibit higher variance, and the prominent example is NaturalQuestions (open-book), where the median range of the accuracy metric across the three random seeds is 0.1730 [H:p056:t3]. For instance, davinci (175B) obtains F1 scores of 0.376, 0.611, and 0.636 across the three sets of in-context examples [H:p056:t3].\n\nThis scenario also appears explicitly in the list of scenarios plotted in the variance-across-seeds figure [H:p056:fig31].",
+    "citations": [
+      "H:p056:t3",
+      "H:p056:fig31"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "box plots variance across random seeds accuracy range",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p056:fig31",
+            "score": 0.6299529704493835,
+            "page": 56
+          },
+          {
+            "id": "H:p056:t3",
+            "score": 0.5649690473153518,
+            "page": 56
+          },
+          {
+            "id": "H:p064:t3",
+            "score": 0.5270730257034639,
+            "page": 64
+          },
+          {
+            "id": "H:p061:fig35",
+            "score": 0.5238112097686758,
+            "page": 61
+          },
+          {
+            "id": "H:p132:t2",
+            "score": 0.5195137765341907,
+            "page": 132
+          }
+        ],
+        "context_ids": [
+          "H:p056:fig31",
+          "H:p056:t3",
+          "H:p064:t3",
+          "H:p132:t2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p056:fig31 | helm_2211.09110v2.pdf | page 56]\nFigure 31 (page 56). Figure 31: Variance across seeds. For a subset of models and scenarios, we evaluate each scenario with three different random sets of in-context examples. We compute the range of the accuracy metric (maximum minus minimum value over the three random seeds) and visualize across models and scenarios.\nText printed inside the figure: 0.0 0.2 0.4 BoolQ - EM NarrativeQA - F1 NaturalQuestions (closed-book) - F1 NaturalQuestions (open-book) - F1 QuAC - F1 TruthfulQA - EM CNN/DailyMail - ROUGE-2 XSUM - ROUGE-2 IMDB - EM 0.0 0.2 0.4 J1-Jumbo v1 (178B) J1-Large v1 (7.5B) J1-Grande v1 (17B) Anthropic-LM v4-s3 (52B) BLOOM (176B) T0pp (11B) Cohere xlarge v20220609 (52.4B) Cohere large v20220720 (13.1B) Cohere medium v20220720 (6.1B) Cohere small v20220720 (410M) GPT-J (6B) GPT-NeoX (20B) T5 (11B) UL2 (20B) OPT (175B) OPT (66B) TNLG v2 (530B) TNLG v2 (6.7B) davinci (175B) curie (6.7B) babbage (1.3B) ada (350M) text-davinci-002 text-curie-001 text-babbage-001 text-ada-001 GLM (130B) YaLM (100B) Figure 31: Variance across seeds. For a subset of models and scenarios, we evaluate each scenario with three different random sets of in-context examples. We compute the range of the accuracy metric (maximum minus minimum value over the t\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a scatter plot.\n\nTitle/Caption: \"Figure 31: Variance across seeds.\"\n\nThe x-axis represents the range of the accuracy metric (maximum minus minimum value over the three random seeds), and the y-axis lists different models and scenarios. The legend includes various model names and their sizes in billions of parameters, such as \"YaLM (100B),\" \"GLM (130B),\" \"text-ada-001,\" and \"text-davinci-002,\" among others.\n\nThe models are ranked by their position on the y-axis, with larger values indicating higher variance. For example, \"YaLM (100B)\" is at the top, followed by \"GLM (130B),\" and so on. The models are also categorized by their size, with \"ada (350M)\" being the smallest and \"J1-Jumbo v1 (178B)\" being the largest.\n\nThe main takeaway is that the variance across seeds is highest for larger models, as indicated by their higher positions on the y-axis.\n\n[H:p056:t3 | helm_2211.09110v2.pdf | page 56]\nTo measure this sensitivity, we repeat all evaluations for 3 runs, meaning 3 choices of the in-context examples. To explore the sensitivity of model results to this choice, hover over a specific entry to see the variance across runs on the website. Further, the predictions across the 3 runs can be found for a given evaluation instance. Additionally, we visualize the accuracy range (best minus worst performance) across seeds in Figure 31. We observe that the performance of most models tends to be relatively consistent: the median range (across scenarios) is below 0.03 for 24 out of 28 models (exceptions are YaLM (100B), davinci (175B), curie (6.7B), ada (350M)). Interestingly, we find that there are scenarios where all models tend to exhibit higher variance. A prominent example is NaturalQuestions (open-book), where the median range is 0.1730 (e.g., davinci (175B) obtains F1 scores of 0.376, 0.611, and 0.636 across the three sets of in-context examples).\n\n[H:p064:t3 | helm_2211.09110v2.pdf | page 64]\nA few models perform worse than chance/majority baseline, namely T5 (11B) and UL2 (20B), with T0++ (11B), Cohere small v20220720 (410M), and babbage (1.3B) slightly above 50% (though ada (350M) is well above chance at 78.4%). The most accurate models are fairly well-calibrated, with GLM (130B) being somewhat miscalibrated with a calibration error of ECE-10 = 0.18 and BLOOM (176B) being quite miscalibrated with ECE-10 = 0.353. YaLM (100B) is especially poorly calibrated with ECE-10 = 0.418 alongside a standard accuracy of 83.6%. For robustness and fairness, we see the size of the drops in accuracy are generally consistent: the gaps are notably quite small for text-davinci-002 (less than a 1% drop for either fairness or robustness) and quite large for GPT-NeoX (20B) (94.8% standard accuracy drops to 91.2% robust accuracy). In particular, GPT-NeoX (20B) is the second most accurate model but it is outside the top 10 models in terms of robust accuracy. Since IMDB is one of the two datasets where we have access to a contrast set, we further look into the relationship in robustness behavior for invariances and equivariances.\n\n[H:p132:t2 | helm_2211.09110v2.pdf | page 132]\nThe selective coverage-accuracy area (SCAA) plots the selective accuracy (on the y-axis) against the coverage (on the x-axis), and calculates the area under the curve. Formally, we have: The selective-accuracy at 10% (acc@10%) is the selective accuracy at the threshold t′95 where the coverage c(t′) is 10%—this corresponds to the accuracy on the 10% of examples that the model is most confident on (the model is allowed to abstain on all the remaining examples where it is less confident). acc@10% = a(t′), where c(t′) = 0.1. (8) Finite sample metrics. Suppose we have an evaluation dataset [(p1, y1, ˆy1, pmax 1 ), . . . , (pn, yn, ˆyn, pmax n )], where each (pi, yi, ˆyi, pmax",
+    "context_ids": [
+      "H:p056:fig31",
+      "H:p056:t3",
+      "H:p064:t3",
+      "H:p132:t2"
+    ],
+    "error": null,
+    "seconds": 4.68,
+    "tokens_in": 2510,
+    "tokens_out": 371,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p056:t3",
+        "page": 56,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      },
+      {
+        "id": "H:p056:fig31",
+        "page": 56,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          83.1,
+          582.0,
+          346.9
+        ],
+        "image": "bonus/data/figures/fig31_p056.png"
+      }
+    ]
+  },
+  {
+    "query_id": "D11",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "**X-axis:** the x-axis is **log(The Pile BPB)** — i.e., the log bits-per-byte (BPB) loss on The Pile; the caption describes the figure as showing \"the relationship between log bits-per-byte (BPB) on The Pile and the accuracy on each core scenario\" [H:p054:fig30].\n\n**Top of the chart:** the scenario plotted highest is **IMDB**, which according to the figure's visual reading has the highest accuracy (approximately 0.85). Note this ordering comes from the automatically generated visual description of the figure, which may contain errors [H:p054:fig30].",
+    "citations": [
+      "H:p054:fig30"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "Pile loss accuracy figure x-axis",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p054:fig30",
+            "score": 0.6613357048043196,
+            "page": 54
+          },
+          {
+            "id": "H:p067:fig36",
+            "score": 0.5568389364289326,
+            "page": 67
+          },
+          {
+            "id": "H:p048:fig24",
+            "score": 0.5501452803958288,
+            "page": 48
+          },
+          {
+            "id": "H:p051:fig26",
+            "score": 0.5493683277807978,
+            "page": 51
+          },
+          {
+            "id": "H:p028:fig17",
+            "score": 0.5447799510027004,
+            "page": 28
+          }
+        ],
+        "context_ids": [
+          "H:p054:fig30",
+          "H:p067:fig36",
+          "H:p028:fig17"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p054:fig30 | helm_2211.09110v2.pdf | page 54]\nFigure 30 (page 54). Figure 30: The Pile loss vs. Accuracy. The relationship between log bits-per-byte (BPB) on The Pile and the accuracy on each core scenario.\nText printed inside the figure: 100 6 × 10 1 log(The Pile BPB) 0.0 0.2 0.4 0.6 0.8 Accuracy J1 te J1 J1 da Co cuCo Coba ad te Co te te IMDB CivilComments BoolQ HellaSwag RAFT OpenbookQA MS MARCO (TREC) MMLU NarrativeQA TruthfulQA QuAC MS MARCO (regular) NaturalQuestions (open-book) CNN/DailyMail XSUM NaturalQuestions (closed-book) Figure 30: The Pile loss vs. Accuracy. The relationship between log bits-per-byte (BPB) on The Pile and the accuracy on each core scenario.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a line chart.\n\nTitle/Caption: Figure 30: The Pile loss vs. Accuracy. The relationship between log bits-per-byte (BPB) on The Pile and the accuracy on each core scenario.\n\nX-axis: log(The Pile BPB)\nY-axis: Accuracy\n\nLegend entries: IMDB, CivilComments, BoolQ, HellaSwag, RAFT, OpenbookQA, MS MARCO (TREC), MMLU, NarrativeQA, TruthfulQA, QuAC, MS MARCO (regular), NaturalQuestions (open-book), CNN/DailyMail, XSUM, NaturalQuestions (closed-book)\n\nClearly visible values or ranking: \n- IMDB has the highest accuracy at approximately 0.85.\n- CivilComments has a consistent accuracy around 0.55.\n- BoolQ has a peak accuracy around 0.75.\n- HellaSwag has a peak accuracy around 0.80.\n- RAFT has a peak accuracy around 0.70.\n- OpenbookQA has a peak accuracy around 0.60.\n- MS MARCO (TREC) has a peak accuracy around 0.40.\n- MMLU has a peak accuracy around 0.30.\n- NarrativeQA has a peak accuracy around 0.35.\n- TruthfulQA has a peak accuracy around 0.25.\n- QuAC has a peak accuracy around 0.30.\n- MS MARCO (regular) has a peak accuracy around 0.20.\n- NaturalQuestions (open-book) has a peak accuracy around 0.20.\n- CNN/DailyMail has a peak accuracy around 0.15.\n- XSUM has a peak accuracy around 0.10.\n- NaturalQuestions (closed-book) has a peak accuracy around 0.20.\n\nMain takeaway: The accuracy of various datasets on The P\n\n[H:p067:fig36 | helm_2211.09110v2.pdf | page 67]\nFigure 36 (page 67). Figure 36: Targeted evaluation of language. Model accuracy on the four scenarios for evaluating linguistic understanding.\nText printed inside the figure: The Pile (BPB ) TwitterAAE (BPB ) ICE (BPB ) BLiMP (EM ) 0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 Language Figure 36: Targeted evaluation of language. Model accuracy on the four scenarios for evaluating linguistic understanding.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a scatter plot.\n\nTitle/Caption: \"Figure 36: Targeted evaluation of language. Model accuracy on the four scenarios for evaluating linguistic understanding.\"\n\nX-axis: Language (BPB ↓)\nY-axis: Model accuracy (units: not explicitly stated, but likely a numerical scale)\n\nLegend entries: The Pile (BPB ↓), TwitterAAE (BPB ↓), ICE (BPB ↓), BLIMP (EM ↑)\n\nClearly visible values or ranking:\n- The Pile (BPB ↓) has a model accuracy range from approximately 0.5 to 1.0.\n- TwitterAAE (BPB ↓) has a model accuracy range from approximately 1.5 to 2.5.\n- ICE (BPB ↓) has a model accuracy range from approximately 0.5 to 1.5.\n- BLIMP (EM ↑) has a model accuracy range from approximately 0.5 to 1.0.\n\nMain takeaway: The figure illustrates the model accuracy across different language scenarios, highlighting that TwitterAAE and ICE have higher model accuracy compared to The Pile and BLIMP.\n\n[H:p028:fig17 | helm_2211.09110v2.pdf | page 28]\nFigure 17 (page 28). Figure 17: Calibration Metrics. A demonstration of how we measure calibration and selective classifica- tion. The model probabilities refer to the probabilities the model assigns to its prediction. For simplicity, the figure uses 2 bins for ECE computation, but we use 10 bins in practice.\nText printed inside the figure: Probabilities of model predictions: 0.0 0.1 0.2 0.7 0.8 0.9 1.0 ✔ ❌ ❌ ✔ ❌ ✔ ✔ Bin 1 Bin 2 Equal-sized bins: Accuracy = 2/4 = 0.5 Prob = (0.0 + 0.1 + 0.2 + 0.3) / 4 = 0.15 Bin-1 error = |0.5 - 0.15| = 0.35 ECE (expected calibration error) = (4/8) * 0.35 + (4/8) * 0.1 = 0.225 0.3 ✔ Accuracy = 3/4 = 0.75 Prob = (0.7 + 0.8 + 0.9 + 1.0) / 4 = 0.85 Bin-2 error = |0.75 - 0.85| = 0.1 0.0 0.1 0.7 0.8 0.9 1.0 ✔ ❌ ✔ ❌ ✔ ✔ 0.2 ❌ C% (e.g. 10%) of examples with highest probabilities Selective classification accuracy = 2/3 = 0.67 0.3 ✔ Probabilities of model predictions: Figure 17: Calibration Metrics. A demonstration of how we measure calibration and selective classifica- tion. The model probabilities refer to the probabilities the model assigns to its prediction. For simplicity, the figure uses 2 bins for ECE computation, but we use 10 bins in practice.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a diagram.\n\n**Title/Caption:** Figure 17: Calibration Metrics. A demonstration of how we measure calibration and selective classification.\n\nThe diagram illustrates the process of measuring calibration and selective classification using model predictions and equal-sized bins.\n\n**Diagram Details:**\n- **Top Section:**\n  - **X-axis:** Probabilities of model predictions (0.0, 0.1, 0.2, 0.3, ..., 0.7, 0.8, 0.9, 1.0).\n  - **Y-axis:** Not explicitly labeled but represents the accuracy and error calculations.\n  - **Legend:** Green check marks represent correct predictions, red crosses represent incorrect predictions.\n  - **Bin 1:** Accuracy = 2/4 = 0.5, Prob = (0.0 + 0.1 + 0.2 + 0.3) / 4 = 0.15, Bin-1 error = |0.5 - 0.15| = 0.35.\n  - **Bin 2:** Accuracy = 3/4 = 0.75, Prob = (0.7 + 0.8 + 0.9 + 1.0) / 4 = 0.85, Bin-2 error = |0.75 - 0.85| = 0.1.\n  - **ECE (expected calibration error):** (4/8) * 0.35 + (4/8) * 0.1 = 0.225.\n\n- **Bottom Section:**\n  - **X-axis:** Probabilities of model predictions (0.0, 0.1, 0.2, 0.3, 0.7, 0.8, 0.9, 1.0).\n  - **Y-axis:**",
+    "context_ids": [
+      "H:p054:fig30",
+      "H:p067:fig36",
+      "H:p028:fig17"
+    ],
+    "error": null,
+    "seconds": 5.68,
+    "tokens_in": 2904,
+    "tokens_out": 453,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p054:fig30",
+        "page": 54,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          507.4,
+          582.0,
+          682.6
+        ],
+        "image": "bonus/data/figures/fig30_p054.png"
+      }
+    ]
+  },
+  {
+    "query_id": "D12",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "The evaluation-components diagram (Figure 5) uses the model **GPT-3 davinci v1**, paired with the IMDB scenario and a robustness metric under prompting adaptation [H:p014:fig5].\n\nAs for the parameter count in the table of evaluated models: the retrieved passages do not contain that number. Page 44 only notes that \"Table 5 documents the models and their properties\" without listing any parameter counts [H:p044:t1], and the remaining passages concern adaptation parameters and evaluation design [H:p046:t1][H:p045:t1]. So there is not enough evidence here to state how many parameters GPT-3 davinci v1 has.",
+    "citations": [
+      "H:p014:fig5",
+      "H:p044:t1",
+      "H:p046:t1",
+      "H:p045:t1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "evaluation-components example diagram model parameters table of evaluated models",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p014:fig5",
+            "score": 0.6148707133685692,
+            "page": 14
+          },
+          {
+            "id": "H:p046:t1",
+            "score": 0.5726261396149215,
+            "page": 46
+          },
+          {
+            "id": "H:p045:t1",
+            "score": 0.566730151554906,
+            "page": 45
+          },
+          {
+            "id": "H:p046:tab1.1",
+            "score": 0.5656920099351616,
+            "page": 46
+          },
+          {
+            "id": "H:p044:t1",
+            "score": 0.5633096879762979,
+            "page": 44
+          }
+        ],
+        "context_ids": [
+          "H:p014:fig5",
+          "H:p046:t1",
+          "H:p045:t1",
+          "H:p046:tab1.1",
+          "H:p044:t1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p014:fig5 | helm_2211.09110v2.pdf | page 14]\nFigure 5 (page 14). Figure 5: Evaluation components. Each evaluation run requires the specification of a scenario (what we want), a model with an adaptation process (how we get it), and one or more metrics (how good are the results).\nText printed inside the figure: Scenario (IMDB) Model (GPT-3 davinci v1) Metrics (robustness) Adaptation (prompting) Figure 5: Evaluation components. Each evaluation run requires the specification of a scenario (what we want), a model with an adaptation process (how we get it), and one or more metrics (how good are the results).\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a diagram.\n\nTitle/Caption: Figure 5: Evaluation components.\n\nThe diagram consists of three main components:\n\n1. Scenario (IMDB) - Represented by a green box.\n2. Adaptation (prompting) - Represented by a gray box containing a yellow box labeled \"Model (GPT-3 davinci v1)\".\n3. Metrics (robustness) - Represented by a blue box.\n\nThere are arrows indicating the flow of information or process: from Scenario to Adaptation, and from Adaptation to Metrics.\n\nThe diagram illustrates that each evaluation run requires specifying a scenario, a model with an adaptation process, and one or more metrics to assess the results.\n\n[H:p046:t1 | helm_2211.09110v2.pdf | page 46]\nPublished in Transactions on Machine Learning Research (08/2023) Table 7: Adaptation parameters. Example of the adaptation parameters specified for (i) language mod- eling scenarios, (ii) the TruthfulQA question answering scenario, and (iii) the CNN/DailyMail summa- rization scenario. We also include additional parameters required to fully specify evaluation (i.e. the number of evaluation instances and runs, which influence the statistical validity and reliability of the results), though they are not strictly part of the adaptation process.\n\n[H:p045:t1 | helm_2211.09110v2.pdf | page 45]\nPublished in Transactions on Machine Learning Research (08/2023) Isolated technical issues. In general, we evaluate every model on every scenario (see Figure 4), and for every scenario we measure every metric (see Table 4). However, in a few isolated cases, we encounter issues/concerns that are generally attributable to specific model providers. We believe these issues are quite marginal in influencing the overall results (e.g. most models are not affected at all, and even affected models are affected on few scenarios).\n\n[H:p046:tab1.1 | helm_2211.09110v2.pdf | page 46]\nTable 7 (page 46). Table 7: Adaptation parameters. Example of the adaptation parameters specified for (i) language mod- eling scenarios, (ii) the TruthfulQA question answering scenario, and (iii) the CNN/DailyMail summa- rization scenario. We also include additional parameters required to fully specify evaluation (i.e. the number of evaluation instances and runs, which influence the statistical validity and reliability of the results), though they are not strictly part of the adaptation process.\nParameter | Language Modeling | TruthfulQA | CNN/DailyMail\nInstructions | None | None | Summarize the given documents.\nPrompt format | Input prefix | None | Question: | Document:\n§J.1: prompting-test | Reference prefix | None | None | None\nOutput prefix | None | Answer: | Summary: {\n§J.2: prompting-remainder\nInstance prefix | None | None | None\nMax training instances | 0 | 5 | 5\nTemperature | 0 | 0 | 0.3\nDecoding parameters | Max tokens | 0 | 5 | 128\n§J.3: decoding-parameters | Stop sequence(s) | None | \\n | }\nNum. outputs | 0 | 1 | 1\nNum. runs | 3 | 3 | 3\nEvaluation parameters\nMax evaluation instances | 1000 | 1000 | 1000\n\n[H:p044:t1 | helm_2211.09110v2.pdf | page 44]\nPublished in Transactions on Machine Learning Research (08/2023) and further into 12 organizations that created the model. Table 5 documents the models and their properties; further description is deferred to Appendix I.",
+    "context_ids": [
+      "H:p014:fig5",
+      "H:p046:t1",
+      "H:p045:t1",
+      "H:p046:tab1.1",
+      "H:p044:t1"
+    ],
+    "error": null,
+    "seconds": 4.76,
+    "tokens_in": 1991,
+    "tokens_out": 373,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p014:fig5",
+        "page": 14,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          77.9,
+          582.0,
+          180.6
+        ],
+        "image": "bonus/data/figures/fig05_p014.png"
+      },
+      {
+        "id": "H:p044:t1",
+        "page": 44,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      },
+      {
+        "id": "H:p046:t1",
+        "page": 46,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      },
+      {
+        "id": "H:p045:t1",
+        "page": 45,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D13",
+    "split": "dev",
+    "config": "baseline",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "40.9% inference 8×2080 Ti GPUs model tokenizer",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p044:tab1.1",
+            "score": 0.6389597223950736,
+            "page": 44
+          },
+          {
+            "id": "H:p044:t3",
+            "score": 0.6150133699258561,
+            "page": 44
+          },
+          {
+            "id": "H:p068:t3",
+            "score": 0.5479038088265996,
+            "page": 68
+          },
+          {
+            "id": "H:p043:tab1.4",
+            "score": 0.5432488697617393,
+            "page": 43
+          },
+          {
+            "id": "H:p006:t2",
+            "score": 0.5399811923335732,
+            "page": 6
+          }
+        ],
+        "context_ids": [
+          "H:p044:tab1.1",
+          "H:p044:t3",
+          "H:p068:t3",
+          "H:p043:tab1.4",
+          "H:p006:t2"
+        ]
+      },
+      {
+        "event": "no_valid_citation"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p044:tab1.1 | helm_2211.09110v2.pdf | page 44]\nTable 6 (page 44). Table 6: Hardware and compute for public models. To perform inference on the public models, we used the Together Research Computer. At the time of this work, Together Research Computer connects clusters at several institutions. We mainly use NVIDIA GeForce RTX 2080 Ti GPUs and NVIDIA A100 GPUs to perform inference. If jobs were run on multiple hardware configurations, we report all configurations separated by “;” (with the percentage of GPU hours spent on each configuration).\nModel | Hardware\nGPT-J (6B) | 2×A100 (10.4%); 4×2080 Ti (89.6%)\nGPT-NeoX (20B) | 2×A100 (73.9%); 11×2080 Ti (26.1%)\nT5 (11B) | 2×A100 (59.1%); 8×2080 Ti (40.9%)\nT0++ (11B) | 2×A100 (1.1%); 8×2080 Ti (98.9%)\nUL2 (20B) | 2×A100 (3.5%); 16×2080 Ti (96.5%)\nYaLM (100B) | 8×A100\nGLM (130B) | 8×A100\nOPT (66B) | 8×A100\nOPT (175B) | 8×A100\nBLOOM (176B) | 8×A100\n\n[H:p044:t3 | helm_2211.09110v2.pdf | page 44]\nTable 6: Hardware and compute for public models. To perform inference on the public models, we used the Together Research Computer. At the time of this work, Together Research Computer connects clusters at several institutions. We mainly use NVIDIA GeForce RTX 2080 Ti GPUs and NVIDIA A100 GPUs to perform inference. If jobs were run on multiple hardware configurations, we report all configurations separated by “;” (with the percentage of GPU hours spent on each configuration).\n\n[H:p068:t3 | helm_2211.09110v2.pdf | page 68]\nTo further hone in on specific factual knowledge, we then consider model accuracies on WikiFact.70 We again see that text-davinci-002 is the most accurate at 38.5%, with TNLG v2 (530B) as the second most accurate at 34.3%, and with Cohere xlarge v20220609 (52.4B) (33.4%) and davinci (175B) (39.7% as the only other models above 30%. For specific subsets we see more variation: for the plaintiff relation type, all of text-davinci-002, TNLG v2 (530B) and Cohere xlarge v20220609 (52.4B) are above 60%, with the next best model being J1-Jumbo v1 (178B) at 51.0% and davinci (175B) being considerably worse (46.5%) despite its overall high accuracy. With that said, in spite of its significantly larger model size, there is no subset where TNLG v2 (530B) performs significantly more accurately than all other models. And all models perform quite poorly for some subsets, e.g. the most accurate model gets an accuracy below 15% for the discoverer_or_inventor relation type.\n\n[H:p043:tab1.4 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nUL2 (20B) | Google | Text | 20B | UL2 | 512 | open | 199,539,380 | 406,072 | 1,570 GPU hours\nOPT (66B) | Meta | Text | 66B | OPT | 2048 | open | 612,752,867 | 851,178 | 2,000 GPU hours\nOPT (175B) | Meta | Text | 175B | OPT | 2048 | open | 610,436,798 | 851,178 | 3,400 GPU hours\nTNLG v2 (6.7B) | Microsoft/NVIDIA | Text | 6.7B | GPT-2 | 2047 | closed | 417,583,950 | 590,756 | -\nTNLG v2 (530B) | Microsoft/NVIDIA | Text | 530B | GPT-2 | 2047 | closed | 417,111,519 | 590,756 | -\n\n[H:p006:t2 | helm_2211.09110v2.pdf | page 6]\nWe emphasize that we have a limited understanding on how contaminated models are, and to what extent this compromises the validity and legitimacy of our evaluation, though we do provide all evidence we are aware of in Appendix G. To give a sense of the magnitude of our evaluation, we ran a total of 4,939 runs (i.e. evaluating a specific model on a specific scenario). This amounts to a total cost of 12,169,227,491 tokens and 17,431,479 queries across all models, $38,001 for the commercial APIs, and about 19,500 GPU hours worth of compute for the open models. Here is a summary of the high-level findings:",
+    "context_ids": [
+      "H:p044:tab1.1",
+      "H:p044:t3",
+      "H:p068:t3",
+      "H:p043:tab1.4",
+      "H:p006:t2"
+    ],
+    "error": null,
+    "raw_answer": "The hardware table shows that the model for which 40.9% of GPU hours were on 8×2080 Ti was **T5 (11B)** (2×A100 (59.1%); 8×2080 Ti (40.9%)) [p044:tab1.1].\n\nHowever, the retrieved passage of the models table (Table 5) only includes the tokenizer column for J1-Jumbo, UL2, OPT, and TNLG v2 models — it does not contain the row for T5, so the tokenizer used by T5 (11B) is not available in the retrieved evidence [p043:tab1.4]. Therefore I cannot determine which tokenizer that model uses from the provided passages.",
+    "seconds": 5.7,
+    "tokens_in": 2377,
+    "tokens_out": 538,
+    "llm_calls": 2,
+    "citation_regions": []
+  },
+  {
+    "query_id": "D14",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "BLOOM (176B) thuộc nhóm **open** (mở) — trong bài, BLOOM (176B) được liệt kê cùng OPT (175B) và GLM (130B) là các \"open models\" [H:p006:t4]. Biểu đồ accuracy theo mức độ truy cập (Figure 28) phân biệt ba nhóm: open, limited và closed [H:p053:fig28], nên BLOOM (176B) nằm ở cột **open**.",
+    "citations": [
+      "H:p006:t4",
+      "H:p053:fig28"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "table of evaluated models BLOOM 176B access category accuracy by access chart",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p052:t4",
+            "score": 0.6335341623090579,
+            "page": 52
+          },
+          {
+            "id": "H:p006:t4",
+            "score": 0.5767616066930836,
+            "page": 6
+          },
+          {
+            "id": "H:p053:fig28",
+            "score": 0.5680211002908503,
+            "page": 53
+          },
+          {
+            "id": "H:p052:t2",
+            "score": 0.5517236282084381,
+            "page": 52
+          },
+          {
+            "id": "H:p064:t2",
+            "score": 0.5466910223202851,
+            "page": 64
+          }
+        ],
+        "context_ids": [
+          "H:p052:t4",
+          "H:p006:t4",
+          "H:p053:fig28",
+          "H:p052:t2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p052:t4 | helm_2211.09110v2.pdf | page 52]\nIn Figure 28, we stratify the results for accuracy based on model accessibility (see Liang et al., 2022) as we discuss in §6: models. For each access category, we report the per-scenario accuracy of the model in that category that is the most accurate (full bar) and that is generally the most accurate (smaller dark sub-bar; based on Figure 26). This means the sub-bar is always the accuracy of OPT (175B) for open models, text-davinci-002 for limited access models, and TNLG v2 (530B) for closed models. We see that these models for limited access are consistently the best in their categories, but OPT (175B) is sometimes\n\n[H:p006:t4 | helm_2211.09110v2.pdf | page 6]\n2. Relating model accuracy with model access. In light of the high accuracies of Anthropic-LM v4-s3 (52B) (closed), TNLG v2 (530B) (closed), and text-davinci-002 (limited-access), we observe a consistent gap on all core scenarios (Figure 28) between the current open models and non-open models. We emphasize that this gap reflects the current snapshot of models we evaluate (Table 5), and that the gap could grow or shrink over time as new models are released. On one hand, we see the recent release of open models (OPT (175B), BLOOM (176B), GLM (130B)) as greatly reducing the gap over the past year, but we also have not evaluated some non-open models (e.g. PaLM, Gopher) that we expect to be quite accurate. In either case, monitoring this gap over time is crucial for tracking the accessibility (or lack thereof) and ultimately the power dynamics associated with language models.\n\n[H:p053:fig28 | helm_2211.09110v2.pdf | page 53]\nFigure 28 (page 53). Figure 28: Accuracy as a function of model access. The relationship between access (open vs. limited vs. closed) and model accuracy for each of the 16 core scenarios. Shaded bars indicate the performance of the best model for that scenario, whereas the solid bars indicate the performance of the overall most accurate model across all core scenarios based on Figure 26.\nText printed inside the figure: MMLU BoolQ NarrativeQA NaturalQuestions (closed-book) NaturalQuestions (open-book) QuAC HellaSwag OpenbookQA TruthfulQA MS MARCO (regular) MS MARCO (TREC) CNN/DailyMail XSUM IMDB CivilComments RAFT 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy open limited closed Figure 28: Accuracy as a function of model access. The relationship between access (open vs. limited vs. closed) and model accuracy for each of the 16 core scenarios. Shaded bars indicate the performance of the best model for that scenario, whereas the solid bars indicate the performance of the overall most accurate model across all core scenarios based on Figure 26.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a bar chart.\n\nTitle/Caption: \"Figure 28: Accuracy as a function of model access. The relationship between access (open vs. limited vs. closed) and model accuracy for each of the 16 core scenarios. Shaded bars indicate the performance of the best model for that scenario, whereas the solid bars indicate the performance of the overall most accurate model across all core scenarios based on Figure 26.\"\n\nX-axis: Core scenarios (e.g., MMLU, BoolQ, NarrativeQA, etc.)\nY-axis: Accuracy (units: none, values range from 0.0 to 1.0)\n\nLegend entries: open (blue), limited (orange), closed (green)\n\nClearly visible values/ranking:\n- For the best model (shaded bars):\n  - IMDB: ~0.95\n  - RAFT: ~0.75\n  - HellaSwag: ~0.80\n  - BoolQ: ~0.80\n  - NaturalQuestions (open-book): ~0.70\n  - NaturalQuestions (closed-book): ~0.45\n  - MMLU: ~0.55\n\n- For the overall most accurate model (solid bars):\n  - IMDB: ~0.95\n  - RAFT: ~0.75\n  - HellaSwag: ~0.80\n  - BoolQ: ~0.80\n  - NaturalQuestions (open-book): ~0.70\n  - NaturalQuestions (closed-book): ~0.45\n  - MMLU: ~0.55\n\nMain takeaway: The accuracy of models varies significantly depending on the access level (open, limited, closed), with the best performance generally achieved under open access conditions.\n\n[H:p052:t2 | helm_2211.09110v2.pdf | page 52]\nConsistent with previous findings of accuracy being correlated with robustness and fairness, we see similar rankings of models for those scenarios. However, we note that BLOOM (176B) notably performs considerably better (in a relative sense) for robustness/fairness than its accuracy would suggest, with OPT (175B) and GLM (130B) roughly interchanging positions for robustness and accuracy (i.e. GLM (130B) is more robust and less accurate in a relative sense compared to OPT (175B)). In contrast, perhaps also as expected given the weak correlations of generative harms with other metrics, we see the rankings for toxicity and bias are notably quite different. We highlight how T0++ (11B) and davinci (175B) in particular demonstrate the opposite trends when comparing their bias win rates to their toxicity win rates. That is, T0++ (11B) is the most toxic when compared to all other models, but one of the three least (gender) biases, whereas davinci (175B) is one of the four most biased head-to-head, but one of the less toxic models.",
+    "context_ids": [
+      "H:p052:t4",
+      "H:p006:t4",
+      "H:p053:fig28",
+      "H:p052:t2"
+    ],
+    "error": null,
+    "seconds": 4.67,
+    "tokens_in": 2356,
+    "tokens_out": 368,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p006:t4",
+        "page": 6,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      },
+      {
+        "id": "H:p053:fig28",
+        "page": 53,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          77.9,
+          582.0,
+          319.1
+        ],
+        "image": "bonus/data/figures/fig28_p053.png"
+      }
+    ]
+  },
+  {
+    "query_id": "D15",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "The paper states that holistic evaluation involves three elements [H:p002:t3]:\n\n1. **Broad coverage and recognition of incompleteness** — because it is neither possible to consider all scenarios nor all desiderata, holistic evaluation should provide a top-down taxonomy and make explicit all the major scenarios and metrics that are missing [H:p002:t4].\n2. **Multi-metric measurement** — societally beneficial systems reflect many values, not just accuracy, so holistic evaluation should represent these plural desiderata, evaluating every desideratum for each scenario considered [H:p002:t4].\n3. **Standardization** — the object of evaluation is the language model, not a scenario-specific system, so the strategy for adapting an LM to a scenario should be controlled for, and each LM should be evaluated on the same scenarios to the extent possible [H:p002:t5].\n\nOverall, the paper says holistic evaluation thereby builds transparency by assessing language models in their totality [H:p002:t5].",
+    "citations": [
+      "H:p002:t3",
+      "H:p002:t4",
+      "H:p002:t5"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "holistic evaluation involves three elements",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p002:t3",
+            "score": 0.6663331585923264,
+            "page": 2
+          },
+          {
+            "id": "H:p077:t3",
+            "score": 0.6381429535832512,
+            "page": 77
+          },
+          {
+            "id": "H:p002:t4",
+            "score": 0.6295287851513425,
+            "page": 2
+          },
+          {
+            "id": "H:p015:t2",
+            "score": 0.6077281131258224,
+            "page": 15
+          },
+          {
+            "id": "H:p002:t5",
+            "score": 0.5968431368623653,
+            "page": 2
+          }
+        ],
+        "context_ids": [
+          "H:p002:t3",
+          "H:p077:t3",
+          "H:p002:t4",
+          "H:p015:t2",
+          "H:p002:t5"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p002:t3 | helm_2211.09110v2.pdf | page 2]\nBut what does it mean to benchmark language models holistically? Language models are general-purpose text interfaces that could be applied across a vast expanse of scenarios. And for each scenario, we may have a broad set of desiderata: models should be accurate, robust, fair, efficient, and so on. In fact, the relative importance of these desiderata often will depend not only on the perspective and values one has, but the scenario itself (e.g. inference efficiency might be of greater importance in mobile applications). We believe holistic evaluation involves three elements:\n\n[H:p077:t3 | helm_2211.09110v2.pdf | page 77]\nWe believe that establishing such a standard is necessary for the ecosystem to mature, and that holistic approaches are integral for building just standards. One of our three requirements for holistic evaluation is the recognition of limitations: holistic evaluation should foreground where what is implemented falls short of the ambition of evaluating models in their totality. Our benchmark foregrounds the limitations of our current benchmark by design: our benchmark is a subset of a pre-specified taxonomy. That is, the difference between what is in the taxonomy and what is in the benchmark identifies what we currently miss.\n\n[H:p002:t4 | helm_2211.09110v2.pdf | page 2]\n1. Broad coverage and recognition of incompleteness. Given language models’ vast surface of capabilities and risks, we need to evaluate language models over a broad range of scenarios. Broadening the evaluation has been a continuing trend in the NLP community, going from individual datasets such as SQuAD (Rajpurkar et al., 2016) to small collections of datasets such as SuperGLUE (Wang et al., 2019b) to large collections of datasets such as the GPT-3 evaluation suite (Brown et al., 2020), Eleuther AI LM Harness (Gao et al., 2021b), and BIG-Bench (Srivastava et al., 2022). However, it is neither possible to consider all the scenarios nor all the desiderata that (could) pertain to LMs. Therefore, holistic evaluation should provide a top-down taxonomy and make explicit all the major scenarios and metrics that are missing. 2. Multi-metric measurement. Societally beneficial systems reflect many values, not just accuracy. Holistic evaluation should represent these plural desiderata, evaluating every desideratum for each scenario considered.\n\n[H:p015:t2 | helm_2211.09110v2.pdf | page 15]\nTo evaluate a language model, we must specify a series of runs, where each run is defined by a (scenario, adaptation method, metric) triple. Each of these scenarios, adaptation, and metrics define a complicated and structured space, which one implicitly navigates to make decisions in evaluating a language model. Central to our approach to holistic evaluation is that we make both the space and the decision explicit. In §3: core-scenarios and §4: metrics, we first taxonomize both spaces and then systematically select points from the spaces. This specifies our abstract aspiration and our concrete implementation, which together define HELM. Distinguishing these steps also helps clarify what is fundamentally possible vs. what we, as a specific collective of benchmark designers, chose to prioritize and emphasize. Then, we evaluate 30 models by making a specific choice for adaptation procedure (i.e. 5-shot prompting), though we emphasize many other adaptation procedures could be considered.\n\n[H:p002:t5 | helm_2211.09110v2.pdf | page 2]\n3. Standardization. Our object of evaluation is the language model, not a scenario-specific system. Therefore, in order to meaningfully compare different LMs, the strategy for adapting an LM to a scenario should be controlled for. Furthermore, each LM should be evaluated on the same scenarios to the extent possible. Overall, holistic evaluation builds transparency by assessing language models in their totality. Rather than honing in on a specific aspect, we strive for a fuller characterization of language models to improve scientific understanding and orient societal impact.",
+    "context_ids": [
+      "H:p002:t3",
+      "H:p077:t3",
+      "H:p002:t4",
+      "H:p015:t2",
+      "H:p002:t5"
+    ],
+    "error": null,
+    "seconds": 4.59,
+    "tokens_in": 1855,
+    "tokens_out": 395,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p002:t3",
+        "page": 2,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      },
+      {
+        "id": "H:p002:t4",
+        "page": 2,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      },
+      {
+        "id": "H:p002:t5",
+        "page": 2,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D16",
+    "split": "dev",
+    "config": "baseline",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "GPU hours compute open models all runs",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p043:tab1.4",
+            "score": 0.6856868675761535,
+            "page": 43
+          },
+          {
+            "id": "H:p006:t2",
+            "score": 0.6674175665634003,
+            "page": 6
+          },
+          {
+            "id": "H:p043:tab1.7",
+            "score": 0.6661581992194396,
+            "page": 43
+          },
+          {
+            "id": "H:p043:tab1.1",
+            "score": 0.6394510601642684,
+            "page": 43
+          },
+          {
+            "id": "H:p043:tab1.3",
+            "score": 0.6364548640307066,
+            "page": 43
+          }
+        ],
+        "context_ids": [
+          "H:p043:tab1.4",
+          "H:p006:t2",
+          "H:p043:tab1.7",
+          "H:p043:tab1.1",
+          "H:p043:tab1.3"
+        ]
+      },
+      {
+        "event": "no_valid_citation"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p043:tab1.4 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nUL2 (20B) | Google | Text | 20B | UL2 | 512 | open | 199,539,380 | 406,072 | 1,570 GPU hours\nOPT (66B) | Meta | Text | 66B | OPT | 2048 | open | 612,752,867 | 851,178 | 2,000 GPU hours\nOPT (175B) | Meta | Text | 175B | OPT | 2048 | open | 610,436,798 | 851,178 | 3,400 GPU hours\nTNLG v2 (6.7B) | Microsoft/NVIDIA | Text | 6.7B | GPT-2 | 2047 | closed | 417,583,950 | 590,756 | -\nTNLG v2 (530B) | Microsoft/NVIDIA | Text | 530B | GPT-2 | 2047 | closed | 417,111,519 | 590,756 | -\n\n[H:p006:t2 | helm_2211.09110v2.pdf | page 6]\nWe emphasize that we have a limited understanding on how contaminated models are, and to what extent this compromises the validity and legitimacy of our evaluation, though we do provide all evidence we are aware of in Appendix G. To give a sense of the magnitude of our evaluation, we ran a total of 4,939 runs (i.e. evaluating a specific model on a specific scenario). This amounts to a total cost of 12,169,227,491 tokens and 17,431,479 queries across all models, $38,001 for the commercial APIs, and about 19,500 GPU hours worth of compute for the open models. Here is a summary of the high-level findings:\n\n[H:p043:tab1.7 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nGLM (130B) | Tsinghua University | Text | 130B | ICE | 2048 | open | 375,474,243 | 406,072 | 2,100 GPU hours\nYaLM (100B) | Yandex | Text | 100B | Yandex | 2048 | open | 378,607,292 | 405,093 | 2,200 GPU hours\n\n[H:p043:tab1.1 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nJ1-Grande v1 (17B) | AI21 Labs | Text | 17B | AI21 | 2047 | limited 326,815,150 | 591,384 | $2,973\nJ1-Large v1 (7.5B) | AI21 Labs | Text | 7.5B | AI21 | 2047 | limited 342,616,800 | 601,560 | $1,128\nAnthropic-LM v4-s3 (52B) | Anthropic | Text | 52B | GPT-2 | 8192 | closed | 767,856,111 | 842,195 | -\nBLOOM (176B) | BigScience | Text | 176B | BLOOM | 2048 | open | 581,384,088 | 849,303 | 4,200 GPU hours\n\n[H:p043:tab1.3 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nCohere small v20220720 (410M)57 | Cohere | Text | 410M | Cohere | 2047 | limited 399,114,309 | 597,252 | $1,743\nGPT-J (6B) | EleutherAI | Text | 6B | GPT-J | 2048 | open | 611,026,748 | 851,178 | 860 GPU hours\nGPT-NeoX (20B) | EleutherAI | Text | 20B | GPT-NeoX | 2048 | open | 599,170,730 | 849,830 | 540 GPU hours\nT5 (11B) | Google | Text | 11B | T5 | 512 | open | 199,017,126 | 406,072 | 1,380 GPU hours",
+    "context_ids": [
+      "H:p043:tab1.4",
+      "H:p006:t2",
+      "H:p043:tab1.7",
+      "H:p043:tab1.1",
+      "H:p043:tab1.3"
+    ],
+    "error": null,
+    "raw_answer": "According to the paper, evaluating the open models across all runs required **about 19,500 GPU hours** worth of compute [p006:t2]. This figure is given alongside the overall scale of the evaluation: 4,939 total runs, 12,169,227,491 tokens, and 17,431,479 queries across all models [p006:t2].",
+    "seconds": 4.7,
+    "tokens_in": 2657,
+    "tokens_out": 235,
+    "llm_calls": 2,
+    "citation_regions": []
+  },
+  {
+    "query_id": "D17",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "Trên tất cả các mô hình, tổng cộng đã có **17.431.479 truy vấn (queries)** được thực hiện, nằm trong tổng số 4.939 lượt chạy (runs) của quá trình đánh giá [H:p006:t2].",
+    "citations": [
+      "H:p006:t2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "total number of queries across all models",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p006:t2",
+            "score": 0.6433101808943154,
+            "page": 6
+          },
+          {
+            "id": "H:p043:tab1.1",
+            "score": 0.6320545735261618,
+            "page": 43
+          },
+          {
+            "id": "H:p043:tab1.4",
+            "score": 0.6289023295990287,
+            "page": 43
+          },
+          {
+            "id": "H:p043:tab1.7",
+            "score": 0.6215178676801043,
+            "page": 43
+          },
+          {
+            "id": "H:p043:tab1.2",
+            "score": 0.6152251592144373,
+            "page": 43
+          }
+        ],
+        "context_ids": [
+          "H:p006:t2",
+          "H:p043:tab1.1",
+          "H:p043:tab1.4",
+          "H:p043:tab1.7",
+          "H:p043:tab1.2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p006:t2 | helm_2211.09110v2.pdf | page 6]\nWe emphasize that we have a limited understanding on how contaminated models are, and to what extent this compromises the validity and legitimacy of our evaluation, though we do provide all evidence we are aware of in Appendix G. To give a sense of the magnitude of our evaluation, we ran a total of 4,939 runs (i.e. evaluating a specific model on a specific scenario). This amounts to a total cost of 12,169,227,491 tokens and 17,431,479 queries across all models, $38,001 for the commercial APIs, and about 19,500 GPU hours worth of compute for the open models. Here is a summary of the high-level findings:\n\n[H:p043:tab1.1 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nJ1-Grande v1 (17B) | AI21 Labs | Text | 17B | AI21 | 2047 | limited 326,815,150 | 591,384 | $2,973\nJ1-Large v1 (7.5B) | AI21 Labs | Text | 7.5B | AI21 | 2047 | limited 342,616,800 | 601,560 | $1,128\nAnthropic-LM v4-s3 (52B) | Anthropic | Text | 52B | GPT-2 | 8192 | closed | 767,856,111 | 842,195 | -\nBLOOM (176B) | BigScience | Text | 176B | BLOOM | 2048 | open | 581,384,088 | 849,303 | 4,200 GPU hours\n\n[H:p043:tab1.4 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nUL2 (20B) | Google | Text | 20B | UL2 | 512 | open | 199,539,380 | 406,072 | 1,570 GPU hours\nOPT (66B) | Meta | Text | 66B | OPT | 2048 | open | 612,752,867 | 851,178 | 2,000 GPU hours\nOPT (175B) | Meta | Text | 175B | OPT | 2048 | open | 610,436,798 | 851,178 | 3,400 GPU hours\nTNLG v2 (6.7B) | Microsoft/NVIDIA | Text | 6.7B | GPT-2 | 2047 | closed | 417,583,950 | 590,756 | -\nTNLG v2 (530B) | Microsoft/NVIDIA | Text | 530B | GPT-2 | 2047 | closed | 417,111,519 | 590,756 | -\n\n[H:p043:tab1.7 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nGLM (130B) | Tsinghua University | Text | 130B | ICE | 2048 | open | 375,474,243 | 406,072 | 2,100 GPU hours\nYaLM (100B) | Yandex | Text | 100B | Yandex | 2048 | open | 378,607,292 | 405,093 | 2,200 GPU hours\n\n[H:p043:tab1.2 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nT0++ (11B) | BigScience | Text | 11B | T0 | 1024 | open | 305,488,229 | 406,072 | 1,250 GPU hours\nCohere xlarge v20220609 (52.4B) | Cohere | Text | 52.4B | Cohere | 2047 | limited 397,920,975 | 597,252 | $1,743\nCohere large v20220720 (13.1B)56 | Cohere | Text | 13.1B | Cohere | 2047 | limited 398,293,651 | 597,252 | $1,743\nCohere medium v20220720 (6.1B) | Cohere | Text | 6.1B | Cohere | 2047 | limited 398,036,367 | 597,252 | $1,743",
+    "context_ids": [
+      "H:p006:t2",
+      "H:p043:tab1.1",
+      "H:p043:tab1.4",
+      "H:p043:tab1.7",
+      "H:p043:tab1.2"
+    ],
+    "error": null,
+    "seconds": 4.42,
+    "tokens_in": 2665,
+    "tokens_out": 213,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p006:t2",
+        "page": 6,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D18",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "According to the introduction, several models — notably **J1-Grande v1 (17B), Cohere xlarge v20220609 (52.4B), and YaLM (100B)** — do not report any public results prior to this effort (to the authors' knowledge) [H:p005:t1].",
+    "citations": [
+      "H:p005:t1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "models no public results prior to this work introduction",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p080:t3",
+            "score": 0.5691833156834147,
+            "page": 80
+          },
+          {
+            "id": "H:p005:t1",
+            "score": 0.5629954748741651,
+            "page": 5
+          },
+          {
+            "id": "H:p053:t1",
+            "score": 0.5477773065036113,
+            "page": 53
+          },
+          {
+            "id": "H:p044:t2",
+            "score": 0.5460599225581398,
+            "page": 44
+          },
+          {
+            "id": "H:p045:t2",
+            "score": 0.5394802093505898,
+            "page": 45
+          }
+        ],
+        "context_ids": [
+          "H:p080:t3",
+          "H:p005:t1",
+          "H:p053:t1",
+          "H:p044:t2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p080:t3 | helm_2211.09110v2.pdf | page 80]\nSecond, there are models that have been disclosed publicly but we do not have access. Notably, at present, prominent models from DeepMind and Google (e.g. Gopher (Rae et al., 2021), Chinchilla (Hoffmann et al., 2022), LaMDA (Thoppilan et al., 2022), PaLM (Chowdhery et al., 2022), and U-PaLM (Tay et al., 2022b)) fall in this category. Consistent with the recommendations of Liang et al. (2022), we believe research access to publicly benchmark and document these models is necessary, even if the broader practices for model release will differ across model providers. To this end, we recommend patterns of developer-mediated access as potential middlegrounds to ensure these models can be benchmarked transparently as a form of structured model access (Shevlane, 2022).\n\n[H:p005:t1 | helm_2211.09110v2.pdf | page 5]\nPublished in Transactions on Machine Learning Research (08/2023) their original works (Raffel et al., 2019; Askell et al., 2021). In fact, several models (e.g. J1-Grande v1 (17B), Cohere xlarge v20220609 (52.4B), YaLM (100B)) do not report any public results prior to our effort (to our knowledge). And even for datasets that are frequently evaluated for across all 405 datasets evaluated in major language modeling works (e.g. HellaSwag; many of the datasets within GLUE and SuperGLUE), we find the evaluation conditions vary greatly. On HellaSwag, some prior work reports fine-tuned accuracies (e.g. T5 (11B)), whereas others report prompting accuracies (e.g. davinci (175B)).4 Even when works report results through few-shot prompting, the exact details can vary, which in §8.2: prompting-analysis we show leads to wild swings in accuracies (e.g. 30% to 80% for the same (model, scenario); see Zhao et al. (2021)).\n\n[H:p053:t1 | helm_2211.09110v2.pdf | page 53]\nPublished in Transactions on Machine Learning Research (08/2023) improved over (e.g. 10 point improvement for MMLU and CivilComments) as is TNLG v2 (530B) (e.g. more than 5 point improvement for NaturalQuestions (open-book) and TruthfulQA). Overall, we see the accuracies generally fall in the direction limited access > closed > open, which aligns with Figure 26. With that said, we see some reason for optimism regarding open science through open-sourced models, in that the best public model is usually somewhat competitive in accuracy (i.e. within 5 points of the best non-open model), with the notable exceptions of more knowledge-intensive scenarios of MMLU, NaturalQuestions (closed-book) and TruthfulQA as well as both information retrieval scenarios. This is especially noteworthy given we have yet to see models being open-sourced with significant use of human preferences and reinforcement learning from human feedback, which may further bridge this gap. However, we do highlight there are other confounds: some models may not be disclosed to the public (let alone released), some models may be disclosed after significant delay, and some highly accurate models are not yet evaluated in HELM (e.g. Gopher, Chinchilla, PaLM; see §10.4: missing-models).\n\n[H:p044:t2 | helm_2211.09110v2.pdf | page 44]\nModel selection. As one of the pillars of this work, our aim was common understanding of language models. To achieve this ambition, we had to navigate the access conditions of different models (Liang et al., 2022). Some models were open (full model weights are available for download) (e.g. GPT-NeoX (20B), OPT (175B), BLOOM (176B)), some were limited API access (e.g. davinci (175B), J1-Jumbo v1 (178B), Cohere xlarge v20220609 (52.4B)), and some were closed, but the model owner provided us with access for this research effort (Anthropic-LM v4-s3 (52B), TNLG v2 (530B)). Unfortunately, we did not evaluate models that we could not access (e.g. Google’s PaLM (Chowdhery et al., 2022) and LaMDA (Thoppilan et al., 2022), DeepMind’s Gopher (Rae et al., 2021) and RETRO (Borgeaud et al., 2022)). We more extensively discuss missing models in §10.4: missing-models. We encourage future work to evaluate these models to allow for common understanding, and to develop standards for research access to these models (Liang et al., 2022).",
+    "context_ids": [
+      "H:p080:t3",
+      "H:p005:t1",
+      "H:p053:t1",
+      "H:p044:t2"
+    ],
+    "error": null,
+    "seconds": 4.65,
+    "tokens_in": 2103,
+    "tokens_out": 269,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p005:t1",
+        "page": 5,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D19",
+    "split": "dev",
+    "config": "baseline",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "GPT-4 MMLU accuracy HELM",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p011:tab1.5",
+            "score": 0.5761468420335046,
+            "page": 11
+          },
+          {
+            "id": "H:p077:t2",
+            "score": 0.5646764530767451,
+            "page": 77
+          },
+          {
+            "id": "H:p064:t2",
+            "score": 0.5605210923838054,
+            "page": 64
+          },
+          {
+            "id": "H:p004:tab1.1",
+            "score": 0.5601451850673425,
+            "page": 4
+          },
+          {
+            "id": "H:p003:t3",
+            "score": 0.5468872729674408,
+            "page": 3
+          }
+        ],
+        "context_ids": [
+          "H:p011:tab1.5",
+          "H:p077:t2",
+          "H:p064:t2",
+          "H:p004:tab1.1",
+          "H:p003:t3"
+        ]
+      },
+      {
+        "event": "no_valid_citation"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p011:tab1.5 | helm_2211.09110v2.pdf | page 11]\ntable on page 11 (page 11). \n1 | Introduction | 2\n1.1 | HELM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 3\n4.3 | Accuracy | . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 27\n4.4 | Calibration and uncertainty . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 27\n4.5 | Robustness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 28\n4.6 | Fairness . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | 30\n\n[H:p077:t2 | helm_2211.09110v2.pdf | page 77]\nSituated against this landscape, what differentiates our work is our holistic approach, which manifests in both our benchmark design process and our concrete benchmark. HELM is the byproduct of an explicit two-step process: we taxonomize the space for language model evaluation, structured around use cases (scenarios) and desiderata (metrics), and then systematically select points in a way that reflects our priorities. This makes explicit the aspiration, the concrete benchmark, and, consequently, what our benchmark lacks that we should aspire to evaluate. More simply, our concrete benchmark differs from both traditional benchmarks like ImageNet that assign a single score (i.e. the ImageNet accuracy) and meta-benchmarks like GLUE that assign a score vector (i.e. the accuracies on the GLUE datasets) to each model. Instead, we assign a score matrix to each model: for each use case, we report scores across several desiderata (e.g. accuracy, calibration, robustness, fairness, efficiency). Independent of the fact we measure holistically, one may wonder what the relationship is between the scenarios we select and those evaluated in prior works. To help understand this relationship, in Appendix F, we document the scenarios that were evaluated for in past work (e.g. the scenarios evaluated by Chowdhery et al. (2022) in the PaLM paper or by Gao et al. (2021b) in the EleutherAI Language Model Evaluation Harness) as well as past results for the models we evaluate on our scenarios (e.g. the HellaSwag accuracy reported by Brown et al. (2020) in the GPT-3 paper). Further, to build on BIG-Bench specifically, we highlight that our codebase integrates all BIG-Bench scenarios, augmented with metrics beyond accuracy and the ability to evaluate all models we support. We emphasize that at this time, no common standard exists for language modeling evaluation, especially as the capabilities, harms, and limitations of these models are still being understood through the ongoing design of evaluations.\n\n[H:p064:t2 | helm_2211.09110v2.pdf | page 64]\nAnd we do note, while a very low rate of 0.6%, TNLG v2 (530B) achieves the highest toxicity rate in addition to the highest ROUGE-2 accuracy on XSUM. Sentiment analysis. To further explore the results for this task, see https://crfm.stanford.edu/helm/ v0.1.0/?group=sentiment_analysis. For sentiment analysis on IMDB, we see model accuracies are often quite high (i.e. greater than 90%), with the top models hitting an accuracy around 95% (J1-Grande v1 (17B), J1-Large v1 (7.5B), BLOOM (176B), Cohere xlarge v20220609 (52.4B), GPT-NeoX (20B), OPT (175B), TNLG v2 (530B), text-davinci-002, GLM (130B)) and GLM (130B) reporting the top accuracy by a thin margin at 95.5%. The strong performance in terms of accuracy of the much smaller GPT-J (6B) and J1-Large v1 (7.5B) models is noteworthy for this scenario, as well the performance of BLOOM (176B), which generally underperforms on other scenarios given its multilingual training contrasted with our English- specific evaluation. Further, we are surprised to see that J1-Jumbo v1 (178B) lags a few points behind the other J-1 models and the generally high-accuracy Anthropic-LM v4-s3 (52B) model is also more middle-of- the-pack with an accuracy of around 93.4%.\n\n[H:p004:tab1.1 | helm_2211.09110v2.pdf | page 4]\ntable on page 4 (page 4). \nPrevious work | HELM\nMetrics\nMetric\nAccuracy Calibration Robustness Fairness | Bias | Toxicity Efficiency\nQuestions Natural | ✔ (Accuracy) | RAFT | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔\nXSUM | ✔ (Accuracy) | IMDB | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔\nScenarios AdversarialQA ✔ (Robustness) | Scenarios Questions Natural | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔\nRealToxicity Prompts | ✔ (Toxicity) | QuAC | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔\nBBQ | ✔ (Bias) | XSUM | ✔ | ✔ | ✔ | ✔\n\n[H:p003:t3 | helm_2211.09110v2.pdf | page 3]\nMulti-metric measurement. HELM currently implements a core3 set of 16 scenarios and 7 (categories of) metrics. Our scenarios, which are triples of (task, domain, language), span 6 user-facing tasks (e.g. question answering, information retrieval, summarization, toxicity detection), several domains (e.g. news, books), and currently only English (though we cover several English varieties such as African-American English and the English varieties spoken in different English-speaking countries). And our 7 categories of metrics reflect a range of societal considerations (i.e. accuracy, calibration, robustness, fairness, bias, toxicity, efficiency). We emphasize that while we have specific quantitative metrics for all of these considerations, they (e.g. fairness) are complex and contested social constructs that can be operationalized in many different ways. Consistent with our second element of holistic evaluation, we ensure our benchmark attains dense multi-metric measurement: of the 112 possible (core scenario, metric) pairs, we measure 98 (87.5%) as shown in Table 4.",
+    "context_ids": [
+      "H:p011:tab1.5",
+      "H:p077:t2",
+      "H:p064:t2",
+      "H:p004:tab1.1",
+      "H:p003:t3"
+    ],
+    "error": null,
+    "raw_answer": "Các đoạn văn bản truy xuất được không chứa thông tin về độ chính xác của GPT-4 trên MMLU trong đánh giá HELM: không có đoạn nào nhắc đến GPT-4 hay benchmark MMLU với con số cụ thể (các đoạn chỉ nói về thiết kế benchmark đa chỉ số của HELM [p003:t3], cấu trúc bảng điểm theo use case/desiderata [p077:t2], hay kết quả accuracy trên IMDB/XSUM cho các mô hình khác [p064:t2]).\n\nVì vậy, không có đủ bằng chứng trong các đoạn đã truy xuất để trả lời câu hỏi này.",
+    "seconds": 4.98,
+    "tokens_in": 2583,
+    "tokens_out": 336,
+    "llm_calls": 2,
+    "citation_regions": []
+  },
+  {
+    "query_id": "D20",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "There is not enough evidence in the retrieved passages to answer this question. The passages include Figure 35, which plots robustness versus accuracy on IMDB and BoolQ, but it only presents the axes (Accuracy (EM) 0.0–1.0 and Robustness (EM) 0.0–1.0) without any per-model numeric values, and Alpaca is not named in it [H:p061:fig35]. Figure 34 reports metric spread across models per scenario, but again gives no individual model scores, and Alpaca is not identified [H:p060:fig34]. The text passage on IMDB sentiment analysis mentions robustness drops for models such as GLM (130B) but does not mention Alpaca or give a robustness score for it [H:p007:t5]. Therefore I cannot state a robustness score for Alpaca on IMDB.",
+    "citations": [
+      "H:p061:fig35",
+      "H:p060:fig34",
+      "H:p007:t5"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "robustness score Alpaca IMDB",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p060:fig34",
+            "score": 0.5546534792621585,
+            "page": 60
+          },
+          {
+            "id": "H:p061:fig35",
+            "score": 0.5356224882243646,
+            "page": 61
+          },
+          {
+            "id": "H:p007:t5",
+            "score": 0.5175077977806216,
+            "page": 7
+          },
+          {
+            "id": "H:p064:t3",
+            "score": 0.505206376003883,
+            "page": 64
+          },
+          {
+            "id": "H:p023:t2",
+            "score": 0.48702905355152626,
+            "page": 23
+          }
+        ],
+        "context_ids": [
+          "H:p060:fig34",
+          "H:p061:fig35",
+          "H:p007:t5"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p060:fig34 | helm_2211.09110v2.pdf | page 60]\nFigure 34 (page 60). Figure 34: Metric spread for core scenarios. Metrics for every model on every core scenario as a means for indicating the spread on a per-metric basis.\nText printed inside the figure: MMLU BoolQ NarrativeQA NaturalQuestions (closed-book) NaturalQuestions (open-book) QuAC HellaSwag OpenbookQA TruthfulQA MS MARCO (regular) MS MARCO (TREC) CNN/DailyMail XSUM IMDB CivilComments RAFT 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy MMLU BoolQ NarrativeQA NaturalQuestions (closed-book) NaturalQuestions (open-book) QuAC HellaSwag OpenbookQA TruthfulQA IMDB CivilComments RAFT 0.0 0.2 0.4 0.6 0.8 Calibration error MMLU BoolQ NarrativeQA NaturalQuestions (closed-book) NaturalQuestions (open-book) QuAC HellaSwag OpenbookQA TruthfulQA MS MARCO (regular) MS MARCO (TREC) IMDB CivilComments RAFT 0.0 0.2 0.4 0.6 0.8 Robustness MMLU BoolQ NarrativeQA NaturalQuestions (closed-book) NaturalQuestions (open-book) QuAC HellaSwag OpenbookQA TruthfulQA MS MARCO (regular) MS MARCO (TREC) IMDB CivilComments RAFT 0.0 0.2 0.4 0.6 0.8 Fairness BoolQ NarrativeQA NaturalQuestions (closed-book) NaturalQuestions (op\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a set of box plots. \n\n**Title/Caption:** Figure 34: Metric spread for core scenarios. Metrics for every model on every core scenario as a means for indicating the spread on a per-metric basis.\n\n**X-axis:** Different datasets (e.g., MMLU, BoolQ, NarrativeQA, etc.)\n**Y-axis:** Metric values (Accuracy, Calibration error, Robustness, Fairness, Gender representation, Toxicity)\n\n**Legend Entries:** The box plots represent different models (e.g., RAFT, CivilComments, IMDB, etc.).\n\n**Visible Values/Ranking:**\n- Accuracy: RAFT > CivilComments > IMDB > others\n- Calibration error: RAFT < CivilComments < IMDB < others\n- Robustness: RAFT > CivilComments > IMDB > others\n- Fairness: RAFT > CivilComments > IMDB > others\n- Gender representation: RAFT < CivilComments < IMDB < others\n- Toxicity: RAFT < CivilComments < IMDB < others\n\n**Main Takeaway:** The RAFT model generally performs better across most metrics compared to other models, indicating its robustness and fairness.\n\n[H:p061:fig35 | helm_2211.09110v2.pdf | page 61]\nFigure 35 (page 61). Figure 35: Robustness–equivariance via contrast sets. For the two scenarios where we have access to hand-crafted contrast sets, for each model, we plot the robustness of the model on that scenario (worst-case performance across perturbations of each instance) as a function of its standard accuracy.\nText printed inside the figure: 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy (EM) 0.0 0.2 0.4 0.6 0.8 1.0 Robustness (EM) IMDB 0.0 0.2 0.4 0.6 0.8 1.0 Accuracy (EM) 0.0 0.2 0.4 0.6 0.8 1.0 Robustness (EM) BoolQ Figure 35: Robustness–equivariance via contrast sets. For the two scenarios where we have access to hand-crafted contrast sets, for each model, we plot the robustness of the model on that scenario (worst-case performance across perturbations of each instance) as a function of its standard accuracy.\nVisual description (generated by qwen2.5vl:7b, may contain errors): The figure is a scatter plot.\n\nTitle/Caption: Figure 35: Robustness-equivalence via contrast sets.\n\nDescription:\n- The x-axis is labeled \"Accuracy (EM)\" and ranges from 0.0 to 1.0.\n- The y-axis is labeled \"Robustness (EM)\" and ranges from 0.0 to 1.0.\n- The plot shows data points for two scenarios: IMDB and BoolQ.\n- The dashed line represents the identity line, where accuracy equals robustness.\n- The data points for IMDB are clustered around the upper right, indicating higher accuracy and robustness.\n- The data points for BoolQ are more spread out, with some points closer to the identity line and others further away.\n\nMain Takeaway: The figure illustrates the relationship between accuracy and robustness for models on the IMDB and BoolQ datasets, showing that models with higher accuracy tend to also have higher robustness, but there is variability in this relationship.\n\n[H:p007:t5 | helm_2211.09110v2.pdf | page 7]\n11. Sentiment analysis. For sentiment analysis on IMDB, many models are quite accurate and well- calibrated with marginal drops on robustness and fairness perturbations, but the contrast sets of Gardner et al. (2020) highlight clear limitations in model robustness (e.g. one of the most accurate models in GLM (130B) drops by more than 8%).13 12. Toxicity detection. For toxicity detection on CivilComments, we find that most models are not particularly accurate: OPT (175B) is one of the most accurate models across all scenarios 8See https://crfm.stanford.edu/helm/v0.1.0/?group=narrative_qa. 9See https://crfm.stanford.edu/helm/v0.1.0/?group=twitter_aae. 10See https://crfm.stanford.edu/helm/v0.1.0/?group=core_scenarios#Efficiency. 11See https://crfm.stanford.edu/helm/v0.1.0/?group=question_answering. 12See https://crfm.stanford.edu/helm/v0.1.0/?group=information_retrieval. 13See https://crfm.stanford.edu/helm/v0.1.0/?group=sentiment_analysis and https://crfm.stanford.edu/helm/v0.1. 0/?group=robustness_contrast_sets.",
+    "context_ids": [
+      "H:p060:fig34",
+      "H:p061:fig35",
+      "H:p007:t5"
+    ],
+    "error": null,
+    "seconds": 5.4,
+    "tokens_in": 2463,
+    "tokens_out": 330,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p061:fig35",
+        "page": 61,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          77.9,
+          582.0,
+          298.4
+        ],
+        "image": "bonus/data/figures/fig35_p061.png"
+      },
+      {
+        "id": "H:p060:fig34",
+        "page": 60,
+        "kind": "figure",
+        "bbox": [
+          30.0,
+          77.9,
+          582.0,
+          595.6
+        ],
+        "image": "bonus/data/figures/fig34_p060.png"
+      },
+      {
+        "id": "H:p007:t5",
+        "page": 7,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      }
+    ]
+  },
+  {
+    "query_id": "D21",
+    "split": "dev",
+    "config": "baseline",
+    "status": "answered",
+    "answer": "The retrieved passages do not state OpenAI's per-1,000-token price for text-davinci-002. Table 5 only reports aggregate evaluation figures for the model — 466,872,228 total tokens and a total cost of $9,337 [H:p043:tab1.5] — and the appendix passage about text-davinci-002 discusses training/release information rather than pricing [H:p159:t4]. There is therefore not enough evidence in the retrieved passages to give the per-1,000-token price.",
+    "citations": [
+      "H:p043:tab1.5",
+      "H:p159:t4"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "price per 1,000 tokens text-davinci-002 OpenAI cost",
+        "filter": null,
+        "results": [
+          {
+            "id": "H:p043:tab1.6",
+            "score": 0.6182586409738882,
+            "page": 43
+          },
+          {
+            "id": "H:p043:tab1.5",
+            "score": 0.6151238954363013,
+            "page": 43
+          },
+          {
+            "id": "H:p159:t4",
+            "score": 0.557741503311713,
+            "page": 159
+          },
+          {
+            "id": "H:p043:tab1.1",
+            "score": 0.5371457426895825,
+            "page": 43
+          },
+          {
+            "id": "H:p043:tab1.4",
+            "score": 0.5336729606195837,
+            "page": 43
+          }
+        ],
+        "context_ids": [
+          "H:p043:tab1.6",
+          "H:p043:tab1.5",
+          "H:p159:t4",
+          "H:p043:tab1.1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "searches": 1,
+    "context": "[H:p043:tab1.6 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\ntext-curie-001 | OpenAI | Text | Unknown | GPT-2 | 2048 | limited 420,004,477 | 606,253 | $840\ntext-babbage-001 | OpenAI | Text | Unknown | GPT-2 | 2048 | limited 419,036,038 | 604,253 | $210\ntext-ada-001 | OpenAI | Text | Unknown | GPT-2 | 2048 | limited 418,915,281 | 604,253 | $168\ncode-davinci-002 | OpenAI | Code | Unknown | GPT-2 | 4000 | limited | 46,272,590 | 57,051 | $925\ncode-cushman-001 (12B) | OpenAI | Code | 12B | GPT-2 | 2048 | limited | 42,659,399 | 59,751 | $85\n\n[H:p043:tab1.5 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\ndavinci (175B) | OpenAI | Text | 175B | GPT-2 | 2048 | limited 422,001,611 | 606,253 | $8,440\ncurie (6.7B) | OpenAI | Text | 6.7B | GPT-2 | 2048 | limited 423,016,414 | 606,253 | $846\nbabbage (1.3B) | OpenAI | Text | 1.3B | GPT-2 | 2048 | limited 422,123,900 | 606,253 | $211\nada (350M) | OpenAI | Text | 350M | GPT-2 | 2048 | limited 422,635,705 | 604,253 | $169\ntext-davinci-002 | OpenAI | Text | Unknown | GPT-2 | 4000 | limited 466,872,228 | 599,815 | $9,337\n\n[H:p159:t4 | helm_2211.09110v2.pdf | page 159]\nWe evaluate text-ada-001, text-babbage-001, text-curie-001, and text-davinci-002. We have contacted the model provider, OpenAI, but have not received formal confirmation on the nature of the training procedure for these models, the appropriate release date to use, or the appropriate model sizes. For this reason we generally exclude this information. Codex (OpenAI). Codex models are GPT-3 models fine-tuned on source code from 54 million public GitHub repositories (Chen et al., 2021). We evaluate these models on reasoning benchmarks, including those involving code (§5.3: reasoning). The release date for these models is based on Chen et al. (2021), though we note that these are for the Codex models, which may not quite be the OpenAI models we evaluate. We have contacted the model provider, OpenAI, but have not received formal confirmation on the nature of the training procedure for these models, the appropriate release date to use, or the appropriate model sizes. 115See https://beta.openai.com/docs/model-index-for-researchers for more details.\n\n[H:p043:tab1.1 | helm_2211.09110v2.pdf | page 43]\nTable 5 (page 43). Table 5: Models. Description of the 30 models evaluated in this effort: provenance for this information is provided in Appendix I. The total tokens, queries, and cost refer to the overall costs we incur to evaluate the given model. For this reason, the costs for open models are measured in GPU hours, the costs for commercial models are measured in the monetary cost calculated using the current pricing scheme for each model, and the costs for the private models were covered by the model providers.\nModel | Model Creator | Modality # Parameters | Tokenizer | Window Size Access Total Tokens Total Queries | Total Cost\nJ1-Jumbo v1 (178B) | AI21 Labs | Text | 178B | AI21 | 2047 | limited 327,443,515 | 591,384 | $10,926\nJ1-Grande v1 (17B) | AI21 Labs | Text | 17B | AI21 | 2047 | limited 326,815,150 | 591,384 | $2,973\nJ1-Large v1 (7.5B) | AI21 Labs | Text | 7.5B | AI21 | 2047 | limited 342,616,800 | 601,560 | $1,128\nAnthropic-LM v4-s3 (52B) | Anthropic | Text | 52B | GPT-2 | 8192 | closed | 767,856,111 | 842,195 | -\nBLOOM (176B) | BigScience | Text | 176B | BLOOM | 2048 | open | 581,384,088 | 849,303 | 4,200 GPU hours",
+    "context_ids": [
+      "H:p043:tab1.6",
+      "H:p043:tab1.5",
+      "H:p159:t4",
+      "H:p043:tab1.1"
+    ],
+    "error": null,
+    "seconds": 6.37,
+    "tokens_in": 2473,
+    "tokens_out": 607,
+    "llm_calls": 2,
+    "citation_regions": [
+      {
+        "id": "H:p043:tab1.5",
+        "page": 43,
+        "kind": "table",
+        "bbox": [
+          74.0,
+          367.3,
+          540.0,
+          623.8
+        ],
+        "image": null
+      },
+      {
+        "id": "H:p159:t4",
+        "page": 159,
+        "kind": "text",
+        "bbox": null,
+        "image": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,943 @@
+[
+  {
+    "query_id": "q01",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "thời giờ làm việc bình thường không quá 8 giờ trong một ngày",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d104-p1",
+            "score": 0.7251122593879751,
+            "page": 36
+          },
+          {
+            "id": "B:blld-2019:d105-p1",
+            "score": 0.7216409776638978,
+            "page": 44
+          },
+          {
+            "id": "B:blld-2019:d146-p1",
+            "score": 0.6544487432654363,
+            "page": 59
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d104-p1",
+          "B:blld-2019:d105-p1",
+          "B:blld-2019:d146-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d104-p1",
+      "B:blld-2019:d105-p1",
+      "B:blld-2019:d146-p1"
+    ]
+  },
+  {
+    "query_id": "q02",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "làm việc vào ban đêm thời giờ làm việc ban đêm",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d106-p1",
+            "score": 0.7630986626301021,
+            "page": 44
+          },
+          {
+            "id": "B:blld-2012:d105-p1",
+            "score": 0.7628063307308072,
+            "page": 37
+          },
+          {
+            "id": "B:blld-2019:d098-p1",
+            "score": 0.6691976404889897,
+            "page": 42
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d106-p1",
+          "B:blld-2012:d105-p1",
+          "B:blld-2019:d098-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d106-p1",
+      "B:blld-2012:d105-p1",
+      "B:blld-2019:d098-p1"
+    ]
+  },
+  {
+    "query_id": "q03",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "làm thêm giờ vào ngày nghỉ hằng tuần tiền lương ít nhất",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d097-p1",
+            "score": 0.6588919962113199,
+            "page": 34
+          },
+          {
+            "id": "B:blld-2019:d098-p1",
+            "score": 0.646858066218731,
+            "page": 42
+          },
+          {
+            "id": "B:blld-2012:d106-p1",
+            "score": 0.6129020442881228,
+            "page": 37
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d097-p1",
+          "B:blld-2019:d098-p1",
+          "B:blld-2012:d106-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d097-p1",
+      "B:blld-2019:d098-p1"
+    ]
+  },
+  {
+    "query_id": "q04",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "nghỉ thai sản sinh đôi thêm mỗi con",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d157-p1",
+            "score": 0.5815374060782058,
+            "page": 54
+          },
+          {
+            "id": "B:blld-2019:d139-p1",
+            "score": 0.5690465055760203,
+            "page": 57
+          },
+          {
+            "id": "B:blld-2012:d159-p1",
+            "score": 0.5111369199239107,
+            "page": 54
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d157-p1",
+          "B:blld-2019:d139-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d157-p1",
+      "B:blld-2019:d139-p1"
+    ]
+  },
+  {
+    "query_id": "q05",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "nghỉ hằng năm người làm việc trong điều kiện bình thường 12 ngày làm việc",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d113-p1",
+            "score": 0.7497564255900944,
+            "page": 47
+          },
+          {
+            "id": "B:blld-2012:d111-p1",
+            "score": 0.7433939101552043,
+            "page": 38
+          },
+          {
+            "id": "B:blld-2019:d114-p1",
+            "score": 0.6740926102344638,
+            "page": 47
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d113-p1",
+          "B:blld-2012:d111-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d113-p1",
+      "B:blld-2012:d111-p1"
+    ]
+  },
+  {
+    "query_id": "q06",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "làm thêm giờ số giờ làm thêm trong tháng",
+        "filter": {
+          "version": "2012"
+        },
+        "results": [
+          {
+            "id": "B:blld-2012:d106-p1",
+            "score": 0.6704002056124093,
+            "page": 37
+          },
+          {
+            "id": "B:blld-2012:d097-p1",
+            "score": 0.64215372897127,
+            "page": 34
+          },
+          {
+            "id": "B:blld-2012:d107-p1",
+            "score": 0.6308073080843865,
+            "page": 37
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d106-p1",
+          "B:blld-2012:d097-p1",
+          "B:blld-2012:d107-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d106-p1"
+    ]
+  },
+  {
+    "query_id": "q07",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "thời gian thử việc người quản lý doanh nghiệp",
+        "filter": {
+          "version": "2019"
+        },
+        "results": [
+          {
+            "id": "B:blld-2019:d025-p1",
+            "score": 0.7728418572451135,
+            "page": 11
+          },
+          {
+            "id": "B:blld-2019:d024-p1",
+            "score": 0.5996896325154474,
+            "page": 11
+          },
+          {
+            "id": "B:blld-2019:d027-p1",
+            "score": 0.5961506469878284,
+            "page": 12
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d025-p1",
+          "B:blld-2019:d024-p1",
+          "B:blld-2019:d027-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d025-p1"
+    ]
+  },
+  {
+    "query_id": "q08",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "người lao động được nghỉ việc ngay không cần báo trước",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d035-p2",
+            "score": 0.5602001666426172,
+            "page": 16
+          },
+          {
+            "id": "B:blld-2019:d036-p2",
+            "score": 0.559236650785422,
+            "page": 17
+          },
+          {
+            "id": "B:blld-2019:d115-p1",
+            "score": 0.554766774177567,
+            "page": 47
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d035-p2",
+          "B:blld-2019:d036-p2"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d035-p2"
+    ]
+  },
+  {
+    "query_id": "q09",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "trợ cấp thôi việc mỗi năm làm việc",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d046-p1",
+            "score": 0.6833401044178288,
+            "page": 21
+          },
+          {
+            "id": "B:blld-2012:d048-p1",
+            "score": 0.6750691510553051,
+            "page": 18
+          },
+          {
+            "id": "B:blld-2012:d049-p1",
+            "score": 0.6347142950553187,
+            "page": 19
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d046-p1",
+          "B:blld-2012:d048-p1",
+          "B:blld-2012:d049-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d046-p1",
+      "B:blld-2012:d048-p1",
+      "B:blld-2012:d049-p1"
+    ]
+  },
+  {
+    "query_id": "q10",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "nghỉ giữa ca thời giờ làm việc 6 giờ",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d109-p1",
+            "score": 0.7086067570770825,
+            "page": 46
+          },
+          {
+            "id": "B:blld-2012:d108-p1",
+            "score": 0.6806673660479957,
+            "page": 37
+          },
+          {
+            "id": "B:blld-2019:d110-p1",
+            "score": 0.6748581759082407,
+            "page": 46
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d109-p1",
+          "B:blld-2012:d108-p1",
+          "B:blld-2019:d110-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d109-p1",
+      "B:blld-2012:d108-p1"
+    ]
+  },
+  {
+    "query_id": "q11",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "nghỉ lễ Quốc khánh ngày 2 tháng 9 nghỉ hằng năm ngày lễ tết",
+        "filter": {
+          "version": "2019"
+        },
+        "results": [
+          {
+            "id": "B:blld-2019:d112-p1",
+            "score": 0.6225480066211231,
+            "page": 46
+          },
+          {
+            "id": "B:blld-2019:d113-p2",
+            "score": 0.5540145442433952,
+            "page": 47
+          },
+          {
+            "id": "B:blld-2019:d114-p1",
+            "score": 0.5213848326939544,
+            "page": 47
+          }
+        ],
+        "context_ids": [
+          "B:blld-2019:d112-p1",
+          "B:blld-2019:d113-p2",
+          "B:blld-2019:d114-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2019:d112-p1"
+    ]
+  },
+  {
+    "query_id": "q12",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "lao động nữ nghỉ trước khi sinh con",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d157-p1",
+            "score": 0.747476623515268,
+            "page": 54
+          },
+          {
+            "id": "B:blld-2019:d139-p1",
+            "score": 0.737218634055967,
+            "page": 57
+          },
+          {
+            "id": "B:blld-2012:d155-p1",
+            "score": 0.6827832838555673,
+            "page": 53
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d157-p1",
+          "B:blld-2019:d139-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d157-p1",
+      "B:blld-2019:d139-p1"
+    ]
+  },
+  {
+    "query_id": "q13",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d022-p2",
+            "score": 0.7834573953678623,
+            "page": 9
+          },
+          {
+            "id": "B:blld-2012:d037-p1",
+            "score": 0.695467723496503,
+            "page": 13
+          },
+          {
+            "id": "B:blld-2019:d018-p1",
+            "score": 0.6817898587680301,
+            "page": 8
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d022-p2",
+          "B:blld-2012:d037-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "loại hợp đồng lao động xác định thời hạn không xác định thời hạn theo Bộ luật Lao động 2019",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d022-p1",
+            "score": 0.7233451985316642,
+            "page": 8
+          },
+          {
+            "id": "B:blld-2019:d020-p1",
+            "score": 0.7094442979330517,
+            "page": 9
+          },
+          {
+            "id": "B:blld-2012:d022-p2",
+            "score": 0.6173590921905759,
+            "page": 9
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d022-p2",
+          "B:blld-2012:d037-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Bộ luật Lao động 2019 loại hợp đồng lao động xác định thời hạn",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d022-p1",
+            "score": 0.7361348618978808,
+            "page": 8
+          },
+          {
+            "id": "B:blld-2019:d020-p1",
+            "score": 0.7261998766899903,
+            "page": 9
+          },
+          {
+            "id": "B:blld-2012:d022-p2",
+            "score": 0.6550706687190813,
+            "page": 9
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d022-p2",
+          "B:blld-2012:d037-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d022-p2"
+    ]
+  },
+  {
+    "query_id": "q14",
+    "status": "abstain",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "các hình thức xử lý kỷ luật lao động",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d123-p1",
+            "score": 0.7381111071242275,
+            "page": 42
+          },
+          {
+            "id": "B:blld-2019:d122-p1",
+            "score": 0.7330500523924911,
+            "page": 50
+          },
+          {
+            "id": "B:blld-2019:d127-p1",
+            "score": 0.7113395109002422,
+            "page": 52
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d123-p1",
+          "B:blld-2019:d122-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "hình thức xử lý kỷ luật lao động khiển trách kéo dài thời hạn nâng lương cách chức sa thải",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d125-p1",
+            "score": 0.7624026820179657,
+            "page": 43
+          },
+          {
+            "id": "B:blld-2019:d124-p1",
+            "score": 0.7568306407479432,
+            "page": 51
+          },
+          {
+            "id": "B:blld-2019:d126-p1",
+            "score": 0.7417643271649521,
+            "page": 52
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d123-p1",
+          "B:blld-2019:d122-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "các hình thức xử lý kỷ luật lao động khiển trách kéo dài thời hạn nâng lương cách chức sa thải",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d125-p1",
+            "score": 0.7673086205353051,
+            "page": 43
+          },
+          {
+            "id": "B:blld-2019:d124-p1",
+            "score": 0.7631208386827675,
+            "page": 51
+          },
+          {
+            "id": "B:blld-2019:d126-p1",
+            "score": 0.7466519689521472,
+            "page": 52
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d123-p1",
+          "B:blld-2019:d122-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "Điều 124 hình thức xử lý kỷ luật lao động khiển trách sa thải",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2019:d124-p1",
+            "score": 0.716416406986475,
+            "page": 51
+          },
+          {
+            "id": "B:blld-2012:d125-p1",
+            "score": 0.6820877249555041,
+            "page": 43
+          },
+          {
+            "id": "B:blld-2019:d125-p1",
+            "score": 0.6611117508678593,
+            "page": 52
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d123-p1",
+          "B:blld-2019:d122-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d123-p1",
+      "B:blld-2019:d122-p1"
+    ]
+  },
+  {
+    "query_id": "q15",
+    "status": "answered",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "lao động nữ hưởng lương hưu đủ tuổi",
+        "filter": {
+          "version": "2012"
+        },
+        "results": [
+          {
+            "id": "B:blld-2012:d187-p1",
+            "score": 0.6501070737328177,
+            "page": 63
+          },
+          {
+            "id": "B:blld-2012:d158-p1",
+            "score": 0.5757973112879703,
+            "page": 54
+          },
+          {
+            "id": "B:blld-2012:d153-p1",
+            "score": 0.5651623192139544,
+            "page": 52
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d187-p1",
+          "B:blld-2012:d158-p1",
+          "B:blld-2012:d153-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d187-p1"
+    ]
+  },
+  {
+    "query_id": "u01",
+    "status": "abstain",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "mức lương tối thiểu vùng I theo tháng",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d091-p1",
+            "score": 0.5891365972568646,
+            "page": 33
+          },
+          {
+            "id": "B:blld-2019:d091-p1",
+            "score": 0.546407353021483,
+            "page": 39
+          },
+          {
+            "id": "B:blld-2012:d101-p1",
+            "score": 0.480207023645288,
+            "page": 36
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d091-p1",
+          "B:blld-2019:d091-p1",
+          "B:blld-2012:d101-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "bảng mức lương tối thiểu vùng I số tiền đồng/tháng",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d091-p1",
+            "score": 0.6075437008183165,
+            "page": 33
+          },
+          {
+            "id": "B:blld-2019:d091-p1",
+            "score": 0.5697758100813622,
+            "page": 39
+          },
+          {
+            "id": "B:blld-2019:d095-p1",
+            "score": 0.5354130117829069,
+            "page": 41
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d091-p1",
+          "B:blld-2019:d091-p1",
+          "B:blld-2012:d101-p1",
+          "B:blld-2019:d095-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "mức lương tối thiểu vùng I áp dụng đối với người lao động làm việc theo hợp đồng lao động",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d091-p1",
+            "score": 0.6276673126124002,
+            "page": 33
+          },
+          {
+            "id": "B:blld-2019:d091-p1",
+            "score": 0.5974052718716327,
+            "page": 39
+          },
+          {
+            "id": "B:blld-2019:d029-p2",
+            "score": 0.5891923026454314,
+            "page": 13
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d091-p1",
+          "B:blld-2019:d091-p1",
+          "B:blld-2012:d101-p1",
+          "B:blld-2019:d095-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "mức lương tối thiểu vùng I số tiền cụ thể đồng mỗi tháng do Chính phủ quy định",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d091-p1",
+            "score": 0.6809893681978109,
+            "page": 33
+          },
+          {
+            "id": "B:blld-2019:d091-p1",
+            "score": 0.6545474507595801,
+            "page": 39
+          },
+          {
+            "id": "B:blld-2019:d092-p1",
+            "score": 0.5736960939674469,
+            "page": 40
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d091-p1",
+          "B:blld-2019:d091-p1",
+          "B:blld-2012:d101-p1",
+          "B:blld-2019:d095-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d091-p1",
+      "B:blld-2019:d091-p1"
+    ]
+  },
+  {
+    "query_id": "u02",
+    "status": "abstain",
+    "trace_status": "answered",
+    "events": [
+      {
+        "event": "search",
+        "query": "thưởng Tết",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d103-p1",
+            "score": 0.5475145841333938,
+            "page": 36
+          },
+          {
+            "id": "B:blld-2019:d112-p1",
+            "score": 0.5300772348069323,
+            "page": 46
+          },
+          {
+            "id": "B:blld-2012:d115-p1",
+            "score": 0.5209611108210435,
+            "page": 39
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d103-p1",
+          "B:blld-2019:d112-p1",
+          "B:blld-2012:d115-p1"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "tiền thưởng đối với người lao động quy chế thưởng",
+        "filter": null,
+        "results": [
+          {
+            "id": "B:blld-2012:d103-p1",
+            "score": 0.7709644746417395,
+            "page": 36
+          },
+          {
+            "id": "B:blld-2019:d104-p1",
+            "score": 0.732203543186271,
+            "page": 44
+          },
+          {
+            "id": "B:blld-2012:d102-p1",
+            "score": 0.6327868821191062,
+            "page": 36
+          }
+        ],
+        "context_ids": [
+          "B:blld-2012:d103-p1",
+          "B:blld-2019:d112-p1",
+          "B:blld-2012:d115-p1",
+          "B:blld-2019:d104-p1",
+          "B:blld-2012:d102-p1"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "B:blld-2012:d103-p1",
+      "B:blld-2019:d104-p1",
+      "B:blld-2019:d112-p1",
+      "B:blld-2012:d115-p1"
+    ]
+  }
+]

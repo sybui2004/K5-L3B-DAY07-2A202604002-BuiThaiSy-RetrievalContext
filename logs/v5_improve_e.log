@@ -1,0 +1,2 @@
+{"config": "improve-e", "split": "dev", "n_questions": 21, "status_counts": {"answered": 21}, "errors": 0, "tokens_in": 152486, "tokens_out": 10645, "seconds_total": 184.8, "model": "deepseek-v4-flash", "figure_reader": null}
+{"config": "improve-e", "split": "retired", "n_questions": 66, "status_counts": {"abstain": 5, "answered": 61}, "errors": 0, "tokens_in": 464194, "tokens_out": 36472, "seconds_total": 566.64, "model": "deepseek-v4-flash", "figure_reader": null}

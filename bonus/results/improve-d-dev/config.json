@@ -1,0 +1,9 @@
+{
+  "name": "improve-d",
+  "method": "hybrid",
+  "top_k": 8,
+  "max_searches": 4,
+  "budget_chars": 12000,
+  "neighbors": false,
+  "rewrite": true
+}

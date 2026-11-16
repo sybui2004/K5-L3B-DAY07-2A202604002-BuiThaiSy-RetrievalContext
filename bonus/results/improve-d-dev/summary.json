@@ -1,0 +1,13 @@
+{
+  "config": "improve-d",
+  "split": "dev",
+  "n_questions": 21,
+  "status_counts": {
+    "answered": 21
+  },
+  "errors": 0,
+  "tokens_in": 150067,
+  "tokens_out": 11193,
+  "seconds_total": 172.8,
+  "model": "deepseek-v4-flash"
+}

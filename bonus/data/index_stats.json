@@ -1,0 +1,25 @@
+{
+  "pages": 162,
+  "text_chunks": 654,
+  "table_chunks": 169,
+  "figures": 40,
+  "figures_region_not_found": [
+    3,
+    6,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    22
+  ],
+  "vlm_failures": [],
+  "pages_without_text": [],
+  "total_chunks": 863,
+  "vlm_model": "qwen2.5vl:7b",
+  "embedding_model": "bge-m3",
+  "table_limit": 700,
+  "pages_with_chunks": 162,
+  "note": "Counts re-read from helm_chunks on 2026-11-16 after the round-5 partial re-ingest (Tables 5, 6, 13 split one chunk per row, pages 43, 44, 157). The previous full ingest had 768 chunks (74 table chunks)."
+}

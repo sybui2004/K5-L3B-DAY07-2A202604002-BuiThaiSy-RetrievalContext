@@ -1,0 +1,431 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Thời giờ làm việc bình thường tối đa là bao nhiêu giờ một ngày và bao nhiêu giờ một tuần?",
+    "expected_answer": "Không quá 08 giờ/ngày và 48 giờ/tuần (cả hai Bộ luật).",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 44,
+        "evidence": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 36,
+        "evidence": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và 48 giờ trong 01 tuần"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Ca làm đêm được tính bắt đầu từ mấy giờ và kết thúc lúc nào?",
+    "expected_answer": "Từ 22 giờ đến 06 giờ sáng ngày hôm sau.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 44,
+        "evidence": "Giờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 37,
+        "evidence": "Giờ làm việc ban đêm được tính từ 22 giờ đến 6 giờ sáng ngày hôm sau"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Làm thêm giờ vào ngày nghỉ hằng tuần thì được trả lương ít nhất bằng bao nhiêu phần trăm?",
+    "expected_answer": "Ít nhất bằng 200%.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 42,
+        "evidence": "Vào ngày nghỉ hằng tuần, ít nhất bằng 200%"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 34,
+        "evidence": "Vào ngày nghỉ hàng tuần, ít nhất bằng 200%"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "dieu_kien",
+    "question": "Lao động nữ sinh đôi thì thời gian nghỉ thai sản được cộng thêm như thế nào?",
+    "expected_answer": "Từ con thứ 02 trở đi, mỗi con người mẹ được nghỉ thêm 01 tháng (ngoài 06 tháng).",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 57,
+        "evidence": "Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 54,
+        "evidence": "Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ 02 trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Người làm công việc trong điều kiện bình thường được nghỉ hằng năm bao nhiêu ngày?",
+    "expected_answer": "12 ngày làm việc (khi đủ 12 tháng làm việc).",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 47,
+        "evidence": "12 ngày làm việc đối với người làm công việc trong điều kiện bình thường"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 38,
+        "evidence": "12 ngày làm việc đối với người làm công việc trong điều kiện bình thường"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "phien_ban",
+    "question": "Theo Bộ luật Lao động 2012, số giờ làm thêm tối đa trong một tháng là bao nhiêu?",
+    "expected_answer": "Không quá 30 giờ/tháng (tổng không quá 200 giờ/năm, trường hợp đặc biệt 300 giờ).",
+    "gold": [
+      {
+        "source_id": "blld-2012",
+        "page": 37,
+        "evidence": "không quá 30 giờ trong 01 tháng và tổng số không quá 200 giờ trong 01 năm"
+      }
+    ],
+    "filter": {
+      "version": "2012"
+    }
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "type": "phien_ban",
+    "question": "Theo Bộ luật Lao động 2019, thời gian thử việc tối đa đối với người quản lý doanh nghiệp là bao lâu?",
+    "expected_answer": "Không quá 180 ngày.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 11,
+        "evidence": "Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp"
+      }
+    ],
+    "filter": {
+      "version": "2019"
+    }
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "type": "dieu_kien",
+    "question": "Trong trường hợp nào người lao động được nghỉ việc ngay mà không cần báo trước cho người sử dụng lao động?",
+    "expected_answer": "Không được bố trí đúng công việc/địa điểm; không được trả đủ hoặc đúng hạn lương; bị ngược đãi; bị quấy rối tình dục; lao động nữ mang thai phải nghỉ; đủ tuổi nghỉ hưu; người sử dụng lao động cung cấp thông tin không trung thực (Điều 35 BLLĐ 2019).",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 16,
+        "evidence": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong trường hợp sau đây"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Trợ cấp thôi việc được tính bao nhiêu cho mỗi năm làm việc?",
+    "expected_answer": "Mỗi năm làm việc được trợ cấp một nửa tháng tiền lương.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 21,
+        "evidence": "mỗi năm làm việc được trợ cấp một nửa tháng tiền lương"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 18,
+        "evidence": "mỗi năm làm việc được trợ cấp một nửa tháng tiền lương"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Nhân viên làm việc từ 6 tiếng trở lên mỗi ngày được nghỉ giữa ca tối thiểu bao nhiêu phút?",
+    "expected_answer": "Ít nhất 30 phút (làm ban đêm ít nhất 45 phút).",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 46,
+        "evidence": "từ 06 giờ trở lên trong một ngày thì được nghỉ giữa giờ ít nhất 30 phút"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 38,
+        "evidence": "được nghỉ giữa giờ ít nhất 30 phút, tính vào thời giờ làm việc"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "phien_ban",
+    "question": "Theo Bộ luật Lao động 2019, người lao động được nghỉ mấy ngày dịp Quốc khánh?",
+    "expected_answer": "02 ngày (ngày 02/9 và 01 ngày liền kề trước hoặc sau).",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 46,
+        "evidence": "Quốc khánh: 02 ngày (ngày 02 tháng 9 dương lịch và 01 ngày liền kề trước hoặc sau)"
+      }
+    ],
+    "filter": {
+      "version": "2019"
+    }
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Lao động nữ được nghỉ trước khi sinh con tối đa bao lâu?",
+    "expected_answer": "Không quá 02 tháng.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 57,
+        "evidence": "thời gian nghỉ trước khi sinh không quá 02 tháng"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 54,
+        "evidence": "Thời gian nghỉ trước khi sinh tối đa không quá 02 tháng"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "dieu_kien",
+    "question": "Có được ký hợp đồng mùa vụ dưới 12 tháng để làm công việc có tính chất thường xuyên từ 12 tháng trở lên không?",
+    "expected_answer": "Không, trừ khi tạm thời thay thế người đi nghĩa vụ quân sự, nghỉ thai sản, ốm đau, tai nạn lao động hoặc nghỉ tạm thời khác (Điều 22 BLLĐ 2012).",
+    "gold": [
+      {
+        "source_id": "blld-2012",
+        "page": 9,
+        "evidence": "Không được giao kết hợp đồng lao động theo mùa vụ hoặc theo một công việc nhất định có thời hạn dưới 12 tháng để làm những công việc có tính chất thường xuyên từ 12 tháng trở lên"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Có những hình thức xử lý kỷ luật lao động nào?",
+    "expected_answer": "Khiển trách; kéo dài thời hạn nâng lương không quá 06 tháng; cách chức; sa thải.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 51,
+        "evidence": "1. Khiển trách. 2. Kéo dài thời hạn nâng lương không quá 06 tháng. 3. Cách chức. 4. Sa thải."
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 43,
+        "evidence": "1. Khiển trách. 2. Kéo dài thời hạn nâng lương không quá 06 tháng; cách chức. 3. Sa thải."
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "type": "phien_ban",
+    "question": "Theo Bộ luật Lao động 2012, lao động nữ được hưởng lương hưu khi đủ bao nhiêu tuổi?",
+    "expected_answer": "Nữ đủ 55 tuổi (nam đủ 60 tuổi).",
+    "gold": [
+      {
+        "source_id": "blld-2012",
+        "page": 63,
+        "evidence": "được hưởng lương hưu khi nam đủ 60 tuổi, nữ đủ 55 tuổi"
+      }
+    ],
+    "filter": {
+      "version": "2012"
+    }
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "type": "phien_ban",
+    "question": "Theo Bộ luật Lao động 2019, hợp đồng lao động xác định thời hạn được ký với thời hạn tối đa bao lâu?",
+    "expected_answer": "Không quá 36 tháng kể từ thời điểm có hiệu lực.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 9,
+        "evidence": "trong thời gian không quá 36 tháng kể từ thời điểm có hiệu lực của hợp đồng"
+      }
+    ],
+    "filter": {
+      "version": "2019"
+    }
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "Trong thời gian thử việc, người lao động được trả lương tối thiểu bao nhiêu?",
+    "expected_answer": "Ít nhất bằng 85% mức lương của công việc đó.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 12,
+        "evidence": "nhưng ít nhất phải bằng 85% mức lương của công việc đó"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 11,
+        "evidence": "nhưng ít nhất phải bằng 85% mức lương của công việc đó"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "type": "dieu_kien",
+    "question": "Nếu hành vi vi phạm liên quan đến bí mật kinh doanh thì thời hiệu xử lý kỷ luật lao động là bao lâu?",
+    "expected_answer": "12 tháng (thay vì 06 tháng thông thường).",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 51,
+        "evidence": "bí mật công nghệ, bí mật kinh doanh của người sử dụng lao động thì thời hiệu xử lý kỷ luật lao động là 12 tháng"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 43,
+        "evidence": "bí mật công nghệ, bí mật kinh doanh của người sử dụng lao động thì thời hiệu xử lý kỷ luật lao động tối đa là 12 tháng"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "type": "dien_dat_lai",
+    "question": "Một doanh nghiệp được cho thuê lại một người lao động trong thời gian dài nhất là bao lâu?",
+    "expected_answer": "Tối đa 12 tháng.",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 23,
+        "evidence": "Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 21,
+        "evidence": "Thời hạn cho thuê lại lao động tối đa không quá 12 tháng"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "type": "truc_tiep",
+    "question": "Người lao động ở độ tuổi nào thì được coi là lao động chưa thành niên?",
+    "expected_answer": "Chưa đủ 18 tuổi (dưới 18 tuổi).",
+    "gold": [
+      {
+        "source_id": "blld-2019",
+        "page": 58,
+        "evidence": "Lao động chưa thành niên là người lao động chưa đủ 18 tuổi"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 55,
+        "evidence": "Người lao động chưa thành niên là người lao động dưới 18 tuổi"
+      }
+    ],
+    "filter": null
+  },
+  {
+    "id": "u01",
+    "split": "dev",
+    "type": "thieu_bang_chung",
+    "question": "Mức lương tối thiểu vùng I hiện nay là bao nhiêu đồng một tháng?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bộ luật chỉ nêu nguyên tắc mức lương tối thiểu, không ghi số tiền theo vùng (do Chính phủ quy định).",
+    "key_phrases": [
+      "vùng I",
+      "đồng/tháng"
+    ],
+    "verified_by_author": true
+  },
+  {
+    "id": "u02",
+    "split": "dev",
+    "type": "thieu_bang_chung",
+    "question": "Doanh nghiệp phải thưởng Tết tối thiểu bằng bao nhiêu tháng lương?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bộ luật chỉ quy định thưởng theo quy chế của người sử dụng lao động, không có mức tối thiểu hay khái niệm thưởng Tết.",
+    "key_phrases": [
+      "thưởng Tết"
+    ],
+    "verified_by_author": true
+  },
+  {
+    "id": "u03",
+    "split": "test",
+    "type": "thieu_bang_chung",
+    "question": "Người lao động làm việc từ xa được hỗ trợ tiền internet và điện thoại bao nhiêu mỗi tháng?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Hai bộ luật không có quy định về làm việc từ xa hay hỗ trợ chi phí internet/điện thoại.",
+    "key_phrases": [
+      "làm việc từ xa",
+      "internet"
+    ],
+    "verified_by_author": true
+  },
+  {
+    "id": "u04",
+    "split": "test",
+    "type": "thieu_bang_chung",
+    "question": "Mức phạt tiền cụ thể là bao nhiêu triệu đồng khi sử dụng lao động chưa thành niên trái quy định?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bộ luật không ghi mức phạt tiền theo số tiền cụ thể (nằm ở nghị định xử phạt).",
+    "key_phrases": [
+      "triệu đồng"
+    ],
+    "verified_by_author": true
+  }
+]

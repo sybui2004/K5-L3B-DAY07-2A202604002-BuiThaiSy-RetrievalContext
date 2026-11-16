@@ -1,0 +1,1 @@
+{"pages": 162, "text_chunks": 654, "table_chunks": 74, "figures": 40, "figures_region_not_found": [3, 6, 11, 12, 13, 14, 15, 16, 22], "vlm_failures": [], "pages_without_text": [], "total_chunks": 768, "vlm_model": "qwen2.5vl:7b", "embedding_model": "bge-m3", "table_limit": 700}

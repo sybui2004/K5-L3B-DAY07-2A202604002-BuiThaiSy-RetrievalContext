@@ -1,0 +1,1 @@
+{"name": "improve-d", "method": "hybrid-rerank", "top_k": 5, "max_searches": 1, "budget_chars": 6000, "neighbors": false, "rewrite": false}

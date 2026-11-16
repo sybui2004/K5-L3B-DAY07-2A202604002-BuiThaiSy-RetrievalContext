@@ -1,0 +1,31 @@
+﻿query_id,question,expected_answer,status,answer,citations,answer_grade_0_2,citation_support,abstention_correct,effective_status,reason
+q16,"Theo Bộ luật Lao động 2019, hợp đồng lao động xác định thời hạn được ký với thời hạn tối đa bao lâu?",Không quá 36 tháng kể từ thời điểm có hiệu lực.,answered,"Theo Bộ luật Lao động **2019**, hợp đồng lao động xác định thời hạn là hợp đồng mà trong đó hai bên xác định thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng **trong thời gian không quá 36 tháng** kể từ thời điểm có hiệu lực của hợp đồng [B:blld-2019:d020-p1].
+
+Lưu ý thêm: khi hợp đồng xác định thời hạn hết hạn mà người lao động vẫn tiếp tục làm việc, trong 30 ngày hai bên phải ký hợp đồng mới; nếu ký hợp đồng xác định thời hạn mới thì chỉ được ký thêm 01 lần, sau đó nếu người lao động vẫn tiếp tục làm việc thì phải ký hợp đồng không xác định thời hạn (trừ một số trường hợp ngoại lệ) [B:blld-2019:d020-p1].",B:blld-2019:d020-p1,2,true,,,Đúng đáp án chuẩn; citation chứa evidence.
+q17,"Trong thời gian thử việc, người lao động được trả lương tối thiểu bao nhiêu?",Ít nhất bằng 85% mức lương của công việc đó.,answered,"Về mức lương tối thiểu trong thời gian thử việc, cả hai bản Bộ luật Lao động đều quy định giống nhau:
+
+- **Bộ luật Lao động 2012** (Điều 28): Tiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận nhưng ít nhất phải bằng 85% mức lương của công việc đó [B:blld-2012:d028-p1].
+- **Bộ luật Lao động 2019** (Điều 26): Tiền lương thử việc do hai bên thỏa thuận nhưng ít nhất phải bằng 85% mức lương của công việc đó [B:blld-2019:d026-p1].
+
+Như vậy, mức tối thiểu là **85% mức lương của công việc đó**, theo thỏa thuận giữa hai bên.",B:blld-2012:d028-p1;B:blld-2019:d026-p1,2,true;true,,,Đúng đáp án chuẩn; citation chứa evidence.
+q18,Nếu hành vi vi phạm liên quan đến bí mật kinh doanh thì thời hiệu xử lý kỷ luật lao động là bao lâu?,12 tháng (thay vì 06 tháng thông thường).,answered,"Theo **Bộ luật Lao động 2019**: nếu hành vi vi phạm **liên quan trực tiếp đến việc tiết lộ bí mật kinh doanh** của người sử dụng lao động thì thời hiệu xử lý kỷ luật lao động là **12 tháng kể từ ngày xảy ra hành vi vi phạm** [B:blld-2019:d123-p1]. Trường hợp thông thường là **06 tháng** [B:blld-2019:d123-p1].
+
+Theo **Bộ luật Lao động 2012**: cùng loại hành vi liên quan trực tiếp đến tiết lộ bí mật kinh doanh thì thời hiệu xử lý kỷ luật lao động **tối đa là 12 tháng**; thông thường tối đa là **06 tháng** [B:blld-2012:d124-p1].",B:blld-2019:d123-p1;B:blld-2012:d124-p1,2,true;true,,,Đúng đáp án chuẩn; citation chứa evidence.
+q19,Một doanh nghiệp được cho thuê lại một người lao động trong thời gian dài nhất là bao lâu?,Tối đa 12 tháng.,answered,"Thời gian cho thuê lại lao động tối đa là **12 tháng**.
+
+- Bộ luật Lao động 2019 quy định: “Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng” [B:blld-2019:d053-p1].
+- Bộ luật Lao động 2012 cũng quy định: “Thời hạn cho thuê lại lao động tối đa không quá 12 tháng” [B:blld-2012:d054-p1].",B:blld-2019:d053-p1;B:blld-2012:d054-p1,2,true;true,,,Đúng đáp án chuẩn; citation chứa evidence.
+q20,Người lao động ở độ tuổi nào thì được coi là lao động chưa thành niên?,Chưa đủ 18 tuổi (dưới 18 tuổi).,answered,"Theo **Bộ luật Lao động 2012**, người lao động **dưới 18 tuổi** được coi là lao động chưa thành niên [B:blld-2012:d161-p1].
+
+Theo **Bộ luật Lao động 2019**, lao động chưa thành niên là người lao động **chưa đủ 18 tuổi** [B:blld-2019:d143-p1].",B:blld-2012:d161-p1;B:blld-2019:d143-p1,2,true;true,,,Đúng đáp án chuẩn; citation chứa evidence.
+u03,Người lao động làm việc từ xa được hỗ trợ tiền internet và điện thoại bao nhiêu mỗi tháng?,(thiếu bằng chứng: Hai bộ luật không có quy định về làm việc từ xa hay hỗ trợ chi phí internet/điện thoại.),answered,"Các đoạn tài liệu hiện có không chứa quy định nào về làm việc từ xa (telework) hay việc hỗ trợ tiền internet, điện thoại hằng tháng cho người lao động. Nội dung tìm được chỉ liên quan đến tạm ứng tiền lương, tiền tàu xe ngày nghỉ hằng năm [B:blld-2012:d113-p1], tạm ứng tiền lương [B:blld-2012:d100-p1] và tiền lương ngừng việc [B:blld-2019:d099-p1] — đều không đề cập đến vấn đề bạn hỏi.
+
+Vì vậy, tôi không đủ bằng chứng để trả lời mức hỗ trợ tiền internet và điện thoại mỗi tháng cho người lao động làm việc từ xa theo Bộ luật Lao động 2012 hoặc 2019 dựa trên các đoạn tài liệu đã cung cấp. Bạn có thể cần tra cứu thêm văn bản khác (ví dụ thỏa ước lao động, nội quy công ty hoặc quy định chuyên ngành) để có con số cụ thể.",B:blld-2012:d113-p1;B:blld-2012:d100-p1;B:blld-2019:d099-p1,,false;false;false,true,abstain,Câu thiếu bằng chứng: agent nói không đủ căn cứ/không có quy định (dù status=answered do còn citation) -> tính là từ chối đúng.
+u04,Mức phạt tiền cụ thể là bao nhiêu triệu đồng khi sử dụng lao động chưa thành niên trái quy định?,(thiếu bằng chứng: Bộ luật không ghi mức phạt tiền theo số tiền cụ thể (nằm ở nghị định xử phạt).),answered,"Không đủ bằng chứng để trả lời.
+
+Các đoạn tài liệu tìm được chỉ quy định về nguyên tắc sử dụng lao động chưa thành niên và danh mục công việc/nơi làm việc bị cấm — không có nội dung về mức phạt tiền:
+
+- Bộ luật Lao động 2012, Điều 163 quy định nguyên tắc sử dụng lao động là người chưa thành niên (cấm làm công việc nặng nhọc, độc hại, nguy hiểm; giới hạn thời giờ làm việc; cấm sản xuất kinh doanh cồn, rượu, bia, thuốc lá, chất gây nghiện...) nhưng không nêu mức xử phạt [B:blld-2012:d163-p1].
+- Bộ luật Lao động 2019, Điều 147 liệt kê các công việc và nơi làm việc cấm sử dụng người lao động từ đủ 15 tuổi đến chưa đủ 18 tuổi, cũng không quy định mức phạt tiền [B:blld-2019:d147-p1].
+
+Mức phạt tiền cụ thể cho hành vi sử dụng lao động chưa thành niên trái quy định thường nằm trong văn bản quy định xử phạt vi phạm hành chính về lao động, không phải trong hai bộ luật trên. Vì vậy, với các đoạn đã tìm được, tôi không thể xác định con số cụ thể (bao nhiêu triệu đồng).",B:blld-2012:d163-p1;B:blld-2019:d147-p1,,false;false,true,abstain,Câu thiếu bằng chứng: agent nói không đủ căn cứ/không có quy định (dù status=answered do còn citation) -> tính là từ chối đúng.

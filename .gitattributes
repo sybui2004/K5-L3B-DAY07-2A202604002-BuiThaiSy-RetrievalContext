@@ -1,0 +1,2 @@
+# Benchmark files are frozen by SHA-256 of their bytes: never convert line endings on checkout.
+*.json -text

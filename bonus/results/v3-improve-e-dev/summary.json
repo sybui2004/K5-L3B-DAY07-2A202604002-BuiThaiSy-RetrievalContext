@@ -1,0 +1,14 @@
+{
+  "config": "improve-e",
+  "split": "dev",
+  "n_questions": 21,
+  "status_counts": {
+    "abstain": 1,
+    "answered": 20
+  },
+  "errors": 0,
+  "tokens_in": 148811,
+  "tokens_out": 10163,
+  "seconds_total": 179.63,
+  "model": "deepseek-v4-flash"
+}

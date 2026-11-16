@@ -1,0 +1,10 @@
+{"config": "baseline", "split": "dev", "n_questions": 21, "status_counts": {"answered": 21}, "errors": 0, "tokens_in": 52111, "tokens_out": 7128, "seconds_total": 108.23, "model": "deepseek-v4-flash"}
+{"config": "improve-a", "split": "dev", "n_questions": 21, "status_counts": {"answered": 21}, "errors": 0, "tokens_in": 68148, "tokens_out": 7675, "seconds_total": 105.85, "model": "deepseek-v4-flash"}
+{"config": "improve-b", "split": "dev", "n_questions": 21, "status_counts": {"answered": 21}, "errors": 0, "tokens_in": 110163, "tokens_out": 10287, "seconds_total": 163.32, "model": "deepseek-v4-flash"}
+{"config": "improve-c", "split": "dev", "n_questions": 21, "status_counts": {"abstain": 1, "answered": 20}, "errors": 0, "tokens_in": 167722, "tokens_out": 12392, "seconds_total": 192.93, "model": "deepseek-v4-flash"}
+{"config": "improve-d", "split": "dev", "n_questions": 21, "status_counts": {"answered": 21}, "errors": 0, "tokens_in": 150067, "tokens_out": 11193, "seconds_total": 172.8, "model": "deepseek-v4-flash"}
+finished
+  File "D:\Vin\temp\K5-L3-Day07-Retrieval-Context-Engineering\.venv\Lib\site-packages\psycopg\connection.py", line 126, in connect
+    raise last_ex.with_traceback(None)
+psycopg.errors.ConnectionTimeout: connection timeout expired
+{"config": "improve-e", "split": "dev", "n_questions": 21, "status_counts": {"answered": 21}, "errors": 0, "tokens_in": 142547, "tokens_out": 9448, "seconds_total": 165.66, "model": "deepseek-v4-flash"}

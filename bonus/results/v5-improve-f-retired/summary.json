@@ -1,0 +1,19 @@
+{
+  "config": "improve-f",
+  "split": "retired",
+  "n_questions": 33,
+  "status_counts": {
+    "answered": 32,
+    "error": 1
+  },
+  "errors": 1,
+  "tokens_in": 225438,
+  "tokens_out": 18192,
+  "seconds_total": 1180.57,
+  "model": "deepseek-v4-flash",
+  "figure_reader": {
+    "model": "qwen2.5vl:7b",
+    "calls": 47,
+    "failures": 0
+  }
+}
