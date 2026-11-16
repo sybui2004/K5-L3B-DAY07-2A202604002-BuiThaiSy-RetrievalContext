@@ -12,7 +12,7 @@ Kiểm tra: `python -m src.benchmark validate` → phải in `0 problems`.
 - Câu thiếu bằng chứng (u01–u04): `key_phrases` là cụm từ mà `validate` kiểm tra không xuất hiện trong kho chunk.
 - `filter`: chỉ có khi chính câu hỏi nêu năm bộ luật (người dùng cung cấp trước), không lấy từ gold.
 
-## Việc tác giả phải làm (chưa xong)
+## Việc tác giả đã làm
 
 - [x] Tự mở cả hai PDF và tìm cho từng câu u01–u04 để xác nhận **thật sự không có đáp án**; sửa/thay câu nếu có. Ghi ngày và cách tìm bên dưới, rồi đổi `verified_by_author` thành `true`.
 - [x] Xem lại các câu Day 6 nếu muốn sửa; sau khi chốt, chạy `python -m src.benchmark freeze` để ghi `benchmark/freeze.json`. **Không chạy split test trước bước này.** (Đã freeze. Lần freeze đầu bị thay sau khi bỏ trường `draft_by`; test đã chạy với cả hai bản freeze, xem `configs/selection.md`.)
