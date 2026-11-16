@@ -2,7 +2,7 @@
 
 Day 7 là agent RAG trên kho vector của Day 6 (Bộ luật Lao động 2012 và 2019). Mỗi bước dưới đây ghi rõ lệnh chạy, file code xử lý, đầu vào, đầu ra và người làm.
 
-Ký hiệu: 🤖 = chạy bằng code; 👤 = bạn phải tự làm (không thể thay).
+Ký hiệu: 🤖 = chạy bằng code; 👤 = tác giả tự làm (không thể thay).
 
 ## Tổng quan
 
@@ -97,7 +97,7 @@ Cấu hình trong [configs/](../configs/):
 | Chi phí USD (mức trần) | `python -m src.cost <run...>` → [src/cost.py](../src/cost.py) |
 | Công thức metrics chung | [starter/agent_metrics.py](../starter/agent_metrics.py) |
 
-Lưu ý: cột `effective_status` giúp bạn gán lại các câu "không đủ bằng chứng" nhưng vẫn có citation thành từ chối.
+Lưu ý: cột `effective_status` dùng để gán lại các câu "không đủ bằng chứng" nhưng vẫn có citation thành từ chối.
 
 ## Bước 5. Chốt cấu hình, chạy test một lần 🤖
 
@@ -108,7 +108,7 @@ python -m src.run_agent --config configs/baseline.json --split test --final --ou
 python -m src.run_agent --config configs/final.json    --split test --final --out results/agent/final-test
 ```
 
-Cờ `--final` và `ensure_split_allowed` ([src/eval_retrieval.py](../src/eval_retrieval.py)) chặn test nếu benchmark chưa freeze hoặc bị sửa sau freeze. Nếu bạn đã xem test để chỉnh, phải tạo test mới và ghi rõ.
+Cờ `--final` và `ensure_split_allowed` ([src/eval_retrieval.py](../src/eval_retrieval.py)) chặn test nếu benchmark chưa freeze hoặc bị sửa sau freeze. Nếu đã xem test để chỉnh, phải tạo test mới và ghi rõ.
 
 ## Bước 6. Chấm nhãn test 👤
 
@@ -121,7 +121,6 @@ Giống bước 4, với `results/agent/<cấu_hình>-test/audit/*.csv`, rồi `
 | Mẫu báo cáo | [REPORT_TEMPLATE.md](../REPORT_TEMPLATE.md) |
 | Báo cáo | [report/individual/2A202604002_BuiThaiSy.md](../report/individual/2A202604002_BuiThaiSy.md) |
 | Bảng dev đầy đủ | `results/dev-summary.md` |
-| Thiết kế và kế hoạch | [docs/superpowers/specs/](superpowers/specs/), [docs/superpowers/plans/](superpowers/plans/) |
 | Chi phí | `python -m src.cost <run...>` quy token ra USD (mức trần) theo giá DeepSeek Flash |
 
 ## Bước 8. Nộp bài
@@ -144,7 +143,7 @@ Test mock chỉ kiểm tra code, không thay cho benchmark agent thật. Các fi
 
 ## Trạng thái hiện tại (cập nhật 2026-11-16)
 
-Bản bàn giao chi tiết (môi trường, cảnh báo DB, lệnh hay dùng) ở [docs/HANDOVER.md](HANDOVER.md).
+Cách dựng lại môi trường và cảnh báo về volume Docker của Day 6: [README.md](../README.md) mục "Tái tạo kho vector Day 6".
 
 ### Phần cơ bản: đã xong
 
@@ -170,17 +169,16 @@ Bản bàn giao chi tiết (môi trường, cảnh báo DB, lệnh hay dùng) �
 - **improve-f đạt 31/33 = 93,94%**, vượt ngưỡng 90%; baseline 23/33. Nhãn đã duyệt. Hai bộ test cũ (T, N) nay là `retired`.
 - Cấu hình chọn theo tiêu chí ghi trước trên dev + retired (87 câu): improve-e và improve-f cùng 85/87, improve-f ít token hơn. Chi tiết ở [bonus/README.md](../bonus/README.md) và `bonus/configs/selection.md`.
 
-### Chưa commit
+### Nộp bài
 
-Theo quy tắc trong CLAUDE.md, mọi thay đổi chưa được commit. Phần lớn Day 7 đang untracked. `results/` không bị git-ignore nên trace và `audit/` sẽ được commit cùng; kiểm tra không có `.env` hay khóa trước khi push.
+Toàn bộ code, cấu hình, benchmark, trace, nhãn và báo cáo đã commit và merge vào `main` (repo public). `.env` được git-ignore; đã quét toàn bộ lịch sử git, không có khóa API.
 
-## Đang chờ bạn
+## Danh sách việc (đã xong)
 
 - [x] Xác nhận u01–u04 và điền [benchmark/README.md](../benchmark/README.md).
 - [x] `python -m src.benchmark freeze`.
-- [x] Chấm nhãn audit dev cho baseline, improve-a/b/c.
+- [x] Chấm nhãn audit dev cho baseline, improve-a/b/c/d/e.
 - [x] Chấm nhãn audit test (`baseline-test`, `final-test`) và chạy `score_run`.
-- [x] Duyệt nhãn `results/agent/improve-d-dev/audit/` và `improve-e-dev/audit/` (q08, q13).
-- [x] Đọc lại và sửa báo cáo [report/individual/2A202604002_BuiThaiSy.md](../report/individual/2A202604002_BuiThaiSy.md).
-- [x] (Bonus) Duyệt đối chiếu M01–M33 và nhãn `pass_fail` của `bonus/results/final-test3/`, `baseline-test3/`, `v5-*`.
-- [ ] Commit, push, cấp quyền xem repo cho người chấm.
+- [x] Báo cáo [report/individual/2A202604002_BuiThaiSy.md](../report/individual/2A202604002_BuiThaiSy.md).
+- [x] (Bonus) Đối chiếu M01–M33 với PDF, chạy test một lần, chấm nhãn `pass_fail`.
+- [x] Commit, push, repo public cho người chấm xem.

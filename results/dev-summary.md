@@ -1,5 +1,7 @@
 # Dev — agent DeepSeek (17 câu: 15 có đáp án + 2 thiếu bằng chứng)
 
+Kết quả được trích dẫn nằm ở `results/agent/` và `results/retrieval/`. Các thư mục `results/rerun/`, `results/agent-v1-dev-before-final-turn/`, `results/check-*` là lượt chạy kiểm chứng hoặc phiên bản cũ, không chấm nhãn đầy đủ; `results/prev-test-old-freeze/` là lần chạy test đầu (xem `configs/selection.md`).
+
 CER = Context Evidence Rate (n/N câu có đáp án mà context cuối chứa evidence). Nhãn answer/citation/abstention **do tác giả chấm** trong `results/agent/<cfg>-dev/audit/*.csv` (đã chấm, xem bảng bên dưới).
 
 | Cấu hình | CER v1 | abstain v1 | CER sau fix | abstain sau fix | tokens | giây | phân bố số lượt tìm |

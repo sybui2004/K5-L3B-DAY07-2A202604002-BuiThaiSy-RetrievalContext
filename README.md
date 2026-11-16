@@ -41,7 +41,7 @@ Day 7 chỉ **đọc** các bảng `chunks_a/b/c` của Day 6 (xem [src/store_da
    docker compose -f infra/docker-compose.yml -p day6_student_starter up -d --wait
    ```
    Cổng host là `15433` (Windows trên máy này giữ `55433`). Mật khẩu `day6_local_only` chỉ dùng local.
-2. Nếu volume Docker của Day 6 còn nguyên (cùng project name `day6_student_starter`), dữ liệu đã có sẵn, bỏ qua bước 3.
+2. Nếu volume Docker của Day 6 còn nguyên (cùng project name `day6_student_starter`, volume `day6_student_starter_pg_data`), dữ liệu đã có sẵn, bỏ qua bước 3. Không chạy `docker compose down -v` hay `docker volume rm` với volume này: dữ liệu (gồm cả `helm_chunks` của phần bonus) sẽ mất và phải ingest lại.
 3. Nếu database trống, nạp lại bằng pipeline Day 6 (repo Day 6, thư mục `starter/`), dùng đúng PDF trong `data/raw/` ở đây (copy sang `data/raw/` của Day 6 nếu cần):
    ```bash
    python -m src.run ingest        # tạo chunks_a, chunks_b, chunks_c với bge-m3 (1024 chiều)

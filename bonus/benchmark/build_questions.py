@@ -264,8 +264,8 @@ TEST2 = [
 
 
 def main(argv=None) -> None:
-    """--with-test3: retire N01-N33 and add M01-M33 as the new test (run only after the author has checked
-    bonus/benchmark/test3_draft.json against the PDF; then `python -m src.benchmark freeze` before any test run)."""
+    """--with-test3: retire N01-N33 and add M01-M33 as the new test. Done on 2026-11-16 after the author checked
+    M01-M33 (bonus/benchmark/test3_draft.json) against the PDF; the result was frozen before the single test run."""
     import sys
     with_test3 = "--with-test3" in (sys.argv[1:] if argv is None else argv)
     if with_test3:

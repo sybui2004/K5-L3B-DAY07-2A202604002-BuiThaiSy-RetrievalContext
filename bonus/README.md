@@ -2,7 +2,7 @@
 
 **Kết quả: đạt ngưỡng trên bộ test thứ ba (M01–M33): improve-f 31/33 = 93,94%** (cần ít nhất 30/33 = 90,9%). Cấu hình chọn: `improve-f` (`configs/final.json`), chọn theo tiêu chí ghi trước trong `configs/selection.md` (vòng 5).
 Nhãn đạt/không đạt ghi ở `results/*/audit/pass_fail.csv` (cột `pass_fail`, `reason`); nhãn của test thứ ba và các lượt vòng 5 đã được tác giả duyệt và đối chiếu với PDF.
-Các bộ test trước (T01–T33, N01–N33) đã bị dùng để soi lỗi nên nay là `retired`; kết quả cũ trên chúng (75,8% và 81,8%) vẫn giữ trong các mục bên dưới.
+Các bộ test trước (T01–T33, N01–N33) đã bị dùng để soi lỗi nên nay là `retired`; kết quả cũ trên chúng (T01–T33: improve-d 27/33, baseline 25/33; N01–N33: improve-e 27/33, baseline 23/33) vẫn giữ trong các mục bên dưới.
 
 ### Test thứ ba M01–M33 (2026-11-16, chạy một lần với `--final`)
 
@@ -108,6 +108,9 @@ Test: thêm `--split test --final` (chỉ chạy được khi `benchmark/freeze.
 | test (M01–M33) | 27 | 6 | 7 / 6 / 6 / 4 / 4 |
 
 ## Kết quả vòng 1 (test cũ T01–T33, nay là `retired`)
+
+Các thư mục `results/_history*` là lượt chạy dev của các phiên bản index cũ, không chấm nhãn và không được trích dẫn.
+
 Dev (cấu hình chọn theo `configs/selection.md`, ghi trước khi chạy test): baseline 19/21, improve-a 19/21, improve-b 20/21, improve-c 20/21, **improve-d 21/21**.
 
 Test (một lần, `--final`, 33 câu, 0 lỗi hệ thống):
